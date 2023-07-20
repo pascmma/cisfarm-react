@@ -1,0 +1,62 @@
+.nav-link {
+    text-decoration: none !important;
+  }
+  
+
+  .bg-image{
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+
+.card{
+  background-image: url('../assets/card3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .card-title{
+  color: white;
+  
+}
+
+.card .card-subtitle{
+  color: yellow;
+}
+
+
+
+/*  animacion slide primera cards  */
+.cards-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 20px; /* Espacio entre las cards */
+}
+
+.card {
+  flex: 0 0 18rem;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento horizontal */
+}
+
+
+/*Imagen de casos*/
+.bg-image-casos{
+  background-image: url('../assets/card1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-prof{
+  max-width: 70%;
+  height: 100%;
+}
