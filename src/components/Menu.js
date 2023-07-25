@@ -10,6 +10,7 @@ function Menu(){
 
     return(
         <div>
+          <div className="bg-image-qa">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -70,11 +71,10 @@ function Menu(){
       </nav>
 
 
-      <h1 className="display-1">Cisfarm TITULO</h1>
-      <p className="lead" id="texto">
-        textototototoasdjajdjdajdjldalsjd adjlajdal ja
-        sajdlajsdljashfjlasjfsjdjaljfasjd asjdasdwi a dsad sajsdjjsadjasdj
-        jsdajklsdajklsdajksdajsa sdahssdkjjksdajajksdjdajdlak
+      <h1 className="display-1 text-white">Cisfarm TITULO</h1>
+      <p className="lead text-white" id="texto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua
       </p>
 
       <p className="text-white display-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -95,7 +95,7 @@ tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
 
         </div>
-
+        </div>
         <Footer/>
       </div>
     );

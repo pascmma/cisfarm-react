@@ -16,13 +16,14 @@ function Inicio() {
 
         <h1 className="display-1">Cisfarm TITULO</h1>
         <p className="lead" id="texto">
-          textototototoasdjajdjdajdjldalsjd adjlajdal ja
-          sajdlajsdljashfjlasjfsjdjaljfasjd asjdasdwi a dsad sajsdjjsadjasdj
-          jsdajklsdajklsdajksdajsa sdahssdkjjksdajajksdjdajdlak
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
         </p>
 
         <Cards/>
-        <button type="button" className="btn btn-outline-light" >Registrases</button>
+        
         <Casos/>
        <Bord></Bord>
 

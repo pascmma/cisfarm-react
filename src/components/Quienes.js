@@ -11,13 +11,18 @@ function Quienes() {
           <h1 className="display-1 text-white">CISFARM</h1>
           <h1 className="display-1 text-white">trea Teconolgia y salud</h1>
         </div>
-        <div className="col">
-          <p className="text-white">
+        <div className="col my-5">
+        <div className=" my-3 " style={{ width: "18rem" }}>
+          
+          <h4 className="card-text text-white ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </p>
+            aliquip ex ea commodo consequat.
+          </h4>
+
+          
+           </div>    
         </div>
       </div>
 
