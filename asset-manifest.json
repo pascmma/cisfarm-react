@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/cisfarm-react/static/css/main.85f2830f.css",
-    "main.js": "/cisfarm-react/static/js/main.14bf18ea.js",
+    "main.css": "/cisfarm-react/static/css/main.be35a13a.css",
+    "main.js": "/cisfarm-react/static/js/main.c4118dcd.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/background.png": "/cisfarm-react/static/media/background.68b62d172b538f7a6fd4.png",
+    "static/media/img9.png": "/cisfarm-react/static/media/img9.5d8133b711c6a747af23.png",
+    "static/media/img16.png": "/cisfarm-react/static/media/img16.3bec255a53b8ddf1cd57.png",
+    "static/media/img5.png": "/cisfarm-react/static/media/img5.990047e1765a9c3f4ffb.png",
+    "static/media/img4.png": "/cisfarm-react/static/media/img4.5c2805e209018489f33d.png",
     "static/media/card3.png": "/cisfarm-react/static/media/card3.cfffc4d4775c3b378c0b.png",
     "static/media/card1.png": "/cisfarm-react/static/media/card1.32af3b9b71197b332180.png",
     "static/media/card2.png": "/cisfarm-react/static/media/card2.bc6a67fb3fdd53088157.png",
+    "static/media/card4.png": "/cisfarm-react/static/media/card4.6c0fb3a78f852daeadad.png",
     "static/media/logo.svg": "/cisfarm-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cisfarm-react/index.html",
-    "main.85f2830f.css.map": "/cisfarm-react/static/css/main.85f2830f.css.map",
-    "main.14bf18ea.js.map": "/cisfarm-react/static/js/main.14bf18ea.js.map",
+    "main.be35a13a.css.map": "/cisfarm-react/static/css/main.be35a13a.css.map",
+    "main.c4118dcd.js.map": "/cisfarm-react/static/js/main.c4118dcd.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f2830f.css",
-    "static/js/main.14bf18ea.js"
+    "static/css/main.be35a13a.css",
+    "static/js/main.c4118dcd.js"
   ]
 }
