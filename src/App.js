@@ -10,6 +10,9 @@ import Blogs from './components/Blogs';
 
 function App() {
   return (
+    
+
+    
     <Router>
       <div className="App">
       <nav>
@@ -49,6 +52,7 @@ function App() {
 
 
     </Router>
+    
   );
 }
 

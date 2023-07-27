@@ -1,6 +1,5 @@
 import React from "react";
 
-import { BsFill8CircleFill } from "react-icons";
 import Footer from "./Footer";
 
 function Cursos() {
