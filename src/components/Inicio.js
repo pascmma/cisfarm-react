@@ -23,7 +23,7 @@ function Inicio() {
             aliquip ex ea commodo consequat.
         </p>
 
-        <Cards/>
+        <CardSlider/>
         
         <Casos/>
        <Bord></Bord>

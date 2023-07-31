@@ -1,9 +1,61 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
 .card-slider{
-    width: 18rem;
+    width: 20rem;
     border: solid black;
     background-image: url('../assets/card3.png');
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
 }
 
+.cont-carousel{
+    
+    background-color: transparent;
+}
+
+.contenedor{
+    width: 20rem;
+}
+
+/* Estilo para cada slide */
+.slick-slide {
+  opacity: 0.3; /* Ajusta la opacidad de los slides no activos */
+  transition: opacity 0.3s;
+}
+
+.slick-slide.slick-center {
+  opacity: 1; /* Slide activo con opacidad completa */
+}
+
+
+.slide{
+    
+}
+
+
+/* Botones de navegación */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.arrow.prev {
+  left: 10px;
+}
 
