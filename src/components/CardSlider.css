@@ -1,0 +1,9 @@
+.card-slider{
+    width: 18rem;
+    border: solid black;
+    background-image: url('../assets/card3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+

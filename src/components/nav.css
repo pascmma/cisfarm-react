@@ -30,7 +30,7 @@
 
 
 
-.card{
+.bg-image-card {
   background-image: url('../assets/card3.png');
   background-size: cover;
   background-repeat: no-repeat;

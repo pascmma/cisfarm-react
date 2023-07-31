@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Barra from "./Barra";
 import Casos from "./Casos";
 import Bord from "./Bord";
+import CardSlider from "./CardSlider";
 
 function Inicio() {
   return (
@@ -27,9 +28,9 @@ function Inicio() {
         <Casos/>
        <Bord></Bord>
 
-
         <Footer />
       </div>
+    <CardSlider/>
     </>
   );
 }
