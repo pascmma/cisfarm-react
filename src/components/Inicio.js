@@ -8,12 +8,13 @@ import Barra from "./Barra";
 import Casos from "./Casos";
 import Bord from "./Bord";
 import CardSlider from "./CardSlider";
+import Header from "./Header";
 
 function Inicio() {
   return (
     <>
       <div className="bg-image">
-        <Barra />
+        <Header/>
 
         <h1 className="display-1">Cisfarm TITULO</h1>
         <p className="lead" id="texto">
@@ -30,7 +31,7 @@ function Inicio() {
 
         <Footer />
       </div>
-    <CardSlider/>
+    
     </>
   );
 }

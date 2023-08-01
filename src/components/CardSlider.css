@@ -24,20 +24,19 @@
 
 /* Estilo para cada slide */
 .slick-slide {
-  opacity: 0.3; /* Ajusta la opacidad de los slides no activos */
-  transition: opacity 0.3s;
+  opacity: 0.4; /* Ajusta la opacidad de los slides no activos */
+  transition: opacity 0.3s, transform 0.7s; /* Agregamos la transición para las transformaciones */
+  transform-origin: center center;
 }
 
-.slick-slide.slick-center {
+.slick-slide.slick-current {
   opacity: 1; /* Slide activo con opacidad completa */
 }
 
-
-.slide{
-    
+.slick-slide:not(.slick-current) {
+  transform: scale(0.8); /* Reduce el tamaño de los slides inactivos */
+  opacity: 0.6; /* Ajusta la opacidad de los slides inactivos */
 }
-
-
 /* Botones de navegación */
 .arrow {
   position: absolute;
