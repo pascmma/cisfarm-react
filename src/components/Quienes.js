@@ -3,6 +3,8 @@ import Barra from "./Barra";
 import Footer from "./Footer";
 import Informacion from "./Informacion";
 import CardSlider2 from "./CardSlider2";
+import Example from "./Example";
+
 
 function Quienes() {
   return (
@@ -10,6 +12,7 @@ function Quienes() {
       <Barra />
       <Informacion/>
       <CardSlider2/>
+    <Example/>
 
 
       <div className="card my-3 " style={{ width: "18rem" }}>

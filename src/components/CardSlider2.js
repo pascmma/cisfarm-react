@@ -94,7 +94,7 @@ function CardSlider() {
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
             <div className="card my-3 contenedor">
           
-            <div className="card-body card-slider">
+            <div className="card-body card-slider-event">
               <h5 className="card-title"> {data.title} </h5>
               <h6 className="card-subtitle mb-2">{data.eventType}</h6>
               <p className="card-text text-white">{data.date}</p>

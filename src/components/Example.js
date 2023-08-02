@@ -1,35 +1,71 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import imagen from '../assets/card3.png'
+import React, { useState } from "react";
+import Slider from "react-slick";
 
-  
-export default function Example() {
+const Example = () => {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "0px",
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-    <div className="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img src={imagen} className="d-block w-100" alt="..."/>
+    <>
+      <div className="container">
+        <Slider {...settings}>
+          <div className="border">
+            <h3 className="text-white">1</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">2</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">3</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">4</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">5</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white"> 6</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">7</h3>
+          </div>
+          <div className="border">
+            <h3 className="text-white">8</h3>
+          </div>
+        
+        </Slider>
       </div>
-      <div className="carousel-item">
-        <img src={imagen} className="d-block w-100" alt="..."/>
-      </div>
-      <div className="carousel-item">
-        <img src={imagen} className="d-block w-100" alt="..."/>
-      </div>
-    </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Previous</span>
-    </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
-    </button>
-  </div>
+    </>
+
+
+
+
+
   );
-}
+};
+
+export default Example;
