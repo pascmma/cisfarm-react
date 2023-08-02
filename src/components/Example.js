@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
+import './example.css';
 
 const Example = () => {
   const settings = {
@@ -10,61 +11,71 @@ const Example = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     speed: 500,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
+
+  const sliderData = [
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    {
+      dayMonth: "dia mes",
+      year:"2023",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+    },
+    // Agrega más objetos según la cantidad de divs que desees mostrar
+  ];
 
   return (
     <>
       <div className="container">
         <Slider {...settings}>
-          <div className="border">
-            <h3 className="text-white">1</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">2</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">3</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">4</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">5</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white"> 6</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">7</h3>
-          </div>
-          <div className="border">
-            <h3 className="text-white">8</h3>
-          </div>
-        
+          {sliderData.map((item, index) => (
+            <div key={index} className="border fechas rounded">
+              <h3 className="text-white">{item.dayMonth}</h3>
+              <h2 className="text-white">{item.year}</h2>
+              <p className="text-white">{item.content}</p>
+            </div>
+          ))}
         </Slider>
       </div>
     </>
-
-
-
-
-
   );
 };
 

@@ -11,8 +11,8 @@ const TituloInicio = () => {
   return (
     <>
       <div className="container">
-        <div className="row border border-danger">
-          <div className="col-9 border border-danger">
+        <div className="row  ">
+          <div className="col-9 ">
             <h1 className="display-1 titulos-inicio text-white">
               
               Titulo correspondiente del tema

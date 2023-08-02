@@ -3,11 +3,13 @@ import Bordtemp from "./Bordtemp";
 import "./nav.css";
 import imagen16 from "../imagenes/img16.png";
 import Footer from "./Footer";
+import Header from "./Header";
 
 function Blogs() {
   return (
     <>
       <div className="bg-image">
+        <Header/>
         <h1>POSTs recientes</h1>
         <br />
         <br />

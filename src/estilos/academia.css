@@ -1,0 +1,74 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+.card-slider{
+    width: 20rem;
+    border: solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont-carousel{
+    
+    background-color: transparent;
+}
+
+.contenedor{
+    width: 20rem;
+}
+
+/* Estilo para cada slide */
+.slick-slide {
+  opacity: 0.4; /* Ajusta la opacidad de los slides no activos */
+  transition: opacity 0.3s, transform 0.7s; /* Agregamos la transición para las transformaciones */
+  transform-origin: center center;
+  position: relative;
+}
+
+.slick-slide.slick-current {
+  opacity: 1; /* Slide activo con opacidad completa */
+  z-index: 1;
+}
+
+.slick-slide:not(.slick-current) {
+  transform: scale(0.8); /* Reduce el tamaño de los slides inactivos */
+  opacity: 0.6; /* Ajusta la opacidad de los slides inactivos */
+  z-index: 0;
+}
+
+.slide.active-slide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+/* Botones de navegación */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+
+.bg-image-qa{
+    background-image: url('../imagenes/img4.png');
+}
+

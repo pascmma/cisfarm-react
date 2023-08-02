@@ -36,10 +36,10 @@ function Bord() {
         <Carousel.Item key={index}>
           <div className="container">
             <div className="row">
-              <div className="col-5 border border-danger">
+              <div className="col-5 ">
                 <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
               </div>
-              <div className="col-7 border border-primary">
+              <div className="col-7 ">
                 <h1 className="text-white">{slide.titulo}</h1>
                 <h1 className="display-2 text-white">{slide.nombre}</h1>
                 <h1 className="text-white">{slide.puesto}</h1>

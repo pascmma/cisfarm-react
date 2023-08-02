@@ -15,31 +15,13 @@ function App() {
     
     <Router>
       <div className="App">
-      <nav>
-          <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/Quienes">Quienes Somos?</Link>
-            </li>
-            <li>
-              <Link to="/Menu">Academia QF</Link>
-            </li> 
-            <li>
-              <Link to="/Cursos">Cursos</Link>
-            </li> 
-            <li>
-              <Link to="/Blogs">Blogs</Link>
-            </li> 
-          </ul>
-        </nav>
+      
         <Routes>
-          <Route path='/' element={<Inicio/>}></Route>
-          <Route path='/Quienes' element={<Quienes/>} ></Route>
-          <Route path='/Menu' element={<Menu/>} ></Route>
-          <Route path='/Cursos' element={<Cursos/>}></Route>
-          <Route path='/Blogs' element={<Blogs/>}></Route>
+          <Route path='/cisfarm-react' element={<Inicio/>}></Route>
+          <Route path='/cisfarm-react/Quienes' element={<Quienes/>} ></Route>
+          <Route path='/cisfarm-react/Menu' element={<Menu/>} ></Route>
+          <Route path='/cisfarm-react/Cursos' element={<Cursos/>}></Route>
+          <Route path='/cisfarm-react/Blogs' element={<Blogs/>}></Route>
 
         </Routes>
 

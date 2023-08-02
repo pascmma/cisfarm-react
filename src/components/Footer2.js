@@ -6,9 +6,9 @@ import {FaFacebook,FaTwitter,FaYoutube,FaInstagram,FaTiktok} from 'react-icons/f
 
 const Footer2 = () =>{
     return(
-        <footer className="footer mt-auto py-3 rounded-top border border-danger">
+        <footer className="footer mt-auto py-3 rounded-top  bg-dark">
             <div className="container">
-                <div className="row border border-danger">
+                <div className="row ">
                     <div className="col-2 ">
                         <img src={logo} className="logo"/>
                         <h6 className="text-white">Tecnologia y salud al alcance de todos</h6>
