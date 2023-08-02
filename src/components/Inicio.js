@@ -9,27 +9,25 @@ import Casos from "./Casos";
 import Bord from "./Bord";
 import CardSlider from "./CardSlider";
 import Header from "./Header";
+import TituloInicio from "./TituloInicio";
+import Footer2 from "./Footer2";
+
 
 function Inicio() {
   return (
     <>
       <div className="bg-image">
         <Header/>
+        <TituloInicio/>
 
-        <h1 className="display-1">Cisfarm TITULO</h1>
-        <p className="lead" id="texto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-        </p>
-
-        <CardSlider/>
+        <CardSlider className="my-3"/>
         
         <Casos/>
-       <Bord></Bord>
-
+       
+       
+        <Bord/>
         <Footer />
+        <Footer2/>
       </div>
     
     </>

@@ -1,30 +1,16 @@
 import React from "react";
 import Barra from "./Barra";
 import Footer from "./Footer";
+import Informacion from "./Informacion";
+import CardSlider2 from "./CardSlider2";
 
 function Quienes() {
   return (
     <div className="bg-image">
       <Barra />
-      <div className="row">
-        <div className="col">
-          <h1 className="display-1 text-white">CISFARM</h1>
-          <h1 className="display-1 text-white">trea Teconolgia y salud</h1>
-        </div>
-        <div className="col my-5">
-        <div className=" my-3 " style={{ width: "18rem" }}>
-          
-          <h4 className="card-text text-white ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h4>
+      <Informacion/>
+      <CardSlider2/>
 
-          
-           </div>    
-        </div>
-      </div>
 
       <div className="card my-3 " style={{ width: "18rem" }}>
         <div className="card-body">

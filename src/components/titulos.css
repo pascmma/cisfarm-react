@@ -1,0 +1,17 @@
+.titulos-inicio{
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.hr{
+    color:white;
+    border:solid;
+
+}
+
+.parrafo{
+    width: 50%;
+    height: 50%;
+    max-width: 50%;
+}

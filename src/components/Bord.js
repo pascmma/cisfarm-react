@@ -1,103 +1,62 @@
 import React, { useState } from "react";
-import imagen1 from "../assets/card2.png";
-import imagen2 from "../assets/card4.png";
+import imagen16 from "../imagenes/img16.png";
+import imagen10 from "../imagenes/img10.png";
+import { Carousel } from "react-bootstrap";
+
+
+import imagen6 from "../imagenes/img6.png";
 
 function Bord() {
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  const nextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  const prevSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const images = [
+  const data = [
     {
-      imgSrc: imagen1,
-      title: "Asesor academico",
-      name: "Alvaro Jose",
-      lastName: "Andrade Condori",
-      job: "Quimico farmaceutico",
-      ranking: "1er puesto",
-      specialization: "Farmacia hospitaliaria",
+      imagen: imagen6,
+      titulo: "Título 1",
+      nombre: "Nombre 1",
+      puesto: "Puesto de trabajo 1",
+      orden: "Orden 1",
+      lugar: "Lugar 1",
     },
     {
-      imgSrc: imagen2,
-      title: "Asesor academico",
-      name: "juan ",
-      lastName: "Perez",
-      job: "Quimico",
-      ranking: "2do puesto",
-      specialization: "EspciaciliastaS",
+      imagen: imagen6,
+      titulo: "Título 2",
+      nombre: "Nombre 2",
+      puesto: "Puesto de trabajo 2",
+      orden: "Orden 2",
+      lugar: "Lugar 2",
     },
-    // Agrega más objetos con información para más diapositivas si lo deseas
+    // Agrega más objetos de acuerdo al número de diapositivas que necesites
   ];
+  
 
   return (
     <>
-      <div
-        id="carouselExampleControls"
-        className="carousel slide"
-        data-ride="carousel"
-      >
-        <div className="carousel-inner">
-          {images.map((slide, index) => (
-            <div
-              key={index}
-              className={`carousel-item ${index === activeIndex ? "active" : ""}`}
-              style={{
-                transform: `translateX(${(index - activeIndex) * 100}%)`, // Desplazar horizontalmente
-                transition: "transform 1s ease-in-out", // Aumentar la duración de la animación
-              }}
-            >
-              <div className="container">
-                <div className="row">
-                  <div className="col-4">
-                    <img
-                      src={slide.imgSrc}
-                      alt={`imagen ${index + 1}`}
-                      className="img-prof"
-                    />
-                  </div>
-                  <div className="col-8">
-                    <h1 className="text-white">{slide.title}</h1>
-                    <h1 className="display-2 text-white">{slide.name}</h1>
-                    <h1 className="display-2 text-white">{slide.lastName}</h1>
-                    <h1 className="text-white">{slide.job}</h1>
-
-                    <h2 className="text-white">{slide.ranking}</h2>
-                    <h2 className="text-white">{slide.specialization}</h2>
-                  </div>
-                </div>
+      <Carousel>
+      {data.map((slide, index) => (
+        <Carousel.Item key={index}>
+          <div className="container">
+            <div className="row">
+              <div className="col-5 border border-danger">
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
+              </div>
+              <div className="col-7 border border-primary">
+                <h1 className="text-white">{slide.titulo}</h1>
+                <h1 className="display-2 text-white">{slide.nombre}</h1>
+                <h1 className="text-white">{slide.puesto}</h1>
+                <br />
+                <br />
+                <br />
+                <h2 className="text-white row-align-items-end">{slide.orden}</h2>
+                <h2 className="text-white row-align-items-end">{slide.lugar}</h2>
               </div>
             </div>
-          ))}
-        </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-          onClick={prevSlide}
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-          onClick={nextSlide}
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
-      </div>
+          </div>
+        </Carousel.Item>
+      ))}
+    </Carousel>
     </>
   );
 }
 
 export default Bord;
+

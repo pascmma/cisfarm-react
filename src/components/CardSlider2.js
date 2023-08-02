@@ -4,69 +4,50 @@ import imagen10 from "../imagenes/img10.png";
 import Slider from "react-slick";
 
 
-import "./CardSlider.css";
+import "./cardslider2.css";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const imagenesCard = [imagen16, imagen10, imagen16, imagen10];
 
-const cardsData = [
+const data = [
   {
     id: 1,
-    
-    title: "Evento 1",
-    eventType: "Tipo de evento 1",
-    date: "2023-07-25",
+    dia: "Evento 1",
+    mes:"enero",
+    year: "2023",
     description: "Descripción del evento 1",
-  },
+},
   {
     id: 2,
-    
-    title: "Evento 2",
-    eventType: "Tipo de evento 2",
-    date: "2023-07-26",
+    dia: "Evento 1",
+    mes:"febrero",
+    year: "2023",
     description: "Descripción del evento 2",
-  },
-  {
+  },  {
     id: 3,
-    
-    title: "Evento 3",
-    eventType: "Tipo de evento 3",
-    date: "2023-07-25",
-    description: "Descripción del evento 1",
-  },
-  {
+    dia: "Evento 1",
+    mes:"marzo",
+    year: "2023",
+    description: "Descripción del evento 3",
+  },  {
     id: 4,
-    
-    title: "Evento 4",
-    eventType: "Tipo de evento 4",
-    date: "2023-07-25",
-    description: "Descripción del evento 1",
-  },
-  {
+    dia: "Evento 1",
+    mes:"abril",
+    year: "2023",
+    description: "Descripción del evento 4",
+  },  {
     id: 5,
-    
-    title: "Evento 5",
-    eventType: "Tipo de evento 5",
-    date: "2023-07-25",
-    description: "Descripción del evento 1",
-  },
-  
-  {
-    id: 6,
-    
-    title: "Evento 5",
-    eventType: "Tipo de evento 5",
-    date: "2023-07-25",
-    description: "Descripción del evento 1",
-  },
-  {
-    id: 7,
-    
-    title: "Evento 5",
-    eventType: "Tipo de evento 5",
-    date: "2023-07-25",
-    description: "Descripción del evento 1",
+    dia: "Evento 1",
+    mes:"mayo",
+    year: "2023",
+    description: "Descripción del evento 5",
+  },  {
+    id: 1,
+    dia: "Evento 1",
+    mes:"enero",
+    year: "2023",
+    description: "Descripción del evento 6",
   },
 ];
 
@@ -105,14 +86,11 @@ function CardSlider() {
     beforeChange:(current,next) => setImageIndex(next),
   };
 
-
-  
-
   return (
     <>
       <div className="container cont-carousel">
         <Slider {...settings}>
-          {cardsData.map((data,idx)=>(
+          {data.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
             <div className="card my-3 contenedor">
           
@@ -129,9 +107,6 @@ function CardSlider() {
           </div>
 
           ))}
-
-
-
         
         </Slider>
       </div>
