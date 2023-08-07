@@ -5,6 +5,8 @@ import Footer2 from "./Footer2";
 import Header from "./Header";
 import InfoCurso from "./InfoCurso";
 import DetallesCurso from "./DetallesCurso";
+import Ejemplo from "./Ejemplo";
+import ContenidoCurso from "./ContenidoCurso";
 
 const containerStyle = {
   position: "relative",
@@ -52,66 +54,10 @@ function Cursos() {
 
     <InfoCurso/>
     <DetallesCurso/>
+    <Ejemplo/>
 
 
-    <div className="bg-image-cursos2">
-      <div className="row">
-        <h4>Docentes</h4>
-      </div>
-
-      <div className="row">
-        <h3>Contenido del cruso</h3>
-      </div>
-
-        <div className="row bg-image-cursos d-flex mx-auto justify-content-center align-items-center" style={{ width: "50%" }}>
-            <h4>Tema nombre</h4>
-            <h5>texto añadido</h5>
-        </div>
-      <br />
-      <br />
-      <div
-        className="row bg-image-cursos d-flex mx-auto justify-content-center align-items-center"
-        style={{ width: "50%" }}
-      >
-        <h4>Tema nombre</h4>
-        <h5>texto añadido</h5>
-      </div>
-      <br />
-      <br />
-      <div
-        className="row bg-image-cursos d-flex mx-auto justify-content-center align-items-center"
-        style={{ width: "50%" }}
-      >
-        <h4>Tema nombre</h4>
-        <h5>texto añadido</h5>
-      </div>
-      <br />
-      <br />
-      <div
-        className="row bg-image-cursos d-flex mx-auto justify-content-center align-items-center"
-        style={{ width: "50%" }}
-      >
-        <h4>Tema nombre</h4>
-        <h5>texto añadido</h5>
-      </div>
-      <br />
-      <br />
-
-      <div className="row ">
-        <div className="col-8">
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip nisi ut aliquip nisi ut aliquip nisi ut aliquip Este
-            curso cuenta con # de temas por aprender
-          </p>
-        </div>
-        <div className="col-4">
-          <h5>Obtener:</h5>
-          <h4>0.000</h4>
-          <h5>Lo tienes</h5>
-        </div>
-      </div>
-      </div>
+      <ContenidoCurso/>
       <Footer />
       <Footer2/>
       </div>
