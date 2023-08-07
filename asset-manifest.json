@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cisfarm-react/static/css/main.29dab26b.css",
-    "main.js": "/cisfarm-react/static/js/main.f2032406.js",
+    "main.js": "/cisfarm-react/static/js/main.f2dfbb93.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
     "static/media/background.png": "/cisfarm-react/static/media/background.68b62d172b538f7a6fd4.png",
@@ -23,11 +23,11 @@
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
     "main.29dab26b.css.map": "/cisfarm-react/static/css/main.29dab26b.css.map",
-    "main.f2032406.js.map": "/cisfarm-react/static/js/main.f2032406.js.map",
+    "main.f2dfbb93.js.map": "/cisfarm-react/static/js/main.f2dfbb93.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29dab26b.css",
-    "static/js/main.f2032406.js"
+    "static/js/main.f2dfbb93.js"
   ]
 }
