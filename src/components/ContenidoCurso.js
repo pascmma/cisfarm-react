@@ -46,7 +46,7 @@ const ContenidoCurso = () =>{
     
     return(
         <>
-            <div className="m-5" style={{ height: '300px', overflowY: 'scroll' }} >
+            <div className="m-5  border border-danger " style={{ height: '300px', overflow:'auto' }} >
                 <div className="container" style={{display:"inline-block"}}>
                     {contenido.map((item,idx)=>(
                         <div>
