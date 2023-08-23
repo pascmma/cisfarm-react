@@ -206,11 +206,127 @@ const paginaQuienes = {
         {area2:{},},
         {area3:{},},
         {area4:{},},
-    ]
+    ],
+    
 
 };
 
 const paginaCursos  = {
+    nombreSector: "Farmacologia",
+    nombreCurso: "Cardiovascular",
+    parrafoIntroduccion:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`, 
+
+    video: "path del video .mp4",
+    valoracionNombre: "Valoraciones Buenas",
+    valoracion: "50",
+    estudiantes:"estudiantes",
+    estudiantesValor: 300,
+    nivel:"Nivel",
+    nivelValor:"Avanzado",
+    idioma: "Idioma",
+    idiomaValor: "Español",
+
+    texto: "Aprende mas en el campo de los mecanismos en accion 3D",
+
+    pregunta: "¿Por qué estudiar Farmacologia Cardiovascular en  CISFARM?",
+    respuesta: `Lorem ipsum dolor sit amet, consectetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
+
+    matricula: "¡Matricúlate",
+    nombresMatriForm: "Nombres y apellidos",
+    correoMatriForm: "Correo Electrónico",
+    telefonoMatriForm: "Télefono/Celular",
+    politicasMatriForm:"path del documento pdf",
+
+    costo: 129.90,
+    duracion: 14.2,
+    lecciones: 9,
+    modalidad: "online y a tu ritmo",
+    acercaCurso: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
+    beneficios:[
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`
+    ],
+    requisitosMateriales: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
+
+    docentes:[
+        {
+            imagen: "path de la imagen .png",
+            nombres: "Nombres del docente",
+            apellidos: "Apellidos del docente",
+            especialidad: "Químico Farmacéutico"
+        },
+        {
+            imagen: "path de la imagen .png",
+            nombres: "Nombres del docente",
+            apellidos: "Apellidos del docente",
+            especialidad: "Químico Farmacéutico"
+        },
+        {
+            imagen: "path de la imagen .png",
+            nombres: "Nombres del docente",
+            apellidos: "Apellidos del docente",
+            especialidad: "Químico Farmacéutico"
+        },
+    ],
+
+    // contenido del curso
+    temas:[
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        },
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        },
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        },
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        },
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        },
+        {
+            id:1,
+            imagenFondo:"path de la imagen de fondo .png",
+            nombreTema: "Tema Nombre",
+            textoTema: "añadir un poco del tema"
+        }
+    ],
+    parrafoFinal: `Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip nisi ut aliquip nisi ut aliquip nisi ut aliquip`,
+
+    obtener: 0.000,
+    
 
 };
 
