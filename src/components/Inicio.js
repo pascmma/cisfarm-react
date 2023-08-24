@@ -11,6 +11,7 @@ import CardSlider from "./CardSlider";
 import Header from "./Header";
 import TituloInicio from "./TituloInicio";
 import Footer2 from "./Footer2";
+import Correccion from "./CorreccionTest";
 
 
 function Inicio() {
@@ -28,6 +29,7 @@ function Inicio() {
         <Bord/>
         <Footer />
         <Footer2/>
+        
       </div>
     
     </>

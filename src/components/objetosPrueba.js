@@ -1,229 +1,231 @@
-
-
 const paginaInicio = {
     titulo: "agregar un titulo sobre el tema",
-    tema:"tema",
+    tema: "tema",
     parrafo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     eventos: [
         {
-            id:1,
+            id: 1,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
         },
         {
-            id:2,
+            id: 2,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
         },
         {
-            id:3,
+            id: 3,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
         },
         {
-            id:4,
+            id: 4,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
         },
         {
-            id:5,
+            id: 5,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
         },
         {
-            id:6,
+            id: 6,
             tituloEvento: "Añade el evento",
             tipoEvento: "Tipo de evento",
-            fechaEvento:"01-01-2023",
-            parrafaoEvento:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            fechaEvento: "01-01-2023",
+            parrafaoEvento: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
-        }
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+        },
     ],
-    detallesCasos: "Actualmente contamos con el 40% de ingresados en el primer lugar",
-    parrafoCasos:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    detallesCasos:
+        "Actualmente contamos con el 40% de ingresados en el primer lugar",
+    parrafoCasos: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    casos:[
+    casos: [
         {
-            id:1,
+            id: 1,
             imagen: "path de la imagen.png",
             numeroPuesto: 1,
-            diminutivo:"er",
-            nombres:"nombres completos",
-            apellidos:"apellidos completos",
-            grado:"Quimico farmaceutico"
+            diminutivo: "er",
+            nombres: "nombres completos",
+            apellidos: "apellidos completos",
+            grado: "Quimico farmaceutico",
         },
         {
-            id:2,
+            id: 2,
             imagen: "path de la imagen.png",
             numeroPuesto: 1,
-            diminutivo:"er",
-            nombres:"nombres completos",
-            apellidos:"apellidos completos",
-            grado:"Quimico farmaceutico"
+            diminutivo: "er",
+            nombres: "nombres completos",
+            apellidos: "apellidos completos",
+            grado: "Quimico farmaceutico",
         },
         {
-            id:3,
+            id: 3,
             imagen: "path de la imagen.png",
             numeroPuesto: 1,
-            diminutivo:"er",
-            nombres:"nombres completos",
-            apellidos:"apellidos completos",
-            grado:"Quimico farmaceutico"
+            diminutivo: "er",
+            nombres: "nombres completos",
+            apellidos: "apellidos completos",
+            grado: "Quimico farmaceutico",
         },
-        
     ],
 
-    farmaceuticos:[
+    farmaceuticos: [
         {
-            id:1,
+            id: 1,
             imagen: "path de la imagen.png",
             ocupacion: "Asesor academico",
             nombre: "Nombres completos",
-            apellidos:"Apellidos completos",
+            apellidos: "Apellidos completos",
             grado: "Quimico Farmaceutico",
             puesto: "1 puesto",
-            campo:"farmacia Hospitalaria",
-
+            campo: "farmacia Hospitalaria",
         },
     ],
-
-
 };
 
-const paginaQuienes = { 
+const paginaQuienes = {
     empresa: "CISFARM",
-    titulo:"trae Tecnologia y salud a tu alcance",
+    titulo: "trae Tecnologia y salud a tu alcance",
     parrafo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat`,
-    historia:[
+    historia: [
         {
-            id:1,
-            fechaHistoria:"01-01-2021",
-            parrafoHistoria:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
-            ipsum dolor sit amet, consectetur`
+            id: 1,
+            fechaHistoria: "01-01-2021",
+            parrafoHistoria: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
+            ipsum dolor sit amet, consectetur`,
         },
         {
-            id:2,
-            fechaHistoria:"01-01-2021",
-            parrafoHistoria:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
-            ipsum dolor sit amet, consectetur`
+            id: 2,
+            fechaHistoria: "01-01-2021",
+            parrafoHistoria: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
+            ipsum dolor sit amet, consectetur`,
         },
         {
-            id:3,
-            fechaHistoria:"01-01-2021",
-            parrafoHistoria:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
-            ipsum dolor sit amet, consectetur`
+            id: 3,
+            fechaHistoria: "01-01-2021",
+            parrafoHistoria: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
+            ipsum dolor sit amet, consectetur`,
         },
         {
-            id:4,
-            fechaHistoria:"01-01-2021",
-            parrafoHistoria:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
-            ipsum dolor sit amet, consectetur`
+            id: 4,
+            fechaHistoria: "01-01-2021",
+            parrafoHistoria: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
+            ipsum dolor sit amet, consectetur`,
         },
         {
-            id:5,
-            fechaHistoria:"01-01-2021",
-            parrafoHistoria:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
-            ipsum dolor sit amet, consectetur`
+            id: 5,
+            fechaHistoria: "01-01-2021",
+            parrafoHistoria: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem
+            ipsum dolor sit amet, consectetur`,
         },
     ],
-    promesa:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+    promesa: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    objetivo:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+    objetivo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    mision:[
-        {item:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`},
-        {item:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`},
-        {item:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`},
-        {item:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`},
-        {item:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`},
+    mision: [
+        {
+            item: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        },
+        {
+            item: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        },
+        {
+            item: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        },
+        {
+            item: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        },
+        {
+            item: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
+        },
     ],
-    vision:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    vision: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
     sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum.`,
 
-    nombresCEO:"Nombres completos",
-    apellidosCEO:"Apellidos completos",
+    nombresCEO: "Nombres completos",
+    apellidosCEO: "Apellidos completos",
     parrafoCEO: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
     amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam`,
 
-    area:[
-        {area1:{
-            nombreArea: "Diseño y animacion",
-            parrafoArea: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    area: [
+        {
+            area1: {
+                nombreArea: "Diseño y animacion",
+                parrafoArea: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
-            personal: [
-                {
-                    paImagen:"path de la imagen.png",
-                    paCargo:"Director",
-                    paNombres:"Nombres y apellidos",
-                    paArea:"area"
-
-                },
-                {
-                    paImagen:"path de la imagen.png",
-                    paCargo:"Director",
-                    paNombres:"Nombres y apellidos",
-                    paArea:"area"
-
-                },
-                {
-                    paImagen:"path de la imagen.png",
-                    paCargo:"Director",
-                    paNombres:"Nombres y apellidos",
-                    paArea:"area"
-
-                }
-            ]
-        },},
-        {area2:{},},
-        {area3:{},},
-        {area4:{},},
+                personal: [
+                    {
+                        paImagen: "path de la imagen.png",
+                        paCargo: "Director",
+                        paNombres: "Nombres y apellidos",
+                        paArea: "area",
+                    },
+                    {
+                        paImagen: "path de la imagen.png",
+                        paCargo: "Director",
+                        paNombres: "Nombres y apellidos",
+                        paArea: "area",
+                    },
+                    {
+                        paImagen: "path de la imagen.png",
+                        paCargo: "Director",
+                        paNombres: "Nombres y apellidos",
+                        paArea: "area",
+                    },
+                ],
+            },
+        },
+        { area2: {} },
+        { area3: {} },
+        { area4: {} },
     ],
-    
-
 };
 
-const paginaCursos  = {
+const paginaCursos = {
     nombreSector: "Farmacologia",
     nombreCurso: "Cardiovascular",
-    parrafoIntroduccion:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`, 
+    parrafoIntroduccion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
 
     video: "path del video .mp4",
     valoracionNombre: "Valoraciones Buenas",
     valoracion: "50",
-    estudiantes:"estudiantes",
+    estudiantes: "estudiantes",
     estudiantesValor: 300,
-    nivel:"Nivel",
-    nivelValor:"Avanzado",
+    nivel: "Nivel",
+    nivelValor: "Avanzado",
     idioma: "Idioma",
     idiomaValor: "Español",
 
@@ -236,9 +238,9 @@ const paginaCursos  = {
     nombresMatriForm: "Nombres y apellidos",
     correoMatriForm: "Correo Electrónico",
     telefonoMatriForm: "Télefono/Celular",
-    politicasMatriForm:"path del documento pdf",
+    politicasMatriForm: "path del documento pdf",
 
-    costo: 129.90,
+    costo: 129.9,
     duracion: 14.2,
     lecciones: 9,
     modalidad: "online y a tu ritmo",
@@ -248,12 +250,12 @@ const paginaCursos  = {
     sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
-    beneficios:[
+    beneficios: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod`,
     ],
     requisitosMateriales: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -262,82 +264,129 @@ const paginaCursos  = {
     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
 
-    docentes:[
+    docentes: [
         {
             imagen: "path de la imagen .png",
             nombres: "Nombres del docente",
             apellidos: "Apellidos del docente",
-            especialidad: "Químico Farmacéutico"
+            especialidad: "Químico Farmacéutico",
         },
         {
             imagen: "path de la imagen .png",
             nombres: "Nombres del docente",
             apellidos: "Apellidos del docente",
-            especialidad: "Químico Farmacéutico"
+            especialidad: "Químico Farmacéutico",
         },
         {
             imagen: "path de la imagen .png",
             nombres: "Nombres del docente",
             apellidos: "Apellidos del docente",
-            especialidad: "Químico Farmacéutico"
+            especialidad: "Químico Farmacéutico",
         },
     ],
 
     // contenido del curso
-    temas:[
+    temas: [
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
+            textoTema: "añadir un poco del tema",
         },
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
+            textoTema: "añadir un poco del tema",
         },
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
+            textoTema: "añadir un poco del tema",
         },
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
+            textoTema: "añadir un poco del tema",
         },
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
+            textoTema: "añadir un poco del tema",
         },
         {
-            id:1,
-            imagenFondo:"path de la imagen de fondo .png",
+            id: 1,
+            imagenFondo: "path de la imagen de fondo .png",
             nombreTema: "Tema Nombre",
-            textoTema: "añadir un poco del tema"
-        }
+            textoTema: "añadir un poco del tema",
+        },
     ],
     parrafoFinal: `Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip nisi ut aliquip nisi ut aliquip nisi ut aliquip`,
 
-    obtener: 0.000,
-    
-
-};
-
-const paginaMetanima = {
-
+    obtener: 0.0,
 };
 
 const paginaAcademia = {
-
+    //parrafo despues de titulo
+    parrafoAcademia: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+ut aliquip ex ea commodo consequat.`,
+    programasParrafo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+ut aliquip ex ea commodo consequat.`,
+    progrmasEntrenamiento: [
+        {
+            id: 1,
+            imagen: "imagen de fondo .png",
+            nombre: "ENAFB- SERUMS 2023-II",
+            intensidad: "SUPERINTENSIVO",
+        },
+        {
+            id: 2,
+            imagen: "imagen de fondo .png",
+            nombre: "ENAFB- SERUMS 2023-II",
+            intensidad: "INTENSIVO",
+        },
+    ],
+    parrafoSimulacro: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.`,
+    simulacros: [
+        {
+            id: 1,
+            imagen: "path de la imagen .png",
+            nombre: "ENAFB- SERUMS 2023-II",
+        },
+    ],
 };
 
-const paginaBLogs = {
+const paginaMetamina = {};
 
+const paginaBLogs = {
+    posts: [
+        {
+            id: 1,
+            imagenPost: "imagen del post .png",
+            nombrePost: "Añade el nombre  completo de la noticia",
+            parrafoPost: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
+            fechaPost: "13-12-2021",
+        },
+        {
+            id: 1,
+            imagenPost: "imagen del post .png",
+            nombrePost: "Añade el nombre  completo de la noticia",
+            parrafoPost: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum`,
+            fechaPost: "13-12-2021",
+        },
+    ],
+    datosCuriosos: [
+        {
+            id: 1,
+            imagen: "Añade el nombre completo de la noticia",
+            parrafo: `lorem ipsum lorem ipsum lorem ipsum  lorem ipsim`,
+        },
+    ],
 };
