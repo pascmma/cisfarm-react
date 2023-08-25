@@ -29,7 +29,7 @@ function Inicio() {
         <Bord/>
         <Footer />
         <Footer2/>
-        
+         <Correccion/>       
       </div>
     
     </>

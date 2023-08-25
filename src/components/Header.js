@@ -12,8 +12,7 @@ const Header = () => {
   };
 
   const styleMenu = {
-    width : "100%",
-    height: "100%",
+    boxShadow : 'none',
   };
 
   return (
@@ -23,13 +22,14 @@ const Header = () => {
           <img className="logo" src={logo} alt="Logo"/>
         </Link>
         <button
-          className="navbar-toggler border-0 box-shadow-0"
+          className="navbar-toggler border-0"
           type="button"
           onClick={handleNavToggle}
+          style={styleMenu}
           
           
         >
-        <IoMenu className="text-white d-flex flex-grow-1" style={styleMenu}/>
+        <IoMenu className="text-white d-flex flex-grow-1"/>
           
         </button>
         <div
