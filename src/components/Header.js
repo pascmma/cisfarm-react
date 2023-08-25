@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../imagenes/img3.png";
 import './header.css';
+import {IoMenu} from 'react-icons/io5';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,7 +11,10 @@ const Header = () => {
     setIsNavOpen(!isNavOpen);
   };
 
-
+  const styleMenu = {
+    width : "100%",
+    height: "100%",
+  };
 
   return (
     <>
@@ -19,12 +23,14 @@ const Header = () => {
           <img className="logo" src={logo} alt="Logo"/>
         </Link>
         <button
-          className="navbar-toggler border border-danger"
+          className="navbar-toggler border-0 box-shadow-0"
           type="button"
           onClick={handleNavToggle}
-          style={{ color: "white" }}
+          
+          
         >
-          <span className="navbar-toggler-icon" style={{}}  ></span>
+        <IoMenu className="text-white d-flex flex-grow-1" style={styleMenu}/>
+          
         </button>
         <div
           className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
