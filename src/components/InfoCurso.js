@@ -8,7 +8,7 @@ import Correccion from "./CorreccionTest";
 
 const estilo = {
   display:"inline-block",
-  color:"#ffff",
+  color:"#000000",
 };
 
 const dataCurso = {
@@ -33,12 +33,13 @@ const circleStyle = {
     width: "400px",
     height: "400px",
     borderRadius: "50%",
-    backgroundColor: "#00aae4",
+    backgroundColor: `#0067e0`,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: "20px"
+    padding: "20px",
+    zIndex:3
   };
 
   const inputStyle = {
@@ -49,7 +50,7 @@ const circleStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    color: "lightblue",
+    color: "blue",
   };
 
 const InfoCurso =() =>{
@@ -59,10 +60,10 @@ const InfoCurso =() =>{
       <div className="col  d-flex flex-column justify-content-center" >
         
         <div className="d-flex flex-column justify-content-center mx-5" style={{display:"flex",  width:"50%",alignItems:"center"}}>
-        <h5 className="text-white text-center" style={{display:"flex",alignItems:"center"}}>
+        <h5 className="text-primary text-center" style={{display:"flex",alignItems:"center"}}>
           ¿Por qué estudiar Farmacología Cardiovascular en Cisfarm?
         </h5>
-        <p className="lead text-wrap text-white text-center " style={{display:"flex",alignItems:"center"}}>
+        <p className="lead text-wrap text-primary text-center " style={{display:"flex",alignItems:"center"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -72,7 +73,7 @@ const InfoCurso =() =>{
         </div>
       </div>
       <div className="col-md-6 d-flex justify-content-center">
-        <div className="circulo" style={circleStyle}>
+        <div className="circulo border" style={circleStyle}>
           <h5 className="text-white">Matriculate </h5>
           <div className="input-group mb-3" style={inputStyle}>
             <input
@@ -94,7 +95,7 @@ const InfoCurso =() =>{
           </div>
           <div class="input-group mb-3">
             <input
-              type="text-white"
+              type="text-primary"
               className="form-control bg-transparent"
               placeholder="Telefono y/o celular"
               aria-label="telefo"
@@ -102,7 +103,7 @@ const InfoCurso =() =>{
             />
           </div>
           <Correccion/>
-          <button className="btn btn-primary">Enviar</button>
+          <button className="btn btn-primary bg-secondary">Enviar</button>
         </div>
       </div>
     </div>
