@@ -32,7 +32,7 @@ const Correccion = () => {
     <>
       <div className="d-inline">
         <p className="text-white">
-        <Form.Check inline className="border border-danger "/>
+        <Form.Check inline className=" "/>
           Acepto haber leido{" "}
           <a className="text-white" onClick={handleOpenModal}>
             las politicas de privacidad

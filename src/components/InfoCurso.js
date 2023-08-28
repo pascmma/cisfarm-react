@@ -1,5 +1,21 @@
 import React from "react";
+import {BiBookReader} from "react-icons/bi"
+import {GiSpeaker,GiUpgrade} from "react-icons/gi"
+import {AiOutlineLike} from "react-icons/ai"
+import Correccion from "./CorreccionTest";
 
+
+const estilo = {
+  display:"inline-block",
+  color:"#ffff",
+};
+
+const dataCurso = {
+  valoracion: "50%",
+  estudiantes: 300,
+  nivel: "avanzado",
+  idioma:"español"
+};
 
 const data = {
     costo:"$ 129",
@@ -16,7 +32,7 @@ const circleStyle = {
     width: "400px",
     height: "400px",
     borderRadius: "50%",
-    backgroundColor: "blue",
+    backgroundColor: "#00aae4",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -38,8 +54,8 @@ const circleStyle = {
 const InfoCurso =() =>{
     return(
         <div style={{backgroundColor:"transparent"}}>
-     <div className="row d-flex justify-content-center border ">
-      <div className="col border d-flex flex-column justify-content-center" >
+     <div className="row d-flex justify-content-center  ">
+      <div className="col  d-flex flex-column justify-content-center" >
         
         <div className="d-flex flex-column justify-content-center mx-5" style={{display:"flex",  width:"50%",alignItems:"center"}}>
         <h5 className="text-white text-center" style={{display:"flex",alignItems:"center"}}>
@@ -84,12 +100,44 @@ const InfoCurso =() =>{
               aria-describedby="basic-addon1"
             />
           </div>
+          <Correccion/>
           <button className="btn btn-primary">Enviar</button>
         </div>
       </div>
     </div>
     <br/>
     <br/>
+    <div className="row display-2">
+                <div className="col-3">
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                        <AiOutlineLike />
+                    </div>
+                    <p className="lead">Valoraciones buenas</p>
+                    <p className="lead">{dataCurso.valoracion}</p>
+                </div>
+                <div className="col-3">
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                        <BiBookReader/>
+                    </div>
+                        <p className="lead">Estudiantes</p>
+                        <p className="lead">{dataCurso.estudiantes}</p>
+
+                </div>
+                <div className="col-3">
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                        <GiUpgrade/>
+                    </div>
+                        <p className="lead"> Nivel</p>
+                        <p className="lead">{dataCurso.nivel}</p>
+                </div>
+                <div className="col-3">
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                        <GiSpeaker/>
+                    </div>
+                        <p className="lead"> Idioma</p>
+                        <p className="lead">{dataCurso.idioma}</p>
+                </div>
+            </div>
 
     <div className="row">
         <div className="col-sm" >
@@ -109,7 +157,7 @@ const InfoCurso =() =>{
             <hr />
           </div>
         </div>
-        <div className="col-sm border border-danger" style={styleAbout}>
+        <div className="col-sm" style={styleAbout}>
             <div className="" style={{width:"50%"}}>
           <h3 className="">Acerca del curso</h3>
           <p className="lead">
@@ -126,7 +174,7 @@ const InfoCurso =() =>{
         </div>
       </div>
       <div className="row bg-white">
-        <div className="col-sm border">
+        <div className="col-sm ">
           <h4>Beneficios</h4>
           <ul>
             <li>

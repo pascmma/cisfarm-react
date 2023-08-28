@@ -46,12 +46,12 @@ const ContenidoCurso = () =>{
     
     return(
         <>
-            <div className="m-5  border border-danger " style={{ height: '300px', overflow:'auto' }} >
+            <div className="m-5  " style={{ height: '300px', overflow:'auto' }} >
                 <div className="container" style={{display:"inline-block"}}>
                     {contenido.map((item,idx)=>(
                         <div>
                             <br/>
-                        <div className=" border border-secondary" style={style}>
+                        <div className=" " style={style}>
                             <h3 className="text-primary">{item.tema}</h3>
                             <h5 className="text-warning">{item.detalle}</h5>
                         </div>
