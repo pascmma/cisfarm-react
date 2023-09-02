@@ -6,6 +6,8 @@ import Quienes from './components/Quienes';
 import { BrowserRouter as Router, Switch, Route, Link,Routes } from 'react-router-dom';
 import Cursos from './components/Cursos';
 import Blogs from './components/Blogs';
+import Metanima from './components/Metanima';
+import CursoMetanima from './components/CursoMetanima';
 
 
 function App() {
@@ -21,7 +23,11 @@ function App() {
           <Route path='/cisfarm-react/Quienes' element={<Quienes/>} ></Route>
           <Route path='/cisfarm-react/Menu' element={<Menu/>} ></Route>
           <Route path='/cisfarm-react/Cursos' element={<Cursos/>}></Route>
+          <Route path='/cisfarm-react/Metanima/metanima' element={<Metanima/>}></Route>
+          <Route path='/cisfarm-react/Metanima/curso1' element={<CursoMetanima/>}></Route>
+
           <Route path='/cisfarm-react/Blogs' element={<Blogs/>}></Route>
+          
 
         </Routes>
 

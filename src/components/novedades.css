@@ -1,0 +1,11 @@
+.colores{
+    background-color: rgb(9, 58, 106);
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+  }
+
+.borde-redondo{
+    border-radius: 40px;
+}
