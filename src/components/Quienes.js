@@ -7,6 +7,8 @@ import Example from "./Example";
 import Header from "./Header";
 import Promesa from "./Promesa";
 import Staff from "./Staff";
+import Footer2 from "./Footer2";
+import Areas from "./Areas";
 
 function Quienes() {
   return (
@@ -21,8 +23,9 @@ function Quienes() {
     <Promesa/>
 
       <Staff/>
-
+      <Areas/>
       <Footer/>
+      <Footer2/>
     </div>
   );
 }
