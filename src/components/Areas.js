@@ -40,105 +40,172 @@ const dataAreas = [
                     },
                 ]
 
+            },
+            {
+                parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.`,
+                usuarios: [
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                ]
+
+            },
+            {
+                parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.`,
+                usuarios: [
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                ]
+
             }
         ]
     },
     {
         nombre: "Area2",
-        card: {
-            parrafo: `lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.`,
-            usuarios: [
-                {
-                    imagenUsuario: imagen,
-                    cargoUsuario: "Director",
-                    nombresUsuario: "Nombres y Apellidos",
-                    areaUsuario: "Area",
-                },
-                {
-                    imagenUsuario: imagen,
-                    cargoUsuario: "Director",
-                    nombresUsuario: "Nombres y Apellidos",
-                    areaUsuario: "Area",
-                },
-                {
-                    imagenUsuario: imagen,
-                    cargoUsuario: "Director",
-                    nombresUsuario: "Nombres y Apellidos",
-                    areaUsuario: "Area",
-                },
-            ]
-        }
-    }
+        cards: [
+            {
+                parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.`,
+                usuarios: [
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                ]
+
+            },
+            {
+                parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.`,
+                usuarios: [
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                    {
+                        imagenUsuario: imagen,
+                        cargoUsuario: "Director",
+                        nombresUsuario: "Nombres y Apellidos",
+                        areaUsuario: "Area",
+                    },
+                ]
+
+            }
+        ]
+    },
+  
 
 ];
 
 
 //creacion de obejtos
 const prueba = () => {
-    console.log('preuba: ', dataAreas[0].card.usuarios[0]);
+    console.log('preuba: ', dataAreas[0].cards[0]);
 };
+
+prueba();
 
 
 const Areas = () => {
 
     return (
         <>
-
-            <div className="container border my-3 bg-danger">
-                <div className="row">
-                    <h5 className="text-white"> Areas</h5>
-                </div>
-                <div className="container border border-warning my-4">
-                    <div className="row my-4">
-                        <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat</p>
-                    </div>
-                    <div className="row my-4">
-                        <div className="col">
-                            <img style={{ width: '100px' }} src={imagen} />
-                            <h4 className="text-white">Director</h4>
-                            <h5 className="text-white">Apellidos y nombres</h5>
-                            <p className="text-white">Area</p>
-                        </div>
-                        <div className="col">
-                            <img style={{ width: '100px' }} src={imagen} />
-                            <h4 className="text-white">Director</h4>
-                            <h5 className="text-white">Apellidos y nombres</h5>
-                            <p className="text-white">Area</p>
-                        </div>
-                        <div className="col">
-                            <img style={{ width: '100px' }} src={imagen} />
-                            <h4 className="text-white">Director</h4>
-                            <h5 className="text-white">Apellidos y nombres</h5>
-                            <p className="text-white">Area</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-
             <div>
                 <Carousel>
                     {dataAreas.map((item, index) => (
                         <Carousel.Item key={index}>
-                            <div className="container border my-3 bg-warning">
+                            <div className="container my-3 bg-white" >
                                 <div className="row">
-                                    <h5 className="text-primary"> {item.nombre}</h5>
+                                    <h3 className="text-warning"> Area </h3>
+                                    <h5 className="text-warning"> {item.nombre}</h5>
                                 </div>
                                 <Carousel>
                                     {
-                                        (item.card.usuarios).map((aux, inde) => (
+                                        (item.cards).map((aux,inde)=>(
                                             <Carousel.Item key={inde}>
-                                              
-            
+                                                <div className="container border border-primary my-4" style={{borderRadius:"25px"}}>
+                                                    <div className="row my-4">
+                                                        <p className="text-primary">{aux.parrafo}</p>
+                                                    </div>
+                                                    <div className="row my-4">
+                                                        {
+                                                            (aux.usuarios).map((temp,ind)=>(
+                                                                <div className="col">
+                                                                    <img style={{width:'100px'}} src={temp.imagenUsuario}/>
+                                                                    <h4 className="text-primary">{temp.cargoUsuario}</h4>
+                                                                    <h5 className="text-primary">{temp.nombresUsuario} </h5>
+                                                                    <p className="text-warning">{temp.areaUsuario} </p>
+                                                                    
+                                                                </div>
+                                                            ))
+                                                        }
+                                                    </div>
+
+                                                </div>
+
                                             </Carousel.Item>
                                         ))
                                     }

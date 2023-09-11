@@ -12,13 +12,17 @@ import Areas from "./Areas";
 
 function Quienes() {
   return (
-    <div className="bg-image">
+    <>
+    <div className="bg-image" style={{borderBottomLeftRadius: "70px", borderBottomRightRadius:"70px"}}>
       <Header/>
       <Informacion/>
       <br/>
       <br/>
+      <br/>
+      <br/>
 
     <Example/>
+    </div>
 
     <Promesa/>
 
@@ -26,7 +30,7 @@ function Quienes() {
       <Areas/>
       <Footer/>
       <Footer2/>
-    </div>
+    </>
   );
 }
 

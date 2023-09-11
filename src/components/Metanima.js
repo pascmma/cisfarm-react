@@ -27,7 +27,7 @@ const Metanima = () =>{
             </div>
 
             <div className="display-1">
-                Sonar es crear
+                Soñar es crear
             </div>
             <p className="lead text-primary" >Estudio de animacion </p>
             <div className="d-flex justify-content-center ">

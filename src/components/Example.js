@@ -8,7 +8,7 @@ const Example = () => {
     centerMode: true,
     infinite: true,
     centerPadding: "0px",
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
   };

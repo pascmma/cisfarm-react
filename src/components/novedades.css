@@ -1,5 +1,8 @@
+
+
+
 .colores{
-    background-color: rgb(9, 58, 106);
+    background-color: rgb(9, 58, 106) !important;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -7,5 +10,5 @@
   }
 
 .borde-redondo{
-    border-radius: 40px;
+    border-radius: 40px !important;
 }

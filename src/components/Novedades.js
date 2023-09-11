@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import './novedades.css'
 import imagen from '../imagenes/img16.png';
+import './novedades.css';
 
 const Novedades = () => {
   const settings = {

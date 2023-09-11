@@ -14,14 +14,8 @@ const Informacion = () =>{
             <div className="col ">
                 <div className="difuminado">
                     <div className="difuminado-content d-flex justify-content-center align-items-center">
-                        <p className="text-white">Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt
-    ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex
-    ea commodo consequa</p>
+                        <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import img from "../imagenes/img.png";
 import { Carousel } from "react-bootstrap";
+import './staff.css';
+
 
 const data = [
     {
@@ -17,7 +19,7 @@ const data = [
       },
       {
         imagen: img,
-        titulo: "Coodinaodr",
+        titulo: "Coordinador",
         nombre: "Nombre y apellidos",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       },
@@ -28,13 +30,20 @@ const data = [
 const Staff = ()=>{
     return(
         <>
+        <br/>
+        <br/>
+        <br/>
+        <h1 className="display-4 text-warning"> STAFF</h1>
+        <br/>
+        <br/>
+        <br/>
         <Carousel>
       {data.map((slide, index) => (
         <Carousel.Item key={index}>
-          <div className="container bg-white rounded" style={{width:"500px"}}>
+          <div className="container bg-white rounded" style={{width:"700px"}}>
             <div className="row">
               <div className="col-5 rounded">
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"70%"}} />
               </div>
               <div className="col-7 border rounded">
                 <h1 className="text-warning">{slide.titulo}</h1>
@@ -47,6 +56,7 @@ const Staff = ()=>{
         </Carousel.Item>
       ))}
     </Carousel>
+    <br/> <br/><br/>
         </>
     );
 }
