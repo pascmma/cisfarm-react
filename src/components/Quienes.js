@@ -30,6 +30,7 @@ function Quienes() {
       <Areas/>
       <Footer/>
       <Footer2/>
+      
     </>
   );
 }

@@ -212,6 +212,7 @@ const Areas = () => {
 
                                 </Carousel>
                             </div>
+                            
 
                         </Carousel.Item>
 
