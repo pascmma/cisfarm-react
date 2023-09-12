@@ -1,0 +1,26 @@
+
+/*Background de slider de inicio*/
+
+.contenedor-1{
+    background-image: url('../imagenes/img8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+
+/*bord de inicio*/
+.bord-1{
+    background: linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/*Queines slider*/
+.slider-fechas{
+    border-radius: 40px;
+}
+

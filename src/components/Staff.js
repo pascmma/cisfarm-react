@@ -1,8 +1,7 @@
 import React from "react";
 import img from "../imagenes/img.png";
 import { Carousel } from "react-bootstrap";
-import './staff.css';
-
+import {GrLinkNext, GrLinkPrevious} from "react-icons/gr";
 
 const data = [
     {
@@ -28,6 +27,9 @@ const data = [
   ];
 
 const Staff = ()=>{
+
+
+
     return(
         <>
         <br/>
@@ -37,22 +39,23 @@ const Staff = ()=>{
         <br/>
         <br/>
         <br/>
-        <Carousel>
+        <Carousel prevIcon=<GrLinkPrevious/> nextIcon=<GrLinkNext/> >
       {data.map((slide, index) => (
         <Carousel.Item key={index}>
           <div className="container bg-white rounded" style={{width:"700px"}}>
             <div className="row">
-              <div className="col-5 rounded">
+              <div className="col-5 ">
                 <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"70%"}} />
               </div>
-              <div className="col-7 border rounded">
+              <div className="col-7 ">
                 <h1 className="text-warning">{slide.titulo}</h1>
-                <h1 className=" ">{slide.nombre}</h1>
+                <h1 className="text-primary ">{slide.nombre}</h1>
     
-                <p className=" lead ">{slide.descripcion} </p>
+                <p className="text-primary">{slide.descripcion} </p>
               </div>
             </div>
           </div>
+          <br/><br/>
         </Carousel.Item>
       ))}
     </Carousel>

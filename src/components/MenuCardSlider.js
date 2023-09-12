@@ -118,7 +118,11 @@ function MenuCardSlider() {
         <p class="lead text-white text-wrap">
         Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1
         </p>
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Slider {...settings}>
           {cardsData.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
@@ -137,6 +141,11 @@ function MenuCardSlider() {
 
           ))}
         </Slider>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     <br/>
 
@@ -145,6 +154,11 @@ function MenuCardSlider() {
         <p class="lead text-white text-wrap">
         Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1
         </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <Slider {...settings}>
           {cardsData2.map((data,idx)=>(

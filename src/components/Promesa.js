@@ -63,7 +63,7 @@ const Promesa = ()=>{
             </div>
             <div className="col d-flex justify-content-center">
                 <div className="" style={{width:"20rem", backgroundImage:"linear-gradient(180deg, rgba(6,19,148,1) 0%, rgba(0,121,255,1) 100%)", borderTopLeftRadius:"30px", borderTopRightRadius:"30px"}}>
-                    <h3 className="text-white"> Vision</h3>
+                    <h3 className="text-white my-3"> Vision</h3>
                     <p className="text-wrap text-white">
                         {data2.visionli}
                     </p>

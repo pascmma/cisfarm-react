@@ -6,8 +6,8 @@ import {FaFacebook,FaTwitter,FaYoutube,FaInstagram,FaTiktok} from 'react-icons/f
 
 const Footer2 = () =>{
     return(
-        <footer className="footer mt-auto py-3 rounded-top  bg-dark">
-            <div className="container">
+        <footer className="footer py-3 bg-dark" style={{borderTopLeftRadius:"60px",borderTopRightRadius:"60px"}}>
+            <div className="container" >
                 <div className="row ">
                     <div className="col-2 ">
                         <img src={logo} className="logo"/>

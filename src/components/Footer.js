@@ -5,9 +5,10 @@ import React from "react";
 const Footer = () =>{
     return(
         <>
-            <footer className="footer mt-auto py-3 bg-light">
+        <div className="bg-white">
+            <footer className="footer mt-auto py-3 bg-light" style={{borderTopLeftRadius: "35px",borderTopRightRadius:"35px"}}>
                 <section className="">
-                    <div className="container text-center text-md-start mt-5">
+                    <div className="container text-center text-md-start mt-5 text-primary">
                         <div className="row mt-3">
                             
 
@@ -103,6 +104,7 @@ const Footer = () =>{
                 
                 
             </footer>
+            </div>
         </>
     );
 }

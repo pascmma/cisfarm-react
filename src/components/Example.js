@@ -59,15 +59,17 @@ const Example = () => {
       year:"2023",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
     },
-    // Agrega más objetos según la cantidad de divs que desees mostrar
+    
   ];
+
+
 
   return (
     <>
       <div className="container">
         <Slider {...settings}>
           {sliderData.map((item, index) => (
-            <div key={index} className="border fechas rounded">
+            <div key={index} className="border fechas slider-fechas" >
               <h3 className="text-white">{item.dayMonth}</h3>
               <h2 className="text-white">{item.year}</h2>
               <p className="text-white">{item.content}</p>

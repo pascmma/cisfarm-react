@@ -27,10 +27,16 @@ function Inicio() {
        
        
         <Bord/>
+        
+
         <Footer />
+        <div className="bg-white">
         <Footer2/>
-         <Correccion/>       
-      </div>
+
+        </div>
+        </div>
+         
+      
     
     </>
   );

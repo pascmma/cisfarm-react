@@ -5,8 +5,9 @@ import { Carousel } from "react-bootstrap";
 
 
 import imagen6 from "../imagenes/img6.png";
+import Slider from "react-slick";
 
-function Bord() {
+const Bord=()=> {
 
   const data = [
     {
@@ -27,21 +28,31 @@ function Bord() {
     },
     // Agrega más objetos de acuerdo al número de diapositivas que necesites
   ];
+
+  const settings={
+    className:"center",
+    centerMode:true,
+    infinite:true,
+    centerPadding:"60px",
+    slidesToShow:1,
+    speed:500
+
+  };
   
 
   return (
     <>
-      <Carousel>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <Slider {...settings}>
       {data.map((slide, index) => (
-        <Carousel.Item key={index}>
-          <div className="container">
+        <div className="container bord-1">
             <div className="row">
-              <div className="col-5 ">
+              <div className="col-5 d-flex justify-content-center ">
                 <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
               </div>
-              <div className="col-7 ">
+              <div className="col-5 ">
                 <h1 className="text-white">{slide.titulo}</h1>
-                <h1 className="display-2 text-white">{slide.nombre}</h1>
+                <h1 className="display-5 text-primary">{slide.nombre}</h1>
                 <h1 className="text-white">{slide.puesto}</h1>
                 <br />
                 <br />
@@ -51,9 +62,9 @@ function Bord() {
               </div>
             </div>
           </div>
-        </Carousel.Item>
       ))}
-    </Carousel>
+</Slider>
+      <br/><br/>
     </>
   );
 }

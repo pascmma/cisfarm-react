@@ -1,69 +1,77 @@
 import React from "react";
 import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png'; // Import additional images as needed
+import { Carousel, CarouselItem } from "react-bootstrap";
+import imagen7 from '../imagenes/img7.png';
 
 const casosData = [
   {
     id: 1,
-    title: "Contamos con el número correcto de...",
-    description: "Contamos con el número correcto de deadaslkdjlasjdlaskdasdsajdklsajdkls",
-    image: card1,
-    ranking: "1st",
-    comment: "Lorem ipsum",
+    texto:"Actualmente contamos con el 40% de ingresantes en los primeros puestos ",
+    parrafo:`Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat.`,
+    imagen: imagen7,
+    puesto: "1 er",
+    nombres: " Nombres y apellidos completos",
+    especialidad: "Quimico farmaceutico",
   },
-  // Add more objects for additional carousel items
+  {
+    id: 2,
+     texto:"Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
+parrafo:`Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat.`,
+    imagen: imagen7,
+    puesto: "2 do",
+    nombres: " Nombres y apellidos completos",
+    especialidad: "Quimico farmaceutico",
+
+  },
+  
 ];
-
-const CasoItem = ({ caso }) => (
-  <div className="my-5 container">
-    <div className="row">
-      <div className="col-12">
-        <h1 className="text-white">Casos de éxito</h1>
-      </div>
-    </div>
-    <div className="row text-white">
-      <div className="col-4">
-        <div className="row">
-          <div className="col-12">
-            <h2>{caso.title}</h2>
-          </div>
-        </div>
-        <div className="row my-5">
-          <div className="col-12">
-            <p>{caso.description}</p>
-          </div>
-        </div>
-      </div>
-      <div className="col-4">
-        <img src={caso.image} alt="imagen de caso" className="img-fluid" />
-      </div>
-      <div className="col-4">
-        <h1 className="display-1">{caso.ranking}</h1>
-        <p>{caso.comment}</p>
-      </div>
-    </div>
-  </div>
-);
-
-function Casos() {
+const Casos = () => {
   return (
-    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
-        {casosData.map((caso) => (
-          <div key={caso.id} className={`carousel-item${caso.id === 1 ? " active" : ""}`}>
-            <CasoItem caso={caso} />
-          </div>
-        ))}
+    <>
+<br/><br/><br/><br/><br/><br/>
+    <Carousel>
+    {casosData.map((item,index)=>(
+      <Carousel.Item>
+
+        <div className="container my-4 py-4" style={{backgroundImage:"linear-gradient(270deg, rgba(23,31,105,1) 0%, rgba(0,176,255,1) 100%)"}}>
+      <div className="row">
+        <h3 className="text-warning"> Casos de Exito</h3>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+      <div className="row my-5">
+        <div className="col">
+          <h3 className="text-white">{item.texto} </h3>
+          <br/><br/><br/><br/>
+          <p className="text-white text-s-xs">{item.parrafo}</p>
+        </div>
+        <div className="col  ">
+ <img src={imagen7} className="img-fluid"  />
+
+        </div>
+
+               <div className="col">
+          <h1 className="display-1 text-warning">{item.puesto}</h1>
+                 <h4 className="text-warning">Puesto</h4>
+                 <h6 className="text-white">{item.nombres}</h6>a
+                 <h6 className="text-warning">{item.especialidad}</h6>
+
+        </div>
+      </div>
     </div>
+      </Carousel.Item>
+      ))}
+    </Carousel>
+    </>
   );
 }
 

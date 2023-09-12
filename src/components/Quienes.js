@@ -9,6 +9,7 @@ import Promesa from "./Promesa";
 import Staff from "./Staff";
 import Footer2 from "./Footer2";
 import Areas from "./Areas";
+import molecula from "../imagenes/molecula3-removebg-preview.png";
 
 function Quienes() {
   return (
@@ -29,8 +30,10 @@ function Quienes() {
       <Staff/>
       <Areas/>
       <Footer/>
+      <div className="bg-white">
       <Footer2/>
-      
+      </div>
+
     </>
   );
 }

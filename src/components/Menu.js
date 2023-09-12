@@ -27,19 +27,27 @@ function Menu() {
         <br/>
         <br/>
         <br/>
-  
+        <br/>
+        <br/>
+        <br/>
+        <br/>
   
         <MenuCardSlider/>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         
 
         <div className="row row justify-content-around m-5" >
-          <div className="col-4" style={{border:"1px solid white", borderRadius:"20px",background: "linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0))",
+          <div className="col-4 my-3" style={{border:"1px solid white", borderRadius:"20px",background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)",
     backdropFilter: "blur(10px)"}}>
             <h1 className="p-3 text-white">Repaso-ENAFB</h1>
           </div>
-          <div className="col-4 " style={{border:"1px solid white", borderRadius:"20px", background: "linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0))",
+          <div className="col-4 my-3" style={{border:"1px solid white", borderRadius:"20px",background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)",
     backdropFilter: "blur(10px)"}}>
             <h1 className="p-3 text-white">Repaso-RESIDENTADO</h1>
           </div>
