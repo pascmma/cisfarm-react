@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import imagen from "../imagenes/img16.png";
+import Slider from "react-slick";
 
 const Prueba = () => {
   const estilos = {
@@ -87,6 +88,17 @@ const Prueba = () => {
     backgrounImage: "linear-gradient(270deg, rgba(0,26,137,1) 3%, rgba(0,104,225,1) 62%)",
   };
 
+  const settings = {
+    className:"center",
+    centerMode:true,
+    infinite:true,
+    centerPadding:"300px",
+    speed:500,
+    slidesToShow:5,
+    dots:true
+    
+  };
+
   return (
     <>
       <div className="m-2 my-5" style={{backgroundImage:"linear-gradient(270deg, rgba(0,26,137,1) 3%, rgba(0,104,225,1) 62%)"}}>
@@ -123,140 +135,260 @@ const Prueba = () => {
       <div className="container">
         <div className="row">
             <div className="col-3 ">
-                <div className="border bg-primary text-align">
+                <div className="border bg-primary text-align" style={{borderRadius:"50px"}}>
                     <p className="lead text-white">Año</p>
                 </div>
             </div>
             <div className="col-3 border-danger">
-            <div className="border  rounded bg-primary text-align">
+            <div className="border bg-primary text-align" style={{borderRadius:"50px"}}>
                     <p className="lead text-white">Mes</p>
                 </div>
             </div>
-            <div className="col-6 border-danger">
-                <div className="border  rounded bg-primary text-align">
-                    <p className="lead text-white"> Categoria</p>
+            <div className="col-6 "  >
+                <div className="border bg-primary  " style={{width:"40%", borderRadius:"50px",marginLeft:"50%"}}>
+                    <p className="lead text-white text-center"> Categoria</p>
                 </div>
             </div>
 
         </div>
+            <br/><br/>
         <div className="row">
-        <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
-            <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
-              </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
-                Ver mas
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
-            <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
-              </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
-                Ver mas
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
-            <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
-              </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
-                Ver mas
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
-            <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
-              </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
-                Ver mas
-              </button>
-            </div>
-          </div>
-        </div>
 
-        <div className="row">
         <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
+          <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
             <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
+              <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+              <h6 className="card-subtitle my-2 text-primary text-start">
+                Nombre completo de la noticia1
               </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
+              <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+              <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
                 Ver mas
               </button>
             </div>
           </div>
         </div>
+        <br/>
+        <br/><br/>
+        
         <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
+          <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
             <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
+              <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+              <h6 className="card-subtitle my-2 text-primary text-start">
+                Nombre completo de la noticia1
               </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
+              <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+              <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
                 Ver mas
               </button>
             </div>
           </div>
         </div>
+        <br/>
+        <br/><br/>
         <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
+          <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
             <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
+              <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+              <h6 className="card-subtitle my-2 text-primary text-start">
+                Nombre completo de la noticia1
               </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
+              <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+              <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
                 Ver mas
               </button>
             </div>
           </div>
         </div>
+        <br/>
+        <br/><br/>
         <div className="col">
-          <div className="card my-3 " style={{ width: "18rem" }}>
+          <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
             <div className="card-body">
-              <img src={imagen} style={{ width: "100%" }} />
-              <h6 className="card-subtitle mb-2">
-                nombre completo de la noticia1
+              <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+              <h6 className="card-subtitle my-2 text-primary text-start">
+                Nombre completo de la noticia1
               </h6>
-              <p className="card-text lead">Fecha de lanzamiento </p>
-              <button type="button" className="btn btn-outline-light">
+              <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+              <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
                 Ver mas
               </button>
             </div>
           </div>
         </div>
-        </div>
+        <br/>
+        <br/><br/>
       </div>
+
+      <br/><br/><br/>
+      <br/>
+      <div className="row">
+
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/><br/>
+
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/><br/>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/><br/>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/><br/>
+</div>
       </div>
+            <br/><br/><br/>
+            <h3 className="text-primary">Sabias que?</h3>
+            <br/><br/><br/>
+
+
+
+<div className="row">
+    <Slider {...settings}>
+    <div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+<div className="col">
+  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
+    <div className="card-body">
+      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
+      <h6 className="card-subtitle my-2 text-primary text-start">
+        Nombre completo de la noticia1
+      </h6>
+      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
+        Ver mas
+      </button>
+    </div>
+  </div>
+</div>
+    </Slider>
+    
+  </div>            
+  <br/><br/><br/>
+      
     </>
   );
 };
