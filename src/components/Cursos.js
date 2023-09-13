@@ -17,15 +17,7 @@ const containerStyle = {
   height: "50%"
 };
 
-const gradientBackgroundStyle = {
-  
-  top: 0,
-  left: 0,
-  width: "100%",
-  height: "100%",
-  backgroundColor:"blue", 
-  zIndex: -1
-};
+
 
 const gradientBackgroundStyle2 = {
   
@@ -41,15 +33,17 @@ function Cursos() {
   return (
     <>
     <div style={containerStyle}>
-    <div style={gradientBackgroundStyle}>
-    <Header/>
-      </div>
+    
+     <div style={{background:"#002780"}}>
+      <Header/>
+     </div>
+    
       <Video/>
 
     <div style={gradientBackgroundStyle2}>
 
     <InfoCurso/>
-    <DetallesCurso/>
+    
     <Ejemplo/>
 
 

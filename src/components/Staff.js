@@ -45,13 +45,13 @@ const Staff = ()=>{
           <div className="container bg-white rounded" style={{width:"700px"}}>
             <div className="row">
               <div className="col-5 ">
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"70%"}} />
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"400px", height:"250px", borderRadius:"50%", background:"blue"}} />
               </div>
               <div className="col-7 ">
-                <h1 className="text-warning">{slide.titulo}</h1>
-                <h1 className="text-primary ">{slide.nombre}</h1>
+                <h1 className="text-warning text-start">{slide.titulo}</h1>
+                <h3 className="text-primary text-start">{slide.nombre}</h3>
     
-                <p className="text-primary">{slide.descripcion} </p>
+                <p className="text-primary mt-5 text-start lead">{slide.descripcion} </p>
               </div>
             </div>
           </div>

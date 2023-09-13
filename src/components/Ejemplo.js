@@ -7,75 +7,80 @@ import Slider from 'react-slick'
 
 const dataDocentes = [
     {
-        id:1,
-        img : avatar,
-        nombre:"nombre del docente",
-        apellido:"apellidos del profesor",
+        id: 1,
+        img: avatar,
+        nombre: "nombre del docente",
+        apellido: "apellidos del profesor",
         profesion: "Quimico farmaceutico",
     },
     {
-        id:1,
-        img : avatar,
-        nombre:"nombre del docente",
-        apellido:"apellidos del profesor",
+        id: 1,
+        img: avatar,
+        nombre: "nombre del docente",
+        apellido: "apellidos del profesor",
         profesion: "Quimico farmaceutico",
     },
     {
-        id:1,
-        img : avatar,
-        nombre:"nombre del docente",
-        apellido:"apellidos del profesor",
+        id: 1,
+        img: avatar,
+        nombre: "nombre del docente",
+        apellido: "apellidos del profesor",
         profesion: "Quimico farmaceutico",
     },
     {
-        id:1,
-        img : avatar,
-        nombre:"nombre del docente",
-        apellido:"apellidos del profesor",
+        id: 1,
+        img: avatar,
+        nombre: "nombre del docente",
+        apellido: "apellidos del profesor",
         profesion: "Quimico farmaceutico",
-    }, 
+    },
 ];
 
-const settings={
-    dots:true,
-    infinite:true,
-    speed:500,
-    slidesToShow:3,
-    slidesToScroll:3
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
 };
 
 
 
 
 
-const Ejemplo = ()=>{
+const Ejemplo = () => {
     return (
-        <> 
-            
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+        <>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 className="display-3 text-primary m-5">Docentes</h1>
+            <br />
+            <br />
+
 
             <div className="container ">
                 <Slider {...settings}>
-                    {dataDocentes.map((item,index)=>(
-                        <div className="card" style="width: 18rem;">
-                        <img className="card-img-top text-center" src={item.img}  style={{width:"30%", display:"inline"}}  alt="Card image cap"/>
-                        <div className="card-body">
-                          <h5 className="card-title text-primary">{item.nombre}</h5>
-                          <h5 className="card-title text-primary">{item.apellido}</h5>
-                          <h5 className="card-title text-warning">{item.profesion}</h5>
-                          
-                          
+                    {dataDocentes.map((item, index) => (
+                        <div className="container">
+                            <div className="col">
+                                <img  className="my-5 border bg-primary" style={{ width: '300px', height:"300px",borderRadius:"50%" }} src={item.img} />
+                                <div className="text-start">
+                                <h4 className="text-primary">{item.nombre}</h4>
+                                <h5 className="text-primary">{item.apellido} </h5>
+                                <p className="text-warning">{item.profesion} </p>
+                                </div>
+
+                            </div>
                         </div>
-                      </div>
                     ))}
 
                 </Slider>
 
-                
+
             </div>
 
         </>

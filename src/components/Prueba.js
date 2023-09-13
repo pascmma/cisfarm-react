@@ -84,40 +84,46 @@ const Prueba = () => {
   ];
 
   const estilo = {
-    backgroundColor: "blue",
+    backgrounImage: "linear-gradient(270deg, rgba(0,26,137,1) 3%, rgba(0,104,225,1) 62%)",
   };
 
   return (
     <>
-      <div className="" style={estilo}>
+      <div className="m-2 my-5" style={{backgroundImage:"linear-gradient(270deg, rgba(0,26,137,1) 3%, rgba(0,104,225,1) 62%)"}}>
         <Carousel>
           {data.map((slide, index) => (
             <Carousel.Item key={index}>
-              <div className="container bg-primary">
-                <div className="row">
-                  <div className="col-5 ">
-                    <img
-                      src={slide.img}
-                      className="img-fluid rounded"
-                      alt={`slide-${index}`}
-                    />
-                  </div>
-                  <div className="col-7 rounded ">
-                    <h1>{slide.titulo}</h1>
-                    <p className="lead text-white">{slide.contenido}</p>
+            <div className="m-5 border">
+              <div className="row my-5">
+                <div className="col-md-6">
+                  <img
+                    src={slide.img}
+                    style={{ borderRadius: "90px", height: "100%", width: "80%" }}
+                    className="img-fluid border border-danger"
+                    alt={`slide-${index}`}
+                  />
+                </div>
+                <div className="col-md-6 rounded d-flex align-items-center">
+                  <div>
+                    <h1 className="text-start text-white">{slide.titulo}</h1>
+                    <p className="lead text-white text-start my-5">{slide.contenido}</p>
                   </div>
                 </div>
               </div>
-            </Carousel.Item>
+            </div>
+          </Carousel.Item>
+          
           ))}
         </Carousel>
 
       </div>
+      <br/><br/><br/><br/>
             <h2 className="my-5">Todos los posts</h2>
+            <br/><br/>
       <div className="container">
         <div className="row">
             <div className="col-3 ">
-                <div className="border  rounded bg-primary text-align">
+                <div className="border bg-primary text-align">
                     <p className="lead text-white">Año</p>
                 </div>
             </div>

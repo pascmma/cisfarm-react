@@ -188,13 +188,13 @@ const Areas = () => {
                                             <Carousel.Item key={inde}>
                                                 <div className="container border border-primary my-4" style={{borderRadius:"25px"}}>
                                                     <div className="row my-4">
-                                                        <p className="text-primary">{aux.parrafo}</p>
+                                                        <p className="text-primary text-center lead">{aux.parrafo}</p>
                                                     </div>
                                                     <div className="row my-4">
                                                         {
                                                             (aux.usuarios).map((temp,ind)=>(
                                                                 <div className="col">
-                                                                    <img style={{width:'100px'}} src={temp.imagenUsuario}/>
+                                                                    <img style={{width:'200px', height:"200px",borderRadius:"50%", background:"blue" }} src={temp.imagenUsuario}/>
                                                                     <h4 className="text-primary">{temp.cargoUsuario}</h4>
                                                                     <h5 className="text-primary">{temp.nombresUsuario} </h5>
                                                                     <p className="text-warning">{temp.areaUsuario} </p>

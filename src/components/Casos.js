@@ -16,7 +16,8 @@ const casosData = [
     ea commodo consequat.`,
     imagen: imagen7,
     puesto: "1 er",
-    nombres: " Nombres y apellidos completos",
+    nombres: " Nombres y",
+    apellidos:"Apellidos ",
     especialidad: "Quimico farmaceutico",
   },
   {
@@ -30,7 +31,8 @@ parrafo:`Lorem ipsum dolor sit amet, consectetur
     ea commodo consequat.`,
     imagen: imagen7,
     puesto: "2 do",
-    nombres: " Nombres y apellidos completos",
+    nombres: " Nombres y",
+    apellidos:"apellidos",
     especialidad: "Quimico farmaceutico",
 
   },
@@ -49,7 +51,7 @@ const Casos = () => {
         <h3 className="text-warning"> Casos de Exito</h3>
       </div>
       <div className="row my-5">
-        <div className="col">
+        <div className="col m-5" style={{textAlign:"left"}}>
           <h3 className="text-white">{item.texto} </h3>
           <br/><br/><br/><br/>
           <p className="text-white text-s-xs">{item.parrafo}</p>
@@ -59,10 +61,11 @@ const Casos = () => {
 
         </div>
 
-               <div className="col">
+               <div className="col" style={{textAlign:"left"}} >
           <h1 className="display-1 text-warning">{item.puesto}</h1>
-                 <h4 className="text-warning">Puesto</h4>
-                 <h6 className="text-white">{item.nombres}</h6>a
+                 <h2 className="text-warning">Puesto</h2>
+                 <h6 className="text-white">{item.nombres}</h6>
+                 <h6 className="text-white"> {item.apellidos}</h6>
                  <h6 className="text-warning">{item.especialidad}</h6>
 
         </div>

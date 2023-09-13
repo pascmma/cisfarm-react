@@ -6,14 +6,14 @@ import {FaFacebook,FaTwitter,FaYoutube,FaInstagram,FaTiktok} from 'react-icons/f
 
 const Footer2 = () =>{
     return(
-        <footer className="footer py-3 bg-dark" style={{borderTopLeftRadius:"60px",borderTopRightRadius:"60px"}}>
-            <div className="container" >
+        <footer className="footer p-5" style={{borderTopLeftRadius:"60px",borderTopRightRadius:"60px", background:"#091e40"}}>
+            
                 <div className="row ">
-                    <div className="col-2 ">
+                    <div className="col-2">
                         <img src={logo} className="logo"/>
-                        <h6 className="text-white">Tecnologia y salud al alcance de todos</h6>
+                        <h5 className="text-white" style={{textAlign:"left"}}>Tecnologia y salud al alcance de todos</h5>
                     </div>
-                    <div className="col-6 text-white d-flex justify-content-start">
+                    <div className="col-6 text-white d-flex justify-content-start" style={{textAlign:"left"}} >
                         <ul className="">
                             <li> Terminos y condiciones</li>
                             <li> Metodologia de enseñanza</li>
@@ -21,7 +21,7 @@ const Footer2 = () =>{
                             <li> Directrices de marca</li>
                         </ul>
                     </div>
-                    <div className="col-4 d-flex felx-row">
+                    <div className="col-4 d-flex felx-row p-2">
                         <FaFacebook className="logos"/>
                         <FaInstagram className="logos"/>
                         <FaTwitter className="logos"/>
@@ -30,7 +30,7 @@ const Footer2 = () =>{
 
                     </div>
                 </div>
-            </div>
+            
 
         </footer>
     );

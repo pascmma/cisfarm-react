@@ -11,7 +11,7 @@ import img4 from "../imagenes/img4.png";
 function Blogs() {
 
   const styles = {
-    backgroundImage: `url(${img4})`,
+    backgroundImage: `linear-gradient(180deg, rgba(0,104,225,1) 16%, rgba(255,255,255,1) 43%)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   

@@ -17,9 +17,9 @@ function Menu() {
       <div className="bg-image-qa">
         <Header />
 
-        <h1 className="display-1 text-white">Academia QF</h1>
+        <h1 className="text-white mx-5" style={{fontSize:"800%",textAlign:"left"}}  >Academia QF</h1>
         <hr style={{border:"solid 4px white", width:"70%"}}/>
-        <p className="lead text-white" id="texto">
+        <p className="display-5 text-white text-start px-5" id="texto" style={{width:"80%"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>

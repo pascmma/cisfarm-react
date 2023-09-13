@@ -12,21 +12,22 @@ const Bord=()=> {
   const data = [
     {
       imagen: imagen6,
-      titulo: "Título 1",
-      nombre: "Nombre 1",
-      puesto: "Puesto de trabajo 1",
-      orden: "Orden 1",
-      lugar: "Lugar 1",
+      titulo: "Asesor Academico",
+      nombre: "Alvaro Jose",
+      apellido:"Andrade Condori",
+      puesto: "Quimico Farmaceutico",
+      orden: "1 Puesto",
+      lugar: "Lugar Farmacia Hospitalaria",
     },
     {
       imagen: imagen6,
-      titulo: "Título 2",
-      nombre: "Nombre 2",
-      puesto: "Puesto de trabajo 2",
-      orden: "Orden 2",
-      lugar: "Lugar 2",
+      titulo: "Asesor Academico",
+      nombre: "Alvaro Jose",
+      apellido:"Andrade Condori",
+      puesto: "Quimico Farmaceutico",
+      orden: "1 Puesto",
+      lugar: "Lugar Farmacia Hospitalaria",
     },
-    // Agrega más objetos de acuerdo al número de diapositivas que necesites
   ];
 
   const settings={
@@ -45,14 +46,15 @@ const Bord=()=> {
       <br/><br/><br/><br/><br/><br/><br/><br/>
       <Slider {...settings}>
       {data.map((slide, index) => (
-        <div className="container bord-1">
+        <div className="bord-1">
             <div className="row">
-              <div className="col-5 d-flex justify-content-center ">
+              <div className="col-5">
                 <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
               </div>
-              <div className="col-5 ">
-                <h1 className="text-white">{slide.titulo}</h1>
+              <div className="col-5 mt-5" style={{textAlign:"left"}}>
+                <h1 className="text-white my-3">{slide.titulo}</h1>
                 <h1 className="display-5 text-primary">{slide.nombre}</h1>
+                <h1 className="display-5 text-primary">{slide.apellido}</h1>
                 <h1 className="text-white">{slide.puesto}</h1>
                 <br />
                 <br />
