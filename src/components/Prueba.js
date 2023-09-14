@@ -130,24 +130,26 @@ const Prueba = () => {
 
       </div>
       <br/><br/><br/><br/>
+      <div className="bg-light">
             <h2 className="my-5">Todos los posts</h2>
             <br/><br/>
       <div className="container">
         <div className="row">
             <div className="col-3 ">
-                <div className="border bg-primary text-align" style={{borderRadius:"50px"}}>
-                    <p className="lead text-white">Año</p>
-                </div>
+                 
+                    <button className="lead mx-5 px-5 bg-primary text-white dropdown-toggle" style={{borderRadius:"50px"}}>Año</button>
+                
             </div>
             <div className="col-3 border-danger">
-            <div className="border bg-primary text-align" style={{borderRadius:"50px"}}>
-                    <p className="lead text-white">Mes</p>
-                </div>
+            <button className="lead mx-5 px-5 bg-primary text-white dropdown-toggle" style={{borderRadius:"50px"}}>Meses</button>
             </div>
             <div className="col-6 "  >
-                <div className="border bg-primary  " style={{width:"40%", borderRadius:"50px",marginLeft:"50%"}}>
-                    <p className="lead text-white text-center"> Categoria</p>
+                <div>
+
+                <button className="lead mx-5 px-5 bg-primary text-white dropdown-toggle" style={{width:"40%", borderRadius:"50px",marginLeft:"50%"}}>Categoria</button>
+                
                 </div>
+                
             </div>
 
         </div>
@@ -291,6 +293,7 @@ const Prueba = () => {
 <br/>
 <br/><br/>
 </div>
+      </div>
       </div>
             <br/><br/><br/>
             <h3 className="text-primary">Sabias que?</h3>

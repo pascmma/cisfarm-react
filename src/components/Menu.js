@@ -13,13 +13,15 @@ import MenuCardSlider from "./MenuCardSlider";
   
 function Menu() {
   return (
-    <div className="bg-image-qa">
-      <div className="bg-image-qa">
+    <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_academia.png"})`, backgroundSize:"cover", backgroundRepeat:"no-repeat",backgroundAttachment: "", // Esto asegura que el fondo se mantenga fijo en su lugar mientras se desplaza la página
+    
+  }}>
+      <div className="">
         <Header />
 
-        <h1 className="text-white mx-5" style={{fontSize:"800%",textAlign:"left"}}  >Academia QF</h1>
+        <h1 className="text-white mx-5" style={{fontSize:"5em",textAlign:"left"}}  >Academia QF</h1>
         <hr style={{border:"solid 4px white", width:"70%"}}/>
-        <p className="display-5 text-white text-start px-5" id="texto" style={{width:"80%"}}>
+        <p className="display-5 text-white text-start px-5" id="texto" style={{width:"80%", textAlign:"justify"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
@@ -42,16 +44,21 @@ function Menu() {
 
         
 
-        <div className="row row justify-content-around m-5" >
-          <div className="col-4 my-3" style={{border:"1px solid white", borderRadius:"20px",background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)",
-    backdropFilter: "blur(10px)"}}>
-            <h1 className="p-3 text-white">Repaso-ENAFB</h1>
-          </div>
-          <div className="col-4 my-3" style={{border:"1px solid white", borderRadius:"20px",background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)",
-    backdropFilter: "blur(10px)"}}>
-            <h1 className="p-3 text-white">Repaso-RESIDENTADO</h1>
-          </div>
-        </div>
+        <div className="container">
+  <div className="row justify-content-center m-5">
+    <div className="col-lg-4 col-md-6 col-sm-12 my-3">
+      <div className="card" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
+        <h1 className="card-title p-3 text-white">Repaso-ENAFB</h1>
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12 my-3">
+      <div className="card" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
+        <h1 className="card-title p-3 text-white">Repaso-RESIDENTADO</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
       <Footer />
       <Footer2/>

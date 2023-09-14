@@ -2,9 +2,7 @@
 
 import React from "react";
 import "./nav.css";
-import Cards from "./Cards";
 import Footer from "./Footer";
-import Barra from "./Barra";
 import Casos from "./Casos";
 import Bord from "./Bord";
 import CardSlider from "./CardSlider";
@@ -17,7 +15,7 @@ import Correccion from "./CorreccionTest";
 function Inicio() {
   return (
     <>
-      <div className="bg-image">
+      <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_inicio.png"})`}}>
         <Header/>
         <TituloInicio/>
 

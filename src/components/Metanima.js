@@ -1,289 +1,239 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from './Header'
 import imagen from '../imagenes/img15.png';
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import Novedades from "./Novedades";
 import Slider from "react-slick";
+import Nav from 'react-bootstrap/Nav';
+import ContenidoSecciones from "./ContenidoSecciones";
 
 
 const mitad = {
-    width: "60%"
+  width: "60%"
 };
 
-const imagenes = {
-    width:'80%'
-}
 
-const bordeRadio={
-    borderRadius: "50px",
-    backgroundColor:"rgba(213, 181, 143,0.5)"
-}
 
-const Metanima = () =>{
-    const settings = {
-        className:"center",
-        centerMode:true,
-        infinite:true,
-        centerPadding:"300px",
-        speed:500,
-        slidesToShow:5,
-        dots:true
-        
-      };
+const Metanima = () => {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "300px",
+    speed: 500,
+    slidesToShow: 5,
+    dots: true
 
-    return(
-        <> 
-            <div style={{background:"#002780"}}>
-      <Header/>
-     </div>
+  };
 
-            <div className="display-1">
-                Soñar es crear
-            </div>
-            <br/><br/>
-            <p className="lead text-primary" >Estudio de animacion </p>
-            <div className="d-flex justify-content-center ">
-            <br/>
-            <p className="lead text-start" style={mitad}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  const [activeTab, setActiveTab] = useState('SECCION I'); // Estado para controlar el tab activo
 
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
-            <div className="d-inline-block">
-                <nav className="nav nav-pills flex-column flex-sm-row">
-                    <a className="nav-link border border-danger mx-3 text-white " style={{backgroundImage:"linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)", borderTopLeftRadius:"40px",borderTopRightRadius:"40px", paddingInline:"40px"}}>SECCION I</a>
-                    <a className="nav-link border border-danger mx-2 text-white" style={{backgroundImage:"linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)", borderTopLeftRadius:"40px",borderTopRightRadius:"40px", paddingInline:"40px"}}>SECCION II</a>
-                    <a className="nav-link border border-danger mx-2 text-white" style={{backgroundImage:"linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)", borderTopLeftRadius:"40px",borderTopRightRadius:"40px", paddingInline:"40px"}}>SECCCION III</a>
-                    <a className="nav-link border border-danger mx-2 text-white" style={{backgroundImage:"linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)", borderTopLeftRadius:"40px",borderTopRightRadius:"40px", paddingInline:"40px"}}> SECCION IV</a>
-                </nav>
-            </div>
-            <br/><br/>
-            <div className="container">
-            <div className="row border">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
+  
 
-                    </div>
+  return (
+    <>
+      <div style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_metanima.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+       <div style={{background:"#383d3d"}}>
+        <Header/>
+        </div> 
+      
 
-                    </div>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen} style={imagenes}/>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen}  style={imagenes}/>
-                </div>
-                <div className="col">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
+      <div className="display-1">
+        Soñar es crear
+      </div>
+      <br /><br />
+      <p className="lead text-primary" >Estudio de animacion </p>
+      <div className="d-flex justify-content-center ">
+        <br />
+        <p className="lead text-start" style={mitad}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-                    </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
-                    </div>
-                </div>
-                </div>
-                
+      <div className="d-inline-block">
+      <Nav variant="tabs" style={{marginLeft:"10%"}}>
+        <Nav.Item>
+          <Nav.Link
+            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
+            style={{
+              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+              borderTopLeftRadius: "40px",
+              borderTopRightRadius: "40px",
+              paddingInline: "40px"
+            }}
+            onClick={() => handleTabClick('SECCION I')}
+          >
+            SECCION I
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION II' ? 'active' : ''}`}
+            style={{
+              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+              borderTopLeftRadius: "40px",
+              borderTopRightRadius: "40px",
+              paddingInline: "40px"
+            }}
+            onClick={() => handleTabClick('SECCION II')}
+          >
+            SECCION II
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION III' ? 'active' : ''}`}
+            style={{
+              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+              borderTopLeftRadius: "40px",
+              borderTopRightRadius: "40px",
+              paddingInline: "40px"
+            }}
+            onClick={() => handleTabClick('SECCION III')}
+          >
+            SECCION III
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION IV' ? 'active' : ''}`}
+            style={{
+              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+              borderTopLeftRadius: "40px",
+              borderTopRightRadius: "40px",
+              paddingInline: "40px"
+            }}
+            onClick={() => handleTabClick('SECCION IV')}
+          >
+            SECCION IV
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
 
-            </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <div className="container">
-            <div className="row border">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
-
-                    </div>
-
-                    </div>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen} style={imagenes}/>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen}  style={imagenes}/>
-                </div>
-                <div className="col">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
-
-                    </div>
-
-                    </div>
-                </div>
-                </div>
-                
-
-            </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <div className="container">
-            <div className="row border">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
-
-                    </div>
-
-                    </div>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen} style={imagenes}/>
-                </div>
-                <div className="col-2 border">
-                    <img className="rounded" src={imagen}  style={imagenes}/>
-                </div>
-                <div className="col">
-                <div className="col border">
-                    <div>
-                    <div className="p-1" style={bordeRadio}> 
-                        <h5 className="text-danger mx-5 text-start">Curso 2</h5>
-                        <p className="text-start mx-5" style={{color:"#11215D"}}>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur</p>
-
-                    </div>
-
-                    </div>
-                </div>
-                </div>
-                
-
-            </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-
-            <div className="">
-                <h4 className="">Novedades </h4>
-            </div>
-            <div className="row">
-    <Slider {...settings}>
-    <div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
+      {/* Contenido de cada sección */}
+      {activeTab === 'SECCION I' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion1"}/></div>}
+      {activeTab === 'SECCION II' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion2"}/></div>}
+      {activeTab === 'SECCION III' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion3"}/></div>}
+      {activeTab === 'SECCION IV' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion4"}/></div>}
     </div>
-  </div>
-</div>
-<div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
-    </div>
-  </div>
-</div>
-<div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
-    </div>
-  </div>
-</div>
-<div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
-    </div>
-  </div>
-</div>
-<div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
-    </div>
-  </div>
-</div>
-<div className="col">
-  <div className="card my-3 " style={{ width: "13rem", borderRadius:"50px", border:"solid blue 13px" }}>
-    <div className="card-body">
-      <img src={imagen} style={{ width: "90%", height:"60%",borderRadius:"40px", }} />
-      <h6 className="card-subtitle my-2 text-primary text-start">
-        Nombre completo de la noticia1
-      </h6>
-      <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-      <button type="button" className="btn btn-primary" style={{marginLeft:"35%", borderRadius:"20px"}}>
-        Ver mas
-      </button>
-    </div>
-  </div>
-</div>
-    </Slider>
-    
-  </div>  
-          <Footer/>
-          <Footer2/>  
-        </>
-    )
+      <br /><br />
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="">
+        <h4 className="">Novedades </h4>
+      </div>
+      <div className="row">
+        <Slider {...settings}>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
+              <div className="card-body">
+                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
+                <h6 className="card-subtitle my-2 text-primary text-start">
+                  Nombre completo de la noticia1
+                </h6>
+                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
+                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+        </Slider>
+
+      </div>
+      </div>
+      <Footer />
+      <Footer2 />
+    </>
+  )
 };
 
 export default Metanima;
 
-<br/>

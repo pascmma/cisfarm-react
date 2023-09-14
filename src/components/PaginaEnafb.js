@@ -1,29 +1,26 @@
 import React from "react";
+import Footer from "./Footer";
+import Footer2 from "./Footer2";
+import Header from "./Header";
+import InfoCurso from "./InfoCurso";
+
+import Ejemplo from "./Ejemplo";
+
+import VideoMetanima from "./VideoMetanima";
 import {BiBookReader} from "react-icons/bi"
 import {GiSpeaker,GiUpgrade} from "react-icons/gi"
 import {AiOutlineLike} from "react-icons/ai"
 import Correccion from "./CorreccionTest";
-
+import ContenidoCursoMetanima from "./ContenidoCursoMetanima";
 
 
 const estilo = {
-  display: "inline-block",
-  fontSize:"70%",
-  color: "#00b2ff",
-  WebkitBoxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-  MozBoxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-  boxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-};
+    display:"inline-block",
+    color:"#000000",
+  };
 
 
-const dataCurso = {
-  valoracion: "50%",
-  estudiantes: 300,
-  nivel: "avanzado",
-  idioma:"español"
-};
-
-const data = {
+  const data = {
     costo:"$ 129",
     duracion: "14,2 horas",
     lecciones: "9 lecciones",
@@ -34,9 +31,43 @@ const data = {
   
   };
 
-const circleStyle = {
-    width: "600px",
-    height: "600px",
+const containerStyle = {
+    position: "relative",
+    width: "100%",
+    height: "50%"
+  };
+  
+  const gradientBackgroundStyle = {
+    
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    backgroundColor:"blue", 
+    zIndex: -1
+  };
+  
+  const gradientBackgroundStyle2 = {
+    
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background:"white", 
+    zIndex: -1
+  };
+
+
+  const dataCurso = {
+    valoracion: "50%",
+    estudiantes: 300,
+    nivel: "avanzado",
+    idioma:"español"
+  };
+
+  const circleStyle = {
+    width: "400px",
+    height: "400px",
     borderRadius: "50%",
     backgroundColor: `#0067e0`,
     display: "flex",
@@ -44,8 +75,7 @@ const circleStyle = {
     alignItems: "center",
     justifyContent: "center",
     padding: "20px",
-    zIndex:2,
-
+    zIndex:3
   };
 
   const inputStyle = {
@@ -55,27 +85,54 @@ const circleStyle = {
   const styleAbout = {
     display: "flex",
     flexDirection: "column",
-    alignItems: "start",
+    alignItems: "center",
     color: "blue",
   };
 
-  const reducido = {
-    
-  }
-
-const InfoCurso =() =>{
+const PaginaEnafb = ()=>{
+  const estilo = {
+    display: "inline-block",
+    color: "white",
+    WebkitBoxShadow: "1px 0px 12px 12px rgba(255,255,255,0.75)",
+    MozBoxShadow: "-1px 0px 12px 12px rgba(255,255,255,0.75)",
+    boxShadow: "1px 0px 24px 12px rgba(255,255,255,0.75)",
+  };
+  const circleStyle = {
+    width: "600px",
+    height: "600px",
+    borderRadius: "50%",
+    backgroundColor: `#0b2f59`,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "20px",
+    zIndex:2,
+  };
+  const styleAbout = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "start",
+    color: "blue",
+  };
     return(
-        <div style={{backgroundColor:"transparent"}}>
-          <div className="row display-2" style={{marginLeft:"1.2em", marginRight:"1.2em"}}>
-                <div className="col-3 " >
-                    <div className="pb-3 px-4 rounded-circle" style={estilo}>
-                        <AiOutlineLike  />
+        <>
+                   <div style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_metanima_curso.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+      <Header/>
+        <VideoMetanima/>
+        <br/><br/><br/>
+        
+
+        <div className="row display-2">
+                <div className="col-3">
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                        <AiOutlineLike/>
                     </div>
                     <h4 className="text-primary m-4">Valoraciones buenas</h4>
                     <p className="lead text-primary">{dataCurso.valoracion}</p>
                 </div>
                 <div className="col-3">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
                         <BiBookReader/>
                     </div>
                         <h4 className="text-primary m-4">Estudiantes</h4>
@@ -83,20 +140,30 @@ const InfoCurso =() =>{
 
                 </div>
                 <div className="col-3">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
                         <GiUpgrade/>
                     </div>
                         <h4 className="text-primary m-4"> Nivel</h4>
                         <p className="lead text-primary">{dataCurso.nivel}</p>
                 </div>
                 <div className="col-3">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
+                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
                         <GiSpeaker/>
                     </div>
                         <h4 className="text-primary m-4"> Idioma</h4>
                         <p className="lead text-primary">{dataCurso.idioma}</p>
                 </div>
             </div>
+
+     
+
+
+
+
+      
+      <div className="row bg-white">
+      <div style={{backgroundColor:"transparent"}}>
+          
             <br/>
             <br/>
             <br/>
@@ -107,7 +174,6 @@ const InfoCurso =() =>{
             <br/>
             <br/>
             <br/>
-
             <div className="container">
   <div className="row ">
     <div className="col-md-6" style={{marginTop:"5.5em"}}>
@@ -166,14 +232,14 @@ const InfoCurso =() =>{
     </div>
   </div>
 </div>
-
     <br/>
     <br/>
     
-      <div className="container">
+
+    <div className="container">
     <div className="row">
         <div className="col-sm " >
-          <div className="m-5 text-white px-5" style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(15,197,236,0.9556197478991597) 100%)"}}>
+          <div className="m-5 text-white px-5" style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}}>
             <div className="p-4">
             <h4 className="fs-5">Costo</h4>
             <h3 className="fs-1">$ 129.00</h3>
@@ -211,10 +277,8 @@ const InfoCurso =() =>{
         </div>
       </div>
       </div>
-
       <br/>
       <br/><br/><br/><br/>
-
       <div className="container">
       <div className="row bg-white m-1">
         <div className="col-sm m-1 ">
@@ -240,7 +304,7 @@ const InfoCurso =() =>{
           </ul>
         </div>
         <div className="col-sm" style={styleAbout}>
-            <div className="border" style={{width:"70%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(0,103,224,0.9864320728291317) 42%, rgba(0,164,255,1) 100%)"}} >
+            <div className="border" style={{width:"70%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}} >
           <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
           <p className="text-white m-4" style={{textAlign:"justify", fontSize:"0.9rem"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -261,9 +325,15 @@ consequat.Lorem ipsum.
       </div>
         </div>
 
-    );
+      </div>
+      <Ejemplo/>
+      <ContenidoCursoMetanima />
+        
+      </div>
+        <Footer/>
+        <Footer2/>
+        </>
+    )
+};
 
-
-}
-
-export default InfoCurso;
+export default PaginaEnafb;

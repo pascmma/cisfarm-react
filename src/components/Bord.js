@@ -36,7 +36,8 @@ const Bord=()=> {
     infinite:true,
     centerPadding:"60px",
     slidesToShow:1,
-    speed:500
+    speed:500,
+    dots:true,
 
   };
   
@@ -45,28 +46,27 @@ const Bord=()=> {
     <>
       <br/><br/><br/><br/><br/><br/><br/><br/>
       <Slider {...settings}>
-      {data.map((slide, index) => (
-        <div className="bord-1">
-            <div className="row">
-              <div className="col-5">
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
-              </div>
-              <div className="col-5 mt-5" style={{textAlign:"left"}}>
-                <h1 className="text-white my-3">{slide.titulo}</h1>
-                <h1 className="display-5 text-primary">{slide.nombre}</h1>
-                <h1 className="display-5 text-primary">{slide.apellido}</h1>
-                <h1 className="text-white">{slide.puesto}</h1>
-                <br />
-                <br />
-                <br />
-                <h2 className="text-white row-align-items-end">{slide.orden}</h2>
-                <h2 className="text-white row-align-items-end">{slide.lugar}</h2>
-              </div>
-            </div>
-          </div>
-      ))}
+  {data.map((slide, index) => (
+    <div className="bord-1 ">
+      <div className="row">
+        <div className="col-lg-5 col-md-6 col-sm-12"> 
+          <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
+        </div>
+        <div className="col-lg-5 col-md-6 col-sm-12 mt-5 " style={{ textAlign: "left" }}>
+          <h1 className="text-white my-3">{slide.titulo}</h1>
+          <h1 className="display-5 text-primary">{slide.nombre}</h1>
+          <h1 className="display-5 text-primary">{slide.apellido}</h1>
+          <h1 className="text-white">{slide.puesto}</h1>
+          <br />
+          <br />
+          <br />
+          <h2 className="text-white row-align-items-end">{slide.orden}</h2>
+          <h2 className="text-white row-align-items-end">{slide.lugar}</h2>
+        </div>
+      </div>
+    </div>
+  ))}
 </Slider>
-      <br/><br/>
     </>
   );
 }

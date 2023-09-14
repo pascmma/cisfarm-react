@@ -14,7 +14,7 @@ import molecula from "../imagenes/molecula3-removebg-preview.png";
 function Quienes() {
   return (
     <>
-    <div className="bg-image" style={{borderBottomLeftRadius: "70px", borderBottomRightRadius:"70px"}}>
+    <div className="img-fluid" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_somos.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       <Header/>
       <Informacion/>
       <br/>
@@ -23,12 +23,16 @@ function Quienes() {
       <br/>
 
     <Example/>
-    </div>
 
     <Promesa/>
 
+    </div>
       <Staff/>
       <Areas/>
+
+
+
+
       <Footer/>
       <div className="bg-white">
       <Footer2/>

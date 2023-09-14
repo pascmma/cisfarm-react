@@ -13,15 +13,15 @@ const TituloInicio = () => {
       <div className="container">
         <div className="row  ">
           <div className="col-9 ">
-            <h1 className="display-1 titulos-inicio text-white">
+            <h1 className="display-1 titulos-inicio text-white text-justify text-start">
               
               Titulo correspondiente del tema
             </h1>
             <hr className="hr my-5"/>
           </div>
         </div>
-        <div className="row my-5 mp-5">
-          <p className="text-white lead parrafo">
+        <div className="row my-5 mp-5 " style={{width:"60%"}}>
+          <p className="text-white lead parrafo " style={{textAlign:"justify"}}> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

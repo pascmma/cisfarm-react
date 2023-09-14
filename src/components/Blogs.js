@@ -11,14 +11,13 @@ import img4 from "../imagenes/img4.png";
 function Blogs() {
 
   const styles = {
-    backgroundImage: `linear-gradient(180deg, rgba(0,104,225,1) 16%, rgba(255,255,255,1) 43%)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   
 };
   return (
     <>
-      <div className="" style={styles}>
+      <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_blogs.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
         <Header/>
 
 

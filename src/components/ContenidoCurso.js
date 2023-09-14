@@ -38,6 +38,7 @@ const style = {
     backgroundImage: `url(${img5})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    
   
 };
 
@@ -51,9 +52,9 @@ const ContenidoCurso = () =>{
             <div className="m-5  " style={{ height: '300px', overflow:'auto' }} >
                 <div className="container" style={{display:"inline-block"}}>
                     {contenido.map((item,idx)=>(
-                        <div>
+                        <div >
                             <br/>
-                        <div className="text-start p-4" style={style}>
+                        <div className="text-start p-4 " style={{...style, borderRadius:"20px"}}>
                             <h3 className="">{item.tema}</h3>
                             <h5 className="text-primary">{item.detalle}</h5>
                         </div>

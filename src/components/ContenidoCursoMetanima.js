@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import "../components/contenedor.css";
 const contenido = [
@@ -54,49 +54,81 @@ const style = {
 };
 
 const ContenidoCursoMetanima = () =>{
+    const [activeTab, setActiveTab] = useState('home-vertical');
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
 
     
     return(
         <>
             <br/><br/><br/>
-            <div class="container border  mt-20">
-    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
-                           
-                            <div class="tab-vertical">
-                                <ul class="nav nav-tabs" id="myTab3" role="tablist"> 
-                                    <li class="nav-item" style={{background:"#ec981a !important"}}>
-                                        <a class="nav-link active" id="home-vertical-tab" data-toggle="tab" href="#home-vertical" role="tab" aria-controls="home" aria-selected="true">Seccion1</a>
-                                    </li>
-                                    <li class="nav-item" style={{background:"#ec981a"}}>
-                                        <a class="nav-link" id="profile-vertical-tab" data-toggle="tab" href="#profile-vertical" role="tab" aria-controls="profile" aria-selected="false">Seccion2</a>
-                                    </li>
-                                    <li class="nav-item" style={{background:"#ec981a"}}>
-                                        <a class="nav-link" id="contact-vertical-tab" data-toggle="tab" href="#contact-vertical" role="tab" aria-controls="contact" aria-selected="false">Seccion3</a>
-                                    </li>
-                                    <li class="nav-item" style={{background:"#ec981a"}}>
-                                        <a class="nav-link" id="contact-vertical-tab" data-toggle="tab" href="#contact-vertical" role="tab" aria-controls="contact" aria-selected="false">Seccion3</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent3">
-                                    <div class="" id="home-vertical" role="tabpanel" aria-labelledby="home-vertical-tab">
-                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis.</p>
-                                        
-                                    </div>
-                                    <div class="tab-pane fade" id="profile-vertical" role="tabpanel" aria-labelledby="profile-vertical-tab">
-                                        <h3>Tab Content 1</h3>
-                                        <p>Integer malesuada nunc vel risus commodo. Enim eu turpis egestas pretium aenean pharetra magna. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Diam vulputate ut pharetra sit amet. At ultrices mi tempus imperdiet.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="contact-vertical" role="tabpanel" aria-labelledby="contact-vertical-tab">
-                                        <h3>Tab Heading</h3>
-                                        <p>Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras pulvinar mattis. Amet risus nullam eget felis eget nunc lobortis mattis. Lacus viverra vitae congue eu. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Est placerat in egestas erat imperdiet sed euismod.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-            
-            
+            <div className="container border mt-20">
+      <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
+        <div className="tab-vertical">
+          <ul className="nav nav-tabs" id="myTab3" role="tablist">
+            <li className={`nav-item ${activeTab === 'home-vertical' ? 'active' : ''}`}>
+              <a
+                className="nav-link"
+                id="home-vertical-tab"
+                onClick={() => handleTabClick('home-vertical')}
+              >
+                Seccion1
+              </a>
+            </li>
+            <li className={`nav-item ${activeTab === 'profile-vertical' ? 'active' : ''}`}>
+              <a
+                className="nav-link"
+                id="profile-vertical-tab"
+                onClick={() => handleTabClick('profile-vertical')}
+              >
+                Seccion2
+              </a>
+            </li>
+            <li className={`nav-item ${activeTab === 'contact-vertical' ? 'active' : ''} `} style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%) !important"}}>
+              <a
+                className="nav-link"
+                id="contact-vertical-tab"
+                onClick={() => handleTabClick('contact-vertical')}
+              >
+                Seccion3
+              </a>
+            </li>
+            <li className={`nav-item ${activeTab === 'section-vertical' ? 'active' : ''}`}>
+              <a
+                className="nav-link"
+                id="section-vertical-tab"
+                onClick={() => handleTabClick('section-vertical')}
+              >
+                Seccion4
+              </a>
+            </li>
+          </ul>
+          <div className="tab-content" id="myTabContent3">
+            <div className={`tab-pane ${activeTab === 'home-vertical' ? 'active' : ''}`} id="home-vertical" role="tabpanel">
+              <h3 >Seccion 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis.
+              </p>
+            </div>
+            <div className={`tab-pane ${activeTab === 'profile-vertical' ? 'active' : ''}`} id="profile-vertical" role="tabpanel">
+              <h3>Seccion 2 </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
+            </div>
+            <div className={`tab-pane ${activeTab === 'contact-vertical' ? 'active' : ''}`} id="contact-vertical" role="tabpanel">
+              <h3>Seccion 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
+            </div>
+            <div className={`tab-pane ${activeTab === 'section-vertical' ? 'active' : ''}`} id="contact-vertical" role="tabpanel">
+              <h3>Seccion 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/><br/>
 
             
         </>

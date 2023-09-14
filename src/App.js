@@ -8,6 +8,7 @@ import Cursos from './components/Cursos';
 import Blogs from './components/Blogs';
 import Metanima from './components/Metanima';
 import CursoMetanima from './components/CursoMetanima';
+import PaginaEnafb from './components/PaginaEnafb';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/cisfarm-react/Metanima/curso1' element={<CursoMetanima/>}></Route>
 
           <Route path='/cisfarm-react/Blogs' element={<Blogs/>}></Route>
+          <Route path='/cisfram-react/enafb'element={<PaginaEnafb/>}></Route>
           
 
         </Routes>

@@ -32,9 +32,9 @@ const gradientBackgroundStyle2 = {
 function Cursos() {
   return (
     <>
-    <div style={containerStyle}>
+    <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_curso_cardio.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}} >
     
-     <div style={{background:"#002780"}}>
+     <div >
       <Header/>
      </div>
     

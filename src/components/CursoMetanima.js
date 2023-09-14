@@ -117,7 +117,7 @@ const CursoMetanima = ()=>{
   };
     return(
         <>
-                   <div style={{backgroundImage:" linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(177,171,171,1) 84%)"}}>
+                   <div style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_metanima_curso.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       <Header/>
         <VideoMetanima/>
         <br/><br/><br/>
@@ -155,45 +155,15 @@ const CursoMetanima = ()=>{
                 </div>
             </div>
 
-     </div>
+     
 
-      <h1 className="text-primary">Aprende dentro del univeros del 3D creativo </h1>
+
 
 
       
       <div className="row bg-white">
       <div style={{backgroundColor:"transparent"}}>
-          <div className="row display-2">
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-                        <AiOutlineLike/>
-                    </div>
-                    <h4 className="text-primary m-4">Valoraciones buenas</h4>
-                    <p className="lead text-primary">{dataCurso.valoracion}</p>
-                </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-                        <BiBookReader/>
-                    </div>
-                        <h4 className="text-primary m-4">Estudiantes</h4>
-                        <p className="lead text-primary">{dataCurso.estudiantes}</p>
-
-                </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-                        <GiUpgrade/>
-                    </div>
-                        <h4 className="text-primary m-4"> Nivel</h4>
-                        <p className="lead text-primary">{dataCurso.nivel}</p>
-                </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-                        <GiSpeaker/>
-                    </div>
-                        <h4 className="text-primary m-4"> Idioma</h4>
-                        <p className="lead text-primary">{dataCurso.idioma}</p>
-                </div>
-            </div>
+          
             <br/>
             <br/>
             <br/>
@@ -204,74 +174,75 @@ const CursoMetanima = ()=>{
             <br/>
             <br/>
             <br/>
-     <div className="row d-flex justify-content-center border border-danger m-5 ">
-      <div className="col  d-flex flex-column justify-content-start border m-5" >
-        
-        <div className="d-flex flex-column justify-content-start mx-5" style={{display:"flex",  width:"50%",alignItems:"left"}}>
-        <h5 className="text-primary text-start" style={{display:"flex",alignItems:"left"}}>
+            <div className="container">
+  <div className="row ">
+    <div className="col-md-6" style={{marginTop:"5.5em"}}>
+      <div className="container" >
+        <h4 className="text-primary text-start">
           ¿Por qué estudiar Farmacología Cardiovascular en Cisfarm?
-        </h5>
-        <br/><br/> <br/>
-        <p className="lead text-primary text-start text-wrap" style={{alignItems:"left"}}>
+        </h4>
+        <br/><br/>
+        <p className="lead text-primary" style={{textAlign:"justify"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
           ea commodo consequat.Lorem ipsum
         </p>
+      </div>
+    </div>
+    <div className="col-md-6 d-flex justify-content-center">
+      <div className="circulo " style={circleStyle}>
+        <h1 className="display-3 text-white">Matricúlate</h1>
+        <div style={{ textAlign: "center" }}>
+          <div className="my-3">
+            <input
+              type="text"
+              className="p-3"
+              style={{textAlign:"center",width:"60%", borderRadius:"50px", backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
+              placeholder="Nombres y Apellidos"
+              aria-label="nombre"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div className="my-3">
+            <input
+              type="text"
+              className="p-3"
+              style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
+              placeholder="Correo Electrónico"
+              aria-label="correo"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div className="my-3">
+            <input
+              type="text"
+              className="p-3"
+              style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
+              placeholder="Teléfono y/o Celular"
+              aria-label="telefono"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <Correccion />
+          <button className="btn btn-primary bg-secondary">Enviar</button>
         </div>
       </div>
-      <div className="col-md-6 d-flex justify-content-center">
-  <div className="circulo border" style={circleStyle}>
-    <h1 className="display-3 text-white">Matricúlate</h1>
-    <div style={{ textAlign: "center" }}>
-      <div className="my-3">
-        <input
-          type="text"
-          className="p-3"
-          style={{textAlign:"center",width:"60%", borderRadius:"50px", backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-          placeholder="Nombres y Apellidos"
-          aria-label="nombre"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div className="my-3">
-        <input
-          type="text"
-          className="p-3"
-          style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-          placeholder="Correo Electrónico"
-          aria-label="correo"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div className="my-3">
-        <input
-          type="text"
-          className="p-3"
-          style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-          placeholder="Teléfono y/o Celular"
-          aria-label="telefono"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <Correccion />
-      <button className="btn btn-primary bg-secondary">Enviar</button>
     </div>
   </div>
 </div>
-
-    </div>
     <br/>
     <br/>
     
 
+    <div className="container">
     <div className="row">
         <div className="col-sm " >
           <div className="m-5 text-white px-5" style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}}>
             <div className="p-4">
-            <h4 className="">Costo</h4>
-            <h3 className="display-1">$ 129.00</h3>
+            <h4 className="fs-5">Costo</h4>
+            <h3 className="fs-1">$ 129.00</h3>
             </div>
           </div>
           <div>
@@ -286,11 +257,13 @@ const CursoMetanima = ()=>{
             <hr />
           </div>
         </div>
-        <div className="col-sm border border-warning" style={styleAbout}>
-            <div className="mt-5" style={{width:"70%",textAlign:"left"}}>
+        <div className="col-sm " style={styleAbout}>
+            <div className="mt-5" style={{width:"70%",textAlign:"justify"}}>
             <br/>
           <h2 className="">Acerca del curso</h2>
-          <p className="lead">
+          <br/>
+          <p className="lead" style={{textAlign:"justify"}}>
+
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -303,10 +276,12 @@ const CursoMetanima = ()=>{
           </div>
         </div>
       </div>
+      </div>
       <br/>
       <br/><br/><br/><br/>
+      <div className="container">
       <div className="row bg-white m-1">
-        <div className="col-sm m-1 border border-danger">
+        <div className="col-sm m-1 ">
           <h1 className="text-primary text-start mb-4"style={{marginLeft:"5%"}} >Beneficios</h1>
           <br/>
           
@@ -330,8 +305,8 @@ const CursoMetanima = ()=>{
         </div>
         <div className="col-sm" style={styleAbout}>
             <div className="border" style={{width:"70%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}} >
-          <h1 className="text-white text-start m-5">Requisitos y materiales</h1>
-          <p className="text-white lead text-start m-5">
+          <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
+          <p className="text-white m-4" style={{textAlign:"justify", fontSize:"0.9rem"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -347,13 +322,14 @@ consequat.Lorem ipsum.
           </div>
         </div>
       </div>
+      </div>
         </div>
 
       </div>
       <Ejemplo/>
       <ContenidoCursoMetanima />
         
-
+      </div>
         <Footer/>
         <Footer2/>
         </>
