@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/cisfarm-react/static/css/main.3979a60d.css",
-    "main.js": "/cisfarm-react/static/js/main.400da4e4.js",
+    "main.css": "/cisfarm-react/static/css/main.5186c6f0.css",
+    "main.js": "/cisfarm-react/static/js/main.046d5c82.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
+    "static/media/back_academia.png": "/cisfarm-react/static/media/back_academia.1e77171ec327eaf2c31d.png",
     "static/media/background.png": "/cisfarm-react/static/media/background.68b62d172b538f7a6fd4.png",
     "static/media/img1.png": "/cisfarm-react/static/media/img1.a99c6ebad9ddd2638354.png",
     "static/media/img9.png": "/cisfarm-react/static/media/img9.5d8133b711c6a747af23.png",
     "static/media/img16.png": "/cisfarm-react/static/media/img16.3bec255a53b8ddf1cd57.png",
+    "static/media/back_curso_cardio.png": "/cisfarm-react/static/media/back_curso_cardio.872ef42bcfdb37a26a43.png",
+    "static/media/back_somos.png": "/cisfarm-react/static/media/back_somos.39c75ff564517600a17b.png",
+    "static/media/back_metanima_curso.png": "/cisfarm-react/static/media/back_metanima_curso.7af5734f2984fbae4d49.png",
     "static/media/img8.png": "/cisfarm-react/static/media/img8.f566a4a0e757fe8759ec.png",
     "static/media/img7.png": "/cisfarm-react/static/media/img7.4d8a02b57f312c9f94b3.png",
     "static/media/img6.png": "/cisfarm-react/static/media/img6.345880d9ad10c1981cc6.png",
     "static/media/img5.png": "/cisfarm-react/static/media/img5.990047e1765a9c3f4ffb.png",
+    "static/media/back_metanima.png": "/cisfarm-react/static/media/back_metanima.a464fd4318eee83864ba.png",
     "static/media/img15.png": "/cisfarm-react/static/media/img15.cbe66b945c7eca8b42f0.png",
     "static/media/img.png": "/cisfarm-react/static/media/img.1e205fe4effea131a64b.png",
+    "static/media/back_blogs.png": "/cisfarm-react/static/media/back_blogs.ee735f21dee992e98ce4.png",
     "static/media/img4.png": "/cisfarm-react/static/media/img4.5c2805e209018489f33d.png",
     "static/media/card3.png": "/cisfarm-react/static/media/card3.cfffc4d4775c3b378c0b.png",
     "static/media/card1.png": "/cisfarm-react/static/media/card1.32af3b9b71197b332180.png",
@@ -27,12 +33,12 @@
     "static/media/slick.ttf": "/cisfarm-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
-    "main.3979a60d.css.map": "/cisfarm-react/static/css/main.3979a60d.css.map",
-    "main.400da4e4.js.map": "/cisfarm-react/static/js/main.400da4e4.js.map",
+    "main.5186c6f0.css.map": "/cisfarm-react/static/css/main.5186c6f0.css.map",
+    "main.046d5c82.js.map": "/cisfarm-react/static/js/main.046d5c82.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3979a60d.css",
-    "static/js/main.400da4e4.js"
+    "static/css/main.5186c6f0.css",
+    "static/js/main.046d5c82.js"
   ]
 }
