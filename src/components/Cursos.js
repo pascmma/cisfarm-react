@@ -8,7 +8,7 @@ import DetallesCurso from "./DetallesCurso";
 import Ejemplo from "./Ejemplo";
 import ContenidoCurso from "./ContenidoCurso";
 import Video from "./Video";
-
+import background from "../imagenes/back_curso_cardio.png";
 
 
 const containerStyle = {
@@ -32,7 +32,7 @@ const gradientBackgroundStyle2 = {
 function Cursos() {
   return (
     <>
-    <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_curso_cardio.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}} >
+    <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}} >
     
      <div >
       <Header/>

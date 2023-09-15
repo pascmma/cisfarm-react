@@ -12,7 +12,7 @@ import {GiSpeaker,GiUpgrade} from "react-icons/gi"
 import {AiOutlineLike} from "react-icons/ai"
 import Correccion from "./CorreccionTest";
 import ContenidoCursoMetanima from "./ContenidoCursoMetanima";
-
+import background from "../imagenes/back_metanima_curso.png";
 
 const estilo = {
     display:"inline-block",
@@ -117,7 +117,7 @@ const CursoMetanima = ()=>{
   };
     return(
         <>
-                   <div style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_metanima_curso.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+                   <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       <Header/>
         <VideoMetanima/>
         <br/><br/><br/>

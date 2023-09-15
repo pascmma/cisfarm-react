@@ -1,15 +1,37 @@
 import React,{useState} from "react";
 import imagen from '../imagenes/img15.png';
+import { Modal,Button } from "react-bootstrap";
+import {OBJModel} from 'react-3d-viewer';
+import objeto from '../imagenes/modeloOBJ.obj';
+
 
 const ContenidoSecciones =(props) =>{
+
+  const [showModal, setShowModal] = useState(false);
+  
+
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+
+
     const imagenes = {
-        width: '80%'
+        width: '80%',
+        cursor:'pointer'
       }
       
       const bordeRadio = {
         borderRadius: "50px",
         backgroundColor: "rgba(213, 181, 143,0.5)"
       }
+
+   
+
     return(
         <>
         <div className="container">
@@ -26,7 +48,27 @@ const ContenidoSecciones =(props) =>{
             </div>
           </div>
           <div className="col-2 ">
-            <img className="rounded" src={imagen} style={imagenes} />
+            <img className="rounded" src={imagen} style={imagenes} onClick={handleOpenModal}  />
+            <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Titulo del modal</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <OBJModel
+
+src={objeto}
+position={{ x: 0, y: -2.5, z: 0 }}
+scale={{ x: 0.25, y: 0.25, z: 0.25 }}
+
+></OBJModel>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Cerrar
+          </Button>
+          <Button variant="primary">Guardar</Button>
+        </Modal.Footer>
+      </Modal>
           </div>
           <div className="col-2 ">
             <img className="rounded" src={imagen} style={imagenes} />
@@ -65,7 +107,9 @@ const ContenidoSecciones =(props) =>{
             </div>
           </div>
           <div className="col-2 ">
-            <img className="rounded" src={imagen} style={imagenes} />
+            <img className="rounded" src={imagen} style={imagenes} onClick={handleOpenModal} />
+                       
+
           </div>
           <div className="col-2 ">
             <img className="rounded" src={imagen} style={imagenes} />

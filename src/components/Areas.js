@@ -177,7 +177,10 @@ const Areas = () => {
                 <Carousel>
                     {dataAreas.map((item, index) => (
                         <Carousel.Item key={index}>
-                            <div className="container my-3 bg-white" >
+                            <div className="container my-3 bg-white" style={{WebkitBoxShadow: "1px 0px 10px 7px rgba(27,26,102,0.75)",
+  MozBoxShadow: "-1px 0px 10px 7px rgba(27,26,102,0.75)",
+  boxShadow: "-1px 0px 10px 7px rgba(27,26,102,0.75)",
+  borderRadius:"10px"}} >
                                 <div className="row">
                                     <h3 className="text-warning"> Area </h3>
                                     <h5 className="text-warning"> {item.nombre}</h5>
@@ -186,7 +189,7 @@ const Areas = () => {
                                     {
                                         (item.cards).map((aux,inde)=>(
                                             <Carousel.Item key={inde}>
-                                                <div className="container border border-primary my-4" style={{borderRadius:"25px"}}>
+                                                <div className="container  my-4" style={{borderRadius:"25px"}}>
                                                     <div className="row my-4">
                                                         <p className="text-primary text-center lead">{aux.parrafo}</p>
                                                     </div>

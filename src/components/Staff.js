@@ -42,12 +42,12 @@ const Staff = ()=>{
         <Carousel prevIcon=<GrLinkPrevious/> nextIcon=<GrLinkNext/> >
       {data.map((slide, index) => (
         <Carousel.Item key={index}>
-          <div className="container bg-white rounded" style={{width:"700px"}}>
+          <div className="container bg-white rounded" style={{width:"100%"}}>
             <div className="row">
-              <div className="col-5 ">
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"400px", height:"250px", borderRadius:"50%", background:"blue"}} />
+              <div className="col-12 col-md-5 " >
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"100%", height:"68%", borderRadius:"50%", background:"blue"}} />
               </div>
-              <div className="col-7 ">
+              <div className="col-12 col-md-7 ">
                 <h1 className="text-warning text-start">{slide.titulo}</h1>
                 <h3 className="text-primary text-start">{slide.nombre}</h3>
     

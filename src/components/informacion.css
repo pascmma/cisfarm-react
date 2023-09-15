@@ -1,7 +1,7 @@
 .difuminado {
     background-color: rgba(37, 116, 185, 0.3); /* Cambia el valor del canal alfa (0.6) para hacerlo más transparente */
     border-radius: 20px;
-    width: 300px;
+    width: 26em;
     height: 300px;
     position: relative;
 }

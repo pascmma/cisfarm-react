@@ -29,7 +29,7 @@ const Promesa = ()=>{
     return(
         <>
         <br/><br/>
-         <div className="bg-white  col align-self-center" style={{width:"100%",height:"400px"}}>
+         <div className="bg-white col align-self-center" style={{width:"100%",height:"32em"}}>
          <br/><br/>
         <h1 className="col align-self-center py-4 text-warning">{data1.promesa}</h1>
 
@@ -37,6 +37,7 @@ const Promesa = ()=>{
           {data1.parrafoPro}
         </p>
       </div>
+      
       <div className="bg-primary col align-self-center " style={{width:"100%",height:"400px", backgroundImage:"linear-gradient(270deg, rgba(52,160,177,1) 0%, rgba(0,155,255,1) 100%)", borderBottomLeftRadius:"35px",borderBottomRightRadius:"35px"}}>
         <h1 className="col align-self-center py-5 text-white">{data1.objetivo}</h1>
 

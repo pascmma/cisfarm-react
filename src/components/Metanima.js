@@ -7,6 +7,8 @@ import Novedades from "./Novedades";
 import Slider from "react-slick";
 import Nav from 'react-bootstrap/Nav';
 import ContenidoSecciones from "./ContenidoSecciones";
+import background from '../imagenes/back_metanima.png';
+
 
 
 const mitad = {
@@ -34,10 +36,11 @@ const Metanima = () => {
   };
 
   
+  
 
   return (
     <>
-      <div style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_metanima.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+      <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
        <div style={{background:"#383d3d"}}>
         <Header/>
         </div> 
@@ -229,6 +232,7 @@ const Metanima = () => {
 
       </div>
       </div>
+      
       <Footer />
       <Footer2 />
     </>

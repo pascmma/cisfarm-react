@@ -10,7 +10,7 @@ const Footer2 = () =>{
 
   <div className="row">
     <div className="col-2">
-      <img src={logo} className="logo" style={{width:"7em"}} />
+      <img src={logo} className="" style={{width:"7em"}} />
       <h5 className="text-white" style={{ textAlign:"center" , fontSize: "0.5rem" }}>Tecnología y salud al alcance de todos</h5>
     </div>
 

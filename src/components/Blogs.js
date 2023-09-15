@@ -7,6 +7,7 @@ import Header from "./Header";
 import Prueba from "./Prueba";
 import Footer2 from "./Footer2";
 import img4 from "../imagenes/img4.png";
+import background from '../imagenes//back_blogs.png';
 
 function Blogs() {
 
@@ -17,7 +18,7 @@ function Blogs() {
 };
   return (
     <>
-      <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_blogs.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+      <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
         <Header/>
 
 

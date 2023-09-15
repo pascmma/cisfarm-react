@@ -10,6 +10,8 @@ import Header from "./Header";
 import TituloInicio from "./TituloInicio";
 import Footer2 from "./Footer2";
 import Correccion from "./CorreccionTest";
+import Modelo from "./Modelo";
+
 
 
 function Inicio() {
@@ -33,6 +35,9 @@ function Inicio() {
 
         </div>
         </div>
+        <Modelo/>
+
+        
          
       
     

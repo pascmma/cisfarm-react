@@ -10,11 +10,12 @@ import Staff from "./Staff";
 import Footer2 from "./Footer2";
 import Areas from "./Areas";
 import molecula from "../imagenes/molecula3-removebg-preview.png";
+import background from "../imagenes/back_somos.png";
 
 function Quienes() {
   return (
     <>
-    <div className="img-fluid" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_somos.png"})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+    <div className="img-fluid" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       <Header/>
       <Informacion/>
       <br/>

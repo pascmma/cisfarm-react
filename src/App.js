@@ -28,7 +28,7 @@ function App() {
           <Route path='/cisfarm-react/Metanima/curso1' element={<CursoMetanima/>}></Route>
 
           <Route path='/cisfarm-react/Blogs' element={<Blogs/>}></Route>
-          <Route path='/cisfram-react/enafb'element={<PaginaEnafb/>}></Route>
+          <Route path='/cisfarm-react/enafb' element={<PaginaEnafb/>}></Route>
           
 
         </Routes>

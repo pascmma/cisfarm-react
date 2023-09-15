@@ -4,7 +4,12 @@ import imagen10 from "../imagenes/img10.png";
 import Slider from "react-slick";
 import imagen8 from "../imagenes/img8.png";
 import './contenedor.css';
-
+import imagen1 from '../imagenes/sliderInicio1/1.png';
+import imagen2 from '../imagenes/sliderInicio1/2.png';
+import imagen3 from '../imagenes/sliderInicio1/3.png';
+import imagen4 from '../imagenes/sliderInicio1/4.png';
+import imagen5 from '../imagenes/sliderInicio1/5.png';
+import imagen6 from '../imagenes/sliderInicio1/6.png';
 
 const cardsData = [
   {
@@ -65,7 +70,7 @@ const cardsData = [
   
 ];
 
-
+const imagenes = [imagen1,imagen2,imagen3,imagen4,imagen5,imagen6];
 
 
 const CardSlider = () => {
@@ -91,6 +96,8 @@ const CardSlider = () => {
   };
 
 
+
+
   return (
     <>
      
@@ -98,21 +105,9 @@ const CardSlider = () => {
       
       <div className="container ">
         <Slider {...settings}>
-          {cardsData.map((item,index)=>(
+          {imagenes.map((item,index)=>(
             <div className="container contenedor-1" >
-              <div className="row">
-                <h3 className="text-white display-5 my-3"> {item.title}</h3>
-              </div>
-              <div className="row">
-                <h4 className="text-warning ">{item.eventType}</h4>
-              </div>
-
-              <div className="row my-5">
-                <h4 className="text-warning">{item.date} </h4>
-              </div>
-              <div className="row">
-                <p className="text-white" style={{fontSize:"xx-small"}} >{item.description}</p>
-              </div>
+              <img src={item} style={{borderRadius:"30px", width:"120%"}}/>
 
               
             </div>

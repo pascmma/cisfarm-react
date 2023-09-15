@@ -1,4 +1,6 @@
 import React from "react";
+//import { useHistory } from 'react-router-dom';
+
 import Barra from "./Barra";
 import Casos from "./Casos";
 import Bord from "./Bord";
@@ -7,14 +9,22 @@ import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import Header from "./Header";
 import imagen from '../imagenes/img1.png';
+import background from '../imagenes/back_academia.png';
 // fondo img4
 import '../estilos/academia.css';
 import MenuCardSlider from "./MenuCardSlider";
+
   
 function Menu() {
+
+  //const history = useHistory();
+
+  //const redirigir = () =>{
+ //   history.push('/cisfarm/enafb')
+  //}
+
   return (
-    <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_academia.png"})`, backgroundSize:"cover", backgroundRepeat:"no-repeat",backgroundAttachment: "", // Esto asegura que el fondo se mantenga fijo en su lugar mientras se desplaza la página
-    
+    <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"cover", backgroundRepeat:"no-repeat",backgroundAttachment: "",    
   }}>
       <div className="">
         <Header />
@@ -48,7 +58,7 @@ function Menu() {
   <div className="row justify-content-center m-5">
     <div className="col-lg-4 col-md-6 col-sm-12 my-3">
       <div className="card" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
-        <h1 className="card-title p-3 text-white">Repaso-ENAFB</h1>
+        <h1 className="card-title p-3 text-white" >Repaso-ENAFB</h1>
       </div>
     </div>
     <div className="col-lg-4 col-md-6 col-sm-12 my-3">

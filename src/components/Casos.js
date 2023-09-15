@@ -50,18 +50,18 @@ const Casos = () => {
       <div className="row  my-3" >
         <h3 className="text-warning pt-5"> Casos de Exito</h3>
       </div>
-      <div className="row my-5 ">
-        <div className="col mb-5 mx-5 mt-2 " style={{textAlign:"justify",fontSize:"0.5em"}}>
+      <div className="row my-5 " style={{padding:"2.5em"}}>
+        <div className="col-12 col-sm-4 mb-5  mt-2 " style={{textAlign:"justify",fontSize:"0.9em"}}>
           <p className="text-white ">{item.texto} </p>
           <br/><br/>
           <p className="text-white text-xs">{item.parrafo}</p>
         </div>
-        <div className="col ">
+        <div className="col-12 col-sm-4 ">
         <img src={imagen7} className="img-fluid "/>
 
         </div>
 
-        <div className="col" style={{ textAlign: "left" }}>
+        <div className="col-12 col-sm-3" style={{ textAlign: "left" }}>
   <h1 className="display-1 text-warning" style={{ fontSize: "3rem" }}>{item.puesto}</h1>
   <h2 className="text-warning" style={{ fontSize: "1.5rem" }}>Puesto</h2>
   <h6 className="text-white" style={{ fontSize: "1rem" }}>{item.nombres}</h6>

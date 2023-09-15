@@ -34,9 +34,9 @@ const Header = (props) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light " >
+      <nav className="navbar navbar-expand-lg navbar-light "  style={{marginLeft:"10em"}}>
         <Link to="/cisfarm-react">
-          <img className="logo" src={logo} alt="Logo"  />
+          <img className="logo" style={{width:"30%"}} src={logo} alt="Logo"  />
         </Link>
         <button
           className="navbar-toggler border-0"
