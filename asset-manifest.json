@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cisfarm-react/static/css/main.0c0a2a92.css",
-    "main.js": "/cisfarm-react/static/js/main.9217e0b8.js",
+    "main.js": "/cisfarm-react/static/js/main.86d65f09.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
@@ -9,6 +9,7 @@
     "static/media/background.png": "/cisfarm-react/static/media/background.68b62d172b538f7a6fd4.png",
     "static/media/img1.png": "/cisfarm-react/static/media/img1.a99c6ebad9ddd2638354.png",
     "static/media/img9.png": "/cisfarm-react/static/media/img9.5d8133b711c6a747af23.png",
+    "static/media/FinalBaseMesh.obj": "/cisfarm-react/static/media/FinalBaseMesh.b00b7ebebc535c2780f2.obj",
     "static/media/img16.png": "/cisfarm-react/static/media/img16.3bec255a53b8ddf1cd57.png",
     "static/media/back_curso_cardio.png": "/cisfarm-react/static/media/back_curso_cardio.872ef42bcfdb37a26a43.png",
     "static/media/back_somos.png": "/cisfarm-react/static/media/back_somos.39c75ff564517600a17b.png",
@@ -21,6 +22,7 @@
     "static/media/img15.png": "/cisfarm-react/static/media/img15.cbe66b945c7eca8b42f0.png",
     "static/media/img.png": "/cisfarm-react/static/media/img.1e205fe4effea131a64b.png",
     "static/media/back_blogs.png": "/cisfarm-react/static/media/back_blogs.ee735f21dee992e98ce4.png",
+    "static/media/modeloOBJ.obj": "/cisfarm-react/static/media/modeloOBJ.766981821cedc9cdfd8a.obj",
     "static/media/img4.png": "/cisfarm-react/static/media/img4.5c2805e209018489f33d.png",
     "static/media/card3.png": "/cisfarm-react/static/media/card3.cfffc4d4775c3b378c0b.png",
     "static/media/card1.png": "/cisfarm-react/static/media/card1.32af3b9b71197b332180.png",
@@ -40,11 +42,11 @@
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
     "main.0c0a2a92.css.map": "/cisfarm-react/static/css/main.0c0a2a92.css.map",
-    "main.9217e0b8.js.map": "/cisfarm-react/static/js/main.9217e0b8.js.map",
+    "main.86d65f09.js.map": "/cisfarm-react/static/js/main.86d65f09.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c0a2a92.css",
-    "static/js/main.9217e0b8.js"
+    "static/js/main.86d65f09.js"
   ]
 }
