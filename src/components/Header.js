@@ -34,9 +34,10 @@ const Header = (props) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light "  style={{marginLeft:"10em"}}>
+    <div className="container border" >
+      <nav className="navbar navbar-expand-lg navbar-light "  >
         <Link to="/cisfarm-react">
-          <img className="logo" style={{width:"30%"}} src={logo} alt="Logo"  />
+          <img className="" style={{width:"30%", marginRight:"35em"}} src={logo} alt="Logo"  />
         </Link>
         <button
           className="navbar-toggler border-0"
@@ -49,6 +50,7 @@ const Header = (props) => {
         <div
           className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
           id="navbarNavAltMarkup"
+          
         >
           <div className="navbar-nav">
             <Link to="/cisfarm-react" className="nav-item nav-link text-white">
@@ -94,6 +96,7 @@ const Header = (props) => {
           </div>
         </div>
       </nav>
+      </div>
     </>
   );
 };

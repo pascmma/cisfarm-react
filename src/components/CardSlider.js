@@ -83,6 +83,8 @@ const CardSlider = () => {
     centerPadding:"60px",
     slidesToShow:3,
     speed:500,
+    focusOnSelect: true,
+    slidesToScroll:1,
     responsive:[
       {
         breakpoint:620,

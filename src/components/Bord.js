@@ -45,9 +45,10 @@ const Bord=()=> {
   return (
     <>
       <br/><br/><br/><br/><br/><br/><br/><br/>
-      <Slider {...settings}>
+      <Slider {...settings} className="container">
   {data.map((slide, index) => (
-    <div className="bord-1 ">
+    
+    <div className="bord-1">
       <div className="row">
         <div className="col-lg-5 col-md-6 col-sm-12"> 
           <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} />
@@ -65,6 +66,7 @@ const Bord=()=> {
         </div>
       </div>
     </div>
+    
   ))}
 </Slider>
     </>

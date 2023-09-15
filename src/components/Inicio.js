@@ -11,13 +11,14 @@ import TituloInicio from "./TituloInicio";
 import Footer2 from "./Footer2";
 import Correccion from "./CorreccionTest";
 import Modelo from "./Modelo";
+import background from '../imagenes/back_inicio.png';
 
 
 
 function Inicio() {
   return (
     <>
-      <div className="" style={{backgroundImage:`url(${"http://vitplanet.com/academia/background/back_inicio.png"})`}}>
+      <div className="" style={{backgroundImage:`url(${background})`}}>
         <Header/>
         <TituloInicio/>
 
@@ -35,7 +36,7 @@ function Inicio() {
 
         </div>
         </div>
-        <Modelo/>
+        
 
         
          
