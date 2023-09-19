@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cisfarm-react/static/css/main.98acbee6.css",
-    "main.js": "/cisfarm-react/static/js/main.e5942434.js",
+    "main.css": "/cisfarm-react/static/css/main.7b86acea.css",
+    "main.js": "/cisfarm-react/static/js/main.d9bd5bfc.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
@@ -16,11 +16,11 @@
     "static/media/back_somos.png": "/cisfarm-react/static/media/back_somos.39c75ff564517600a17b.png",
     "static/media/back_metanima_curso.png": "/cisfarm-react/static/media/back_metanima_curso.7af5734f2984fbae4d49.png",
     "static/media/img8.png": "/cisfarm-react/static/media/img8.f566a4a0e757fe8759ec.png",
-    "static/media/img7.png": "/cisfarm-react/static/media/img7.4d8a02b57f312c9f94b3.png",
     "static/media/img6.png": "/cisfarm-react/static/media/img6.345880d9ad10c1981cc6.png",
     "static/media/img5.png": "/cisfarm-react/static/media/img5.990047e1765a9c3f4ffb.png",
     "static/media/back_metanima.png": "/cisfarm-react/static/media/back_metanima.a464fd4318eee83864ba.png",
     "static/media/img15.png": "/cisfarm-react/static/media/img15.cbe66b945c7eca8b42f0.png",
+    "static/media/img7Recortada.png": "/cisfarm-react/static/media/img7Recortada.62685407524d46e2cba8.png",
     "static/media/img.png": "/cisfarm-react/static/media/img.1e205fe4effea131a64b.png",
     "static/media/back_blogs.png": "/cisfarm-react/static/media/back_blogs.ee735f21dee992e98ce4.png",
     "static/media/modeloOBJ.obj": "/cisfarm-react/static/media/modeloOBJ.766981821cedc9cdfd8a.obj",
@@ -42,12 +42,12 @@
     "static/media/slick.ttf": "/cisfarm-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
-    "main.98acbee6.css.map": "/cisfarm-react/static/css/main.98acbee6.css.map",
-    "main.e5942434.js.map": "/cisfarm-react/static/js/main.e5942434.js.map",
+    "main.7b86acea.css.map": "/cisfarm-react/static/css/main.7b86acea.css.map",
+    "main.d9bd5bfc.js.map": "/cisfarm-react/static/js/main.d9bd5bfc.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98acbee6.css",
-    "static/js/main.e5942434.js"
+    "static/css/main.7b86acea.css",
+    "static/js/main.d9bd5bfc.js"
   ]
 }
