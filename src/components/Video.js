@@ -8,7 +8,7 @@ const Video = () => {
       <div className="bg-curso-video">
         <div className="video-container ">
           <video className="video-background" src={video} autoPlay loop muted />
-            <div className="content border border-warning">
+            <div className="content ">
               <div className="row">
                 <div className="col">
                   <h1 className="display-1">Farmacologia</h1>

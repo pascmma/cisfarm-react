@@ -68,7 +68,7 @@ const Metanima = () => {
       <Nav variant="tabs" style={{marginLeft:"10%"}}>
         <Nav.Item>
           <Nav.Link
-            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
+            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
             style={{
               backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
               borderTopLeftRadius: "40px",
@@ -82,7 +82,7 @@ const Metanima = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION II' ? 'active' : ''}`}
+            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION II' ? 'active' : ''}`}
             style={{
               backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
               borderTopLeftRadius: "40px",
@@ -96,7 +96,7 @@ const Metanima = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION III' ? 'active' : ''}`}
+            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION III' ? 'active' : ''}`}
             style={{
               backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
               borderTopLeftRadius: "40px",
@@ -110,7 +110,7 @@ const Metanima = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={`nav-link border border-danger mx-3 text-white ${activeTab === 'SECCION IV' ? 'active' : ''}`}
+            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION IV' ? 'active' : ''}`}
             style={{
               backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
               borderTopLeftRadius: "40px",

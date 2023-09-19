@@ -48,8 +48,8 @@ const ContenidoCurso = () =>{
     return(
         <>
         <br/><br/><br/><br/><br/>
-            <h1 className="display-1 text-primary my-5 " style={{marginRight:"30%"}}>Contenido del curso</h1>
-            <div className="m-5  " style={{ height: '300px', overflow:'auto' }} >
+            <h1 className="display-3 text-primary my-5 " style={{marginLeft:"1em"}}>Contenido del curso</h1>
+            <div className="m-5  " style={{ height: '40em', overflow:'auto' }} >
                 <div className="container" style={{display:"inline-block"}}>
                     {contenido.map((item,idx)=>(
                         <div >
@@ -71,6 +71,7 @@ const ContenidoCurso = () =>{
                     <h3 className="my-3 text-start"  >Este curso cuenta con # de temas por aprender</h3>
                 </div>
             </div>
+            <br/><br/><br/>
         </>
     );
 }

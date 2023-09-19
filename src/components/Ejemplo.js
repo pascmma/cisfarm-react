@@ -38,10 +38,21 @@ const dataDocentes = [
 
 const settings = {
     dots: true,
+    centerMode:true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive:[
+        {
+        breakpoint:620,
+        settings:{
+          slidesToShow:1,
+          infinite:true,
+          dots:true
+        }
+    }
+    ]
 };
 
 
@@ -68,7 +79,7 @@ const Ejemplo = () => {
                         <div className="container">
                             <div className="col">
                                 <img  className="my-5 border bg-primary" style={{ width: '300px', height:"300px",borderRadius:"50%" }} src={item.img} />
-                                <div className="text-start">
+                                <div className="text-start" style={{marginLeft:"3em"}}>
                                 <h4 className="text-primary">{item.nombre}</h4>
                                 <h5 className="text-primary">{item.apellido} </h5>
                                 <p className="text-warning">{item.profesion} </p>

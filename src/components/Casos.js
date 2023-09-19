@@ -2,13 +2,13 @@ import React from "react";
 import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png'; // Import additional images as needed
 import { Carousel, CarouselItem } from "react-bootstrap";
-import imagen7 from '../imagenes/img7.png';
+import imagen7 from '../imagenes/img7Recortada.png';
 
 const casosData = [
   {
     id: 1,
-    texto:"Actualmente contamos con el 40% de ingresantes en los primeros puestos ",
-    parrafo:`Lorem ipsum dolor sit amet, consectetur
+    texto: "Actualmente contamos con el 40% de ingresantes en los primeros puestos ",
+    parrafo: `Lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud
@@ -17,13 +17,13 @@ const casosData = [
     imagen: imagen7,
     puesto: "1 er",
     nombres: " Nombres y",
-    apellidos:"Apellidos ",
+    apellidos: "Apellidos ",
     especialidad: "Quimico farmaceutico",
   },
   {
     id: 2,
-     texto:"Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
-parrafo:`Lorem ipsum dolor sit amet, consectetur
+    texto: "Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
+    parrafo: `Lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud
@@ -32,47 +32,47 @@ parrafo:`Lorem ipsum dolor sit amet, consectetur
     imagen: imagen7,
     puesto: "2 do",
     nombres: " Nombres y",
-    apellidos:"apellidos",
+    apellidos: "apellidos",
     especialidad: "Quimico farmaceutico",
 
   },
-  
+
 ];
 const Casos = () => {
   return (
     <>
-<br/><br/><br/><br/><br/><br/>
-    <Carousel>
-    {casosData.map((item,index)=>(
-      <Carousel.Item>
+      <br /><br /><br /><br /><br /><br />
+      <Carousel>
+        {casosData.map((item, index) => (
+          <Carousel.Item>
 
-        <div className="container my-4 " style={{backgroundImage:"linear-gradient(270deg, rgba(23,31,105,1) 0%, rgba(0,176,255,1) 100%)"}}>
-      <div className="row  my-3" >
-        <h3 className="text-warning pt-5"> Casos de Exito</h3>
-      </div>
-      <div className="row my-5 " style={{padding:"2.5em"}}>
-        <div className="col-12 col-sm-4 mb-5  mt-2 " style={{textAlign:"justify",fontSize:"0.9em"}}>
-          <p className="text-white ">{item.texto} </p>
-          <br/><br/>
-          <p className="text-white text-xs">{item.parrafo}</p>
-        </div>
-        <div className="col-12 col-sm-4 ">
-        <img src={imagen7} className="img-fluid "/>
+            <div className="container my-4 " style={{ backgroundImage: "linear-gradient(270deg, rgba(23,31,105,1) 0%, rgba(0,176,255,1) 100%)" }}>
+              <div className="row my-3" >
+                <h3 className="text-warning pt-5 text-center"> Casos de Exito</h3>
+              </div>
+              <div className="row my-5 " style={{ padding: "2.5em" }}>
+                <div className="col-12 col-sm-4 mb-5" style={{ textAlign: "left", fontSize: "0.9em" }}>
+                  <p className="text-white " style={{fontSize:"2em"}}>{item.texto}  </p>
+                  <br /><br/><br /><br/>
+                  <p className="text-white text-xs" style={{fontSize:"1.3em", textAlign:"justify"}}>{item.parrafo}</p>
+                </div>
+                <div className="col-12 col-sm-4 ">
+                  <img src={imagen7} className="img-fluid " />
 
-        </div>
+                </div>
 
-        <div className="col-12 col-sm-3" style={{ textAlign: "left" }}>
-  <h1 className="display-1 text-warning" style={{ fontSize: "3rem" }}>{item.puesto}</h1>
-  <h2 className="text-warning" style={{ fontSize: "1.5rem" }}>Puesto</h2>
-  <h6 className="text-white" style={{ fontSize: "1rem" }}>{item.nombres}</h6>
-  <h6 className="text-white" style={{ fontSize: "1rem" }}> {item.apellidos}</h6>
-  <h6 className="text-warning" style={{ fontSize: "1rem" }}>{item.especialidad}</h6>
-</div>
-      </div>
-    </div>
-      </Carousel.Item>
-      ))}
-    </Carousel>
+                <div className="col-12 col-sm-3  mx-auto" style={{  margin:"0 auto" }}>
+                  <h1 className="display-1 text-warning" style={{ fontSize: "7em", textAlign:"justify" }}>{item.puesto}</h1>
+                  <h2 className="text-warning" style={{ fontSize: "2.5em", textAlign:"justify" }}>Puesto</h2>
+                  <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}>{item.nombres}</h6>
+                  <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}> {item.apellidos}</h6>
+                  <h6 className="text-warning" style={{ fontSize: "1em", textAlign:"justify" }}>{item.especialidad}</h6>
+                </div>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </>
   );
 }

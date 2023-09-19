@@ -11,53 +11,63 @@ const Example = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
+    responsive:[
+      {
+        breakpoint:620,
+        settings:{
+          slidesToShow:1,
+          infinite:true,
+          dots:true
+        }
+      }
+    ]
   };
 
   const sliderData = [
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     {
-      dayMonth: "dia mes",
+      dayMonth: "Dia Mes",
       year:"2023",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consectetur",
     },
     
   ];
@@ -66,13 +76,13 @@ const Example = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container text-center">
         <Slider {...settings}>
           {sliderData.map((item, index) => (
-            <div key={index} className="border fechas slider-fechas" >
-              <h3 className="text-white">{item.dayMonth}</h3>
-              <h2 className="text-white">{item.year}</h2>
-              <p className="text-white">{item.content}</p>
+            <div key={index}  className="fechas slider-fechas">
+              <h5 className="text-white" style={{marginTop:"1.5em"}}>{item.dayMonth}</h5>
+              <h1 className="text-white">{item.year}</h1>
+              <p className="text-white p-3">{item.content}</p>
             </div>
           ))}
         </Slider>

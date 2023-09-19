@@ -1,7 +1,5 @@
 import React from "react";
 //import { useHistory } from 'react-router-dom';
-
-import Barra from "./Barra";
 import Casos from "./Casos";
 import Bord from "./Bord";
 import Card from "./Cards";

@@ -74,6 +74,17 @@ const cardsData2 = [
         
 ]
 
+const slideStyles = `
+  .slide p {
+    font-size: 1.2rem; /* Tamaño de fuente predeterminado */
+  }
+
+  @media (max-width: 768px) {
+    .slide p {
+      font-size: 1rem; /* Tamaño de fuente para pantallas más pequeñas */
+    }
+  }
+`;
 
 
 function MenuCardSlider() {
@@ -106,6 +117,16 @@ function MenuCardSlider() {
     NextArrow:<NextArrow/>,
     PrevArrow:<PrevArrow/>,
     beforeChange:(current,next) => setImageIndex(next),
+    responsive:[
+      {
+        breakpoint:620,
+        settings:{
+          slidesToShow:1,
+          infinite:true,
+          dots:true
+        }
+      }
+    ]
   };
 
 
@@ -124,6 +145,7 @@ function MenuCardSlider() {
         <br/>
         <br/>
         <br/>
+        
         <Slider {...settings}>
           {cardsData.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
@@ -132,7 +154,7 @@ function MenuCardSlider() {
                 <div className=""> 
                     <p className="text-white"> {data.title}</p>
                     <hr style={{border:"solid 2px white"}}/>
-                    <p className="lead text-wrap text-warning"> {data.ciclo}</p>
+                    <p className="lead text-wrap text-warning" style={{fontSize:"1.9em"}}> {data.ciclo}</p>
                     <button className="btn btn-primary">ver mas</button>
                 </div>
             </div>

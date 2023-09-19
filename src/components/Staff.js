@@ -35,7 +35,7 @@ const Staff = ()=>{
         <br/>
         <br/>
         <br/>
-        <h1 className="display-4 text-warning"> STAFF</h1>
+        <h1 className="display-5 text-warning text-center"> STAFF</h1>
         <br/>
         <br/>
         <br/>
@@ -45,10 +45,10 @@ const Staff = ()=>{
           <div className="container bg-white rounded" style={{width:"100%"}}>
             <div className="row">
               <div className="col-12 col-md-5 " >
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"100%", height:"68%", borderRadius:"50%", background:"blue"}} />
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"50%", height:"68%", borderRadius:"50%", background:"blue", marginLeft:"8em"}} />
               </div>
               <div className="col-12 col-md-7 ">
-                <h1 className="text-warning text-start">{slide.titulo}</h1>
+                <h1 className="text-primary text-start">{slide.titulo}</h1>
                 <h3 className="text-primary text-start">{slide.nombre}</h3>
     
                 <p className="text-primary mt-5 text-start lead">{slide.descripcion} </p>

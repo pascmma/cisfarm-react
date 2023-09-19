@@ -1,5 +1,4 @@
 import React from "react";
-import Barra from "./Barra";
 import Footer from "./Footer";
 import Informacion from "./Informacion";
 import CardSlider2 from "./CardSlider2";
@@ -11,11 +10,12 @@ import Footer2 from "./Footer2";
 import Areas from "./Areas";
 import molecula from "../imagenes/molecula3-removebg-preview.png";
 import background from "../imagenes/back_somos.png";
+import MisionQuienes from "./MisionQuienes";
 
 function Quienes() {
   return (
     <>
-    <div className="img-fluid" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+    <div className="img-fluid" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat"}}>
       <Header/>
       <Informacion/>
       <br/>
@@ -26,12 +26,11 @@ function Quienes() {
     <Example/>
 
     <Promesa/>
-
     </div>
+    <MisionQuienes/>
+
       <Staff/>
       <Areas/>
-
-
 
 
       <Footer/>

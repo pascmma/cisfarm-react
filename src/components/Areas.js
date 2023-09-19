@@ -182,8 +182,8 @@ const Areas = () => {
   boxShadow: "-1px 0px 10px 7px rgba(27,26,102,0.75)",
   borderRadius:"10px"}} >
                                 <div className="row">
-                                    <h3 className="text-warning"> Area </h3>
-                                    <h5 className="text-warning"> {item.nombre}</h5>
+                                    <h3 className="text-warning text-center"> Area </h3>
+                                    <h5 className="text-warning text-center"> {item.nombre}</h5>
                                 </div>
                                 <Carousel>
                                     {

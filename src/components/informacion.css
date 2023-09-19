@@ -1,18 +1,23 @@
 .difuminado {
+    margin-left: 10em;
     background-color: rgba(37, 116, 185, 0.3); /* Cambia el valor del canal alfa (0.6) para hacerlo más transparente */
     border-radius: 20px;
-    width: 26em;
-    height: 300px;
+    width: 22em;
+    height: 16em;
     position: relative;
+    margin-left: auto; /* Establece el margen izquierdo a automático */
+    margin-right: auto; /* Establece el margen derecho a automático */
 }
 
 .difuminado-content {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(circle, rgba(0, 123, 255, 0.6), transparent); /* Cambia el valor del canal alfa (0.6) para hacerlo más transparente */
     border-radius: inherit;
-    padding: 20px; /* Añade un relleno para separar el texto de los bordes */
+    padding: 2em; /* Añade un relleno para separar el texto de los bordes */
+    text-align: justify;
+
 }

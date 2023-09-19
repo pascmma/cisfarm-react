@@ -12,6 +12,8 @@ const Header = (props) => {
     setIsNavOpen(!isNavOpen);
   };
 
+  
+
   const handleSubMenuToggle = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
   };
@@ -34,9 +36,9 @@ const Header = (props) => {
 
   return (
     <>
-    <div className="container border" >
+    <div className="container " >
       <nav className="navbar navbar-expand-lg navbar-light "  >
-        <Link to="/cisfarm-react">
+        <Link to="/cisfarm-react" className="nav-item nav-link text-white">
           <img className="" style={{width:"30%", marginRight:"35em"}} src={logo} alt="Logo"  />
         </Link>
         <button
