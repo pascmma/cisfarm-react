@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cisfarm-react/static/css/main.7b86acea.css",
-    "main.js": "/cisfarm-react/static/js/main.d9bd5bfc.js",
+    "main.css": "/cisfarm-react/static/css/main.b5ba1761.css",
+    "main.js": "/cisfarm-react/static/js/main.a028e5f8.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
@@ -42,12 +42,12 @@
     "static/media/slick.ttf": "/cisfarm-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
-    "main.7b86acea.css.map": "/cisfarm-react/static/css/main.7b86acea.css.map",
-    "main.d9bd5bfc.js.map": "/cisfarm-react/static/js/main.d9bd5bfc.js.map",
+    "main.b5ba1761.css.map": "/cisfarm-react/static/css/main.b5ba1761.css.map",
+    "main.a028e5f8.js.map": "/cisfarm-react/static/js/main.a028e5f8.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b86acea.css",
-    "static/js/main.d9bd5bfc.js"
+    "static/css/main.b5ba1761.css",
+    "static/js/main.a028e5f8.js"
   ]
 }
