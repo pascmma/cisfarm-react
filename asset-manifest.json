@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cisfarm-react/static/css/main.d27fe181.css",
-    "main.js": "/cisfarm-react/static/js/main.ddf26eb3.js",
+    "main.js": "/cisfarm-react/static/js/main.efbfb16a.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
@@ -9,6 +9,7 @@
     "static/media/back_academia.png": "/cisfarm-react/static/media/back_academia.1e77171ec327eaf2c31d.png",
     "static/media/background.png": "/cisfarm-react/static/media/background.68b62d172b538f7a6fd4.png",
     "static/media/img1.png": "/cisfarm-react/static/media/img1.a99c6ebad9ddd2638354.png",
+    "static/media/back_enafb.png": "/cisfarm-react/static/media/back_enafb.9e40c501b5dd47cb1c2f.png",
     "static/media/img9.png": "/cisfarm-react/static/media/img9.5d8133b711c6a747af23.png",
     "static/media/FinalBaseMesh.obj": "/cisfarm-react/static/media/FinalBaseMesh.b00b7ebebc535c2780f2.obj",
     "static/media/img16.png": "/cisfarm-react/static/media/img16.3bec255a53b8ddf1cd57.png",
@@ -43,11 +44,11 @@
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
     "main.d27fe181.css.map": "/cisfarm-react/static/css/main.d27fe181.css.map",
-    "main.ddf26eb3.js.map": "/cisfarm-react/static/js/main.ddf26eb3.js.map",
+    "main.efbfb16a.js.map": "/cisfarm-react/static/js/main.efbfb16a.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d27fe181.css",
-    "static/js/main.ddf26eb3.js"
+    "static/js/main.efbfb16a.js"
   ]
 }
