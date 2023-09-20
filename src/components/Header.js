@@ -55,33 +55,38 @@ const Header = (props) => {
           
         >
           <div className="navbar-nav">
-            <Link to="/cisfarm-react" className="nav-item nav-link text-white">
-              Inicio
+            <Link to="/cisfarm-react" className="nav-item nav-link text-white ">
+              <h6 className=" sobre p-1"> Inicio</h6>
+              
             </Link>
             <Link
               to="/cisfarm-react/Quienes"
               className="nav-item nav-link text-white"
             >
-              ¿Quienes somos?
+              <h6 className=" sobre p-1">¿Quienes somos? </h6>
+              
             </Link>
             
             <Link
               to="/cisfarm-react/Cursos"
               className="nav-item nav-link text-white"
             >
-              Cursos
+               <h6 className=" sobre p-1">Cursos </h6>
+              
             </Link>
             <Link
               to="/cisfarm-react/Menu"
               className="nav-item nav-link text-white"
             >
-              Academia Q.F.
+               <h6 className=" sobre p-1">Academia Q.F. </h6>
+              
             </Link>
             <span // Agregar un elemento de span para el enlace "Metanima"
               className="nav-item nav-link text-white"
               onClick={handleSubMenuToggle} // Manejar la apertura/cierre del submenú
             >
-              Metanima
+               <h6 className=" sobre p-1">Metanima </h6>
+              
               <div className="sub-menu  m-3 p-3" style={subMenuStyle}>
                 <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white">Metanima</Link>
                 <br/>
@@ -93,7 +98,8 @@ const Header = (props) => {
               to="/cisfarm-react/Blogs"
               className="nav-item nav-link text-white"
             >
-              Blogs
+              <h6 className=" sobre p-1">Blogs </h6>
+              
             </Link>
           </div>
         </div>

@@ -44,15 +44,20 @@ const Staff = ()=>{
         <Carousel.Item key={index}>
           <div className="container bg-white rounded" style={{width:"100%"}}>
             <div className="row">
-              <div className="col-12 col-md-5 " >
-                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"50%", height:"68%", borderRadius:"50%", background:"blue", marginLeft:"8em"}} />
+              <div className="col-12 col-md-4 d-none d-md-block "  >
+                <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{width:"50%", height:"68%", borderRadius:"50%", background:"blue", marginLeft:"10em"}} />
               </div>
-              <div className="col-12 col-md-7 ">
+              <div className="col-12 d-md-none">
+      {/* Esta imagen se muestra solo en pantallas pequeñas */}
+      <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{ width: "50%", height: "68%", borderRadius: "50%", background: "blue", marginLeft: "4em" }} />
+    </div>
+              <div className="col-12 col-md-7 border" >
                 <h1 className="text-primary text-start">{slide.titulo}</h1>
                 <h3 className="text-primary text-start">{slide.nombre}</h3>
     
                 <p className="text-primary mt-5 text-start lead">{slide.descripcion} </p>
               </div>
+          
             </div>
           </div>
           <br/><br/>

@@ -1,10 +1,12 @@
-.nav-item {
-    font-size:40px;
-    margin-right: 30px;
+
+
+.sobre:hover{
+    background:linear-gradient(90deg, rgba(129,131,142,1) 0%, rgba(63,98,140,0.6811099439775911) 91%);
+    border-top-left-radius: 0.5em;
 }
 
-.nav-item:hover{
-    color: brown;
+.sobre:active{
+    background:linear-gradient(90deg, rgba(129,131,142,1) 0%, rgba(63,98,140,0.6811099439775911) 91%);
 }
 
 
@@ -12,4 +14,7 @@
     font-weight: bold;
     color: brown;
 }
+
+
+
 
