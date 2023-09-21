@@ -17,7 +17,7 @@ function App() {
 
     
     <Router>
-      <div className=''>
+      <div >
       
         <Routes>
           <Route path='/cisfarm-react' element={<Inicio/>}></Route>

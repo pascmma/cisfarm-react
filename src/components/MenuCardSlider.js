@@ -113,6 +113,7 @@ function MenuCardSlider() {
     speed:300,
     slidesToShow:3,
     centerMode:true,
+    focusOnSelect: true,
     centerPadding:0,
     NextArrow:<NextArrow/>,
     PrevArrow:<PrevArrow/>,

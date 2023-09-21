@@ -15,7 +15,8 @@ const casosData = [
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
     imagen: imagen7,
-    puesto: "1 er",
+    puesto: "1",
+    dimi:"er",
     nombres: " Nombres y",
     apellidos: "Apellidos ",
     especialidad: "Quimico farmaceutico",
@@ -30,7 +31,8 @@ const casosData = [
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
     imagen: imagen7,
-    puesto: "2 do",
+    puesto: "2",
+    dimi:"do",
     nombres: " Nombres y",
     apellidos: "apellidos",
     especialidad: "Quimico farmaceutico",
@@ -62,7 +64,7 @@ const Casos = () => {
                 </div>
 
                 <div className="col-12 col-sm-3  mx-auto" style={{  margin:"0 auto" }}>
-                  <h1 className="display-1 text-warning" style={{ fontSize: "7em", textAlign:"justify" }}>{item.puesto}</h1>
+                  <h1 className="display-1 text-warning" style={{ fontSize: "7em", textAlign:"justify", fontWeight:"bold" }}>{item.puesto} <sup className="display-3" style={{verticalAlign:"0.2em", fontWeight:"bold"}}> {item.dimi}</sup> </h1>
                   <h2 className="text-warning" style={{ fontSize: "2.5em", textAlign:"justify" }}>Puesto</h2>
                   <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}>{item.nombres}</h6>
                   <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}> {item.apellidos}</h6>

@@ -27,7 +27,7 @@ const TituloInicio = () => {
       <div className="container">
         <div className="row  ">
           <div className="col-12 col-sm-9">
-            <h1 className="display-2 titulos-inicio text-white text-justify text-start">
+            <h1 className="display-2 titulos-inicio text-white text-justify text-start" style={{fontWeight:"bold"}}>
               
               Preparate en nuestros programas de entrenamiento
             </h1>
@@ -35,7 +35,7 @@ const TituloInicio = () => {
           </div>
         </div>
         <div className="col-12 col-sm-9 " >
-          <p className="text-white lead  " style={{textAlign:"justify"}}> 
+          <p className="text-white lead  " style={{textAlign:"justify", fontWeight:"bold"}}> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

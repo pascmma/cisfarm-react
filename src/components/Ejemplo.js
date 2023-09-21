@@ -42,6 +42,7 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
+    focusOnSelect: true,
     slidesToScroll: 3,
     responsive:[
         {

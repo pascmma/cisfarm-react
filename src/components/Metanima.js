@@ -22,6 +22,7 @@ const Metanima = () => {
     className: "center",
     centerMode: true,
     infinite: true,
+    focusOnSelect: true,
     centerPadding: "300px",
     speed: 500,
     slidesToShow: 5,

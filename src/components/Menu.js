@@ -11,6 +11,7 @@ import background from '../imagenes/back_academia.png';
 // fondo img4
 import '../estilos/academia.css';
 import MenuCardSlider from "./MenuCardSlider";
+import { Link } from "react-router-dom";
 
   
 function Menu() {
@@ -56,7 +57,9 @@ function Menu() {
   <div className="row justify-content-center m-5">
     <div className="col-lg-4 col-md-6 col-sm-12 my-3">
       <div className="card" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
-        <h1 className="card-title p-3 text-white" >Repaso-ENAFB</h1>
+        <Link to="/cisfarm-react/enafb">
+          <h1 className="card-title p-3 text-white" >Repaso-ENAFB</h1>
+        </Link>
       </div>
     </div>
     <div className="col-lg-4 col-md-6 col-sm-12 my-3">

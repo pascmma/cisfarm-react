@@ -39,7 +39,7 @@ const data = {
 
 const circleStyle = {
   width: "40em",
-  height: "35em",
+  height: "40em",
   borderRadius: "50%",
   backgroundColor: `#0067e0`,
   display: "flex",
@@ -48,6 +48,7 @@ const circleStyle = {
   justifyContent: "center",
   padding: "20px",
   zIndex: 2,
+  fontSize:"0.9em !important"
 
 };
 
@@ -111,7 +112,7 @@ const InfoCurso = () => {
 
       <div className="container">
         <div className="row ">
-          <div className="col-md-6" style={{ marginTop: "5.5em" }}>
+          <div className="col-md-6 " style={{ marginTop: "5.5em" }}>
             <div className="container" >
               <h4 className="text-primary text-start">
                 ¿Por qué estudiar Farmacología Cardiovascular en Cisfarm?
@@ -126,8 +127,8 @@ const InfoCurso = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 d-flex justify-content-center ">
-            <div className="circulo" style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
+          <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
+            <div className="circulo " style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
               <h1 className="display-5 text-white">Matricúlate</h1>
               <div style={{ textAlign: "center" }}>
                 <div className="my-3">
@@ -140,11 +141,11 @@ const InfoCurso = () => {
                     aria-describedby="basic-addon1"
                   />
                 </div>
-                <div className="my-3">
+                <div className="my-3 ">
                   <input
                     type="text"
                     className="p-3"
-                    style={{ textAlign: "center", width: "60%", maxWidth: "300px", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Correo Electrónico"
                     aria-label="correo"
                     aria-describedby="basic-addon1"
@@ -165,6 +166,46 @@ const InfoCurso = () => {
               </div>
             </div>
           </div>
+          <div className="col-12 d-md-none">
+                  {/* Esta imagen se muestra solo en pantallas pequeñas */}
+                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
+              <h1 className="display-6 text-white">Matricúlate</h1>
+              <div style={{ textAlign: "center" }}>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
+                    placeholder="Nombres y Apellidos"
+                    aria-label="nombre"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3 ">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Correo Electrónico"
+                    aria-label="correo"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Teléfono y/o Celular"
+                    aria-label="telefono"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <Correccion />
+                <button className="btn btn-primary bg-secondary">Enviar</button>
+              </div>
+            </div>
+                </div>
         </div>
       </div>
 
@@ -207,8 +248,8 @@ const InfoCurso = () => {
               <hr />
             </div>
           </div>
-          <div className="col-sm " style={styleAbout}>
-            <div className="mt-5" style={{ width: "70%", textAlign: "justify" }}>
+          <div className="col " style={styleAbout}>
+            <div className="mt-5" style={{ width: "95%", textAlign: "justify" }}>
               <br />
               <h2 className="">Acerca del curso</h2>
               <br />

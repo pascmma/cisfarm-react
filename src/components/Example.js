@@ -11,6 +11,7 @@ const Example = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
+    focusOnSelect: true,
     responsive:[
       {
         breakpoint:620,
@@ -92,3 +93,4 @@ const Example = () => {
 };
 
 export default Example;
+

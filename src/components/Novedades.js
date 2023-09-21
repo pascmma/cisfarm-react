@@ -8,6 +8,7 @@ const Novedades = () => {
     className: "center",
     centerMode: true,
     infinite: true,
+    focusOnSelect: true,
     centerPadding: "80px",
     slidesToShow: 5,
     speed: 500,
