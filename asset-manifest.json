@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/cisfarm-react/static/css/main.0a6d83b1.css",
-    "main.js": "/cisfarm-react/static/js/main.ea482c05.js",
+    "main.css": "/cisfarm-react/static/css/main.d27fe181.css",
+    "main.js": "/cisfarm-react/static/js/main.07019a03.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
+    "static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.mp4": "/cisfarm-react/static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.04aa4aeb398168ca9423.mp4",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
     "static/media/back_inicio.png": "/cisfarm-react/static/media/back_inicio.c294af240b441aca7b04.png",
@@ -24,15 +25,24 @@
     "static/media/img7Recortada.png": "/cisfarm-react/static/media/img7Recortada.62685407524d46e2cba8.png",
     "static/media/img.png": "/cisfarm-react/static/media/img.1e205fe4effea131a64b.png",
     "static/media/back_blogs.png": "/cisfarm-react/static/media/back_blogs.ee735f21dee992e98ce4.png",
-    "static/media/modeloOBJ.obj": "/cisfarm-react/static/media/modeloOBJ.91bc63bf4074f43f9456.obj",
+    "static/media/modeloOBJ.obj": "/cisfarm-react/static/media/modeloOBJ.766981821cedc9cdfd8a.obj",
     "static/media/img4.png": "/cisfarm-react/static/media/img4.5c2805e209018489f33d.png",
     "static/media/card3.png": "/cisfarm-react/static/media/card3.cfffc4d4775c3b378c0b.png",
+    "static/media/Mario_Cavero Medina.png": "/cisfarm-react/static/media/Mario_Cavero Medina.56145b09bc1d53a6fb5d.png",
+    "static/media/Ruth Jenny Lucas Vargas.png": "/cisfarm-react/static/media/Ruth Jenny Lucas Vargas.d492ff68bb88eb45a653.png",
+    "static/media/Robert Anthony Dietz Maravi.png": "/cisfarm-react/static/media/Robert Anthony Dietz Maravi.f78e3d3039c21af1911a.png",
+    "static/media/Alicia Esmeralda Triviños Ancachi.png": "/cisfarm-react/static/media/Alicia Esmeralda Triviños Ancachi.b42499160614648c0692.png",
+    "static/media/Christopher_Davila Mendoza.png": "/cisfarm-react/static/media/Christopher_Davila Mendoza.672f577e55242b937b18.png",
+    "static/media/Academia- metálico-simple.png": "/cisfarm-react/static/media/Academia- metálico-simple.812955e709fc5420ba02.png",
     "static/media/card1.png": "/cisfarm-react/static/media/card1.32af3b9b71197b332180.png",
     "static/media/card2.png": "/cisfarm-react/static/media/card2.bc6a67fb3fdd53088157.png",
+    "static/media/Nelber_Fernandez Flores.png": "/cisfarm-react/static/media/Nelber_Fernandez Flores.f2018803821d9d2ef242.png",
+    "static/media/David_James Vásquez Díaz.png": "/cisfarm-react/static/media/David_James Vásquez Díaz.edf6f484102769b8729a.png",
     "static/media/4.png": "/cisfarm-react/static/media/4.3434da9c435f68c33806.png",
     "static/media/6.png": "/cisfarm-react/static/media/6.7a8b075e2b2fec15df61.png",
     "static/media/1.png": "/cisfarm-react/static/media/1.ebd5ef65d4f18642ff1e.png",
     "static/media/3.png": "/cisfarm-react/static/media/3.07e0a97b9e58ceae2b04.png",
+    "static/media/Guido_Alonso Saldón Beltran.png": "/cisfarm-react/static/media/Guido_Alonso Saldón Beltran.442433c253937962f02f.png",
     "static/media/5.png": "/cisfarm-react/static/media/5.3a2de413b9c568c0642b.png",
     "static/media/2.png": "/cisfarm-react/static/media/2.d367661de3d0f808ee8c.png",
     "static/media/img3.png": "/cisfarm-react/static/media/img3.1bf2e03351a2e82aae60.png",
@@ -43,12 +53,12 @@
     "static/media/slick.ttf": "/cisfarm-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
-    "main.0a6d83b1.css.map": "/cisfarm-react/static/css/main.0a6d83b1.css.map",
-    "main.ea482c05.js.map": "/cisfarm-react/static/js/main.ea482c05.js.map",
+    "main.d27fe181.css.map": "/cisfarm-react/static/css/main.d27fe181.css.map",
+    "main.07019a03.js.map": "/cisfarm-react/static/js/main.07019a03.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a6d83b1.css",
-    "static/js/main.ea482c05.js"
+    "static/css/main.d27fe181.css",
+    "static/js/main.07019a03.js"
   ]
 }
