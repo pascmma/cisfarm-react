@@ -67,16 +67,17 @@ const styleAbout = {
 
 const InfoCurso = () => {
   return (
-    <div style={{ backgroundColor: "transparent" }}>
+    <div className="container" style={{ backgroundColor: "transparent" }}>
+      
       <div className="row display-2" style={{ marginLeft: "1.2em", marginRight: "1.2em" }}>
-        <div className="col-3 " >
+        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center" >
           <div className="pb-3 px-4 rounded-circle " style={estilo}>
             <AiOutlineLike />
           </div>
           <h4 className="text-info mt-4 mb-4" style={{ fontSize: "0.3em" }} >Valoraciones buenas</h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion}</p>
         </div>
-        <div className="col-3">
+        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
           <div className=" pb-3 px-4 rounded-circle" style={estilo}>
             <BiBookReader />
           </div>
@@ -84,14 +85,14 @@ const InfoCurso = () => {
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
 
         </div>
-        <div className="col-3">
+        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
           <div className=" pb-3 px-4 rounded-circle" style={estilo}>
             <GiUpgrade />
           </div>
           <h4 className="text-info m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
         </div>
-        <div className="col-3">
+        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
           <div className=" pb-3 px-4 rounded-circle" style={estilo}>
             <GiSpeaker />
           </div>
@@ -169,7 +170,7 @@ const InfoCurso = () => {
           <div className="col-12 d-md-none">
                   {/* Esta imagen se muestra solo en pantallas pequeñas */}
                   <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
-              <h1 className="display-6 text-white">Matricúlate</h1>
+              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
               <div style={{ textAlign: "center" }}>
                 <div className="my-3">
                   <input

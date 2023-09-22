@@ -17,15 +17,21 @@ const Header = (props) => {
 
 const handleAcademia = () =>{
   setSubMenuAcademia(!submenuAcademia);
+  setIsSubMenuOpen(false);
+  setSubMenuCursos(false);
 }
 
 
   const handleCursos = () => {
     setSubMenuCursos(!subMenuCursos);
+    setIsSubMenuOpen(false);
+    setSubMenuAcademia(false);
   }
 
   const handleSubMenuToggle = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
+    setSubMenuAcademia(false);
+    setSubMenuCursos(false);
   };
 
   const styleMenu = {
@@ -66,7 +72,7 @@ const handleAcademia = () =>{
 
   return (
     <>
-      <div className="container " >
+      <div className="container border " style={{position:"relative"}} >
         <nav className="navbar navbar-expand-lg navbar-light "  >
           <Link to="/cisfarm-react" className="nav-item nav-link text-white">
             <img className="" style={{ width: "30%", marginRight: "35em" }} src={logo} alt="Logo" />

@@ -46,12 +46,13 @@ const Metanima = () => {
         <Header/>
         </div> 
       
-
+      <div className="d-flex justify-content-center">
       <div className="display-1">
         Soñar es crear
       </div>
+      </div>
       <br /><br />
-      <p className="lead text-primary" >Estudio de animacion </p>
+      <p className="lead text-primary" style={{textAlign:"center"}} >Estudio de animacion </p>
       <div className="d-flex justify-content-center ">
         <br />
         <p className="lead text-start" style={mitad}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -64,9 +65,9 @@ const Metanima = () => {
       <br />
       <br />
       <br />
-
-      <div className="d-inline-block">
-      <Nav variant="tabs" style={{marginLeft:"10%"}}>
+      <div className="container">
+      <div className="d-inline-block ">
+      <Nav variant="tabs" className="d-flex justify-content-center">
         <Nav.Item>
           <Nav.Link
             className={`nav-link  mx-3 text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
@@ -124,12 +125,12 @@ const Metanima = () => {
           </Nav.Link>
         </Nav.Item>
       </Nav>
-
       {/* Contenido de cada sección */}
       {activeTab === 'SECCION I' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion1"}/></div>}
       {activeTab === 'SECCION II' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion2"}/></div>}
       {activeTab === 'SECCION III' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion3"}/></div>}
       {activeTab === 'SECCION IV' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion4"}/></div>}
+    </div>
     </div>
       <br /><br />
       
@@ -140,7 +141,7 @@ const Metanima = () => {
       <br />
       <br />
 
-      <div className="">
+      <div className="d-flex justify-content-center mb-4">
         <h4 className="">Novedades </h4>
       </div>
       <div className="row">

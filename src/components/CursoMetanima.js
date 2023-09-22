@@ -98,8 +98,8 @@ const CursoMetanima = ()=>{
     boxShadow: "1px 0px 24px 12px rgba(255,255,255,0.75)",
   };
   const circleStyle = {
-    width: "600px",
-    height: "600px",
+    width: "40em",
+    height: "40em",
     borderRadius: "50%",
     backgroundColor: `#0b2f59`,
     display: "flex",
@@ -108,6 +108,7 @@ const CursoMetanima = ()=>{
     justifyContent: "center",
     padding: "20px",
     zIndex:2,
+    fontSize:"0.9em !important"
   };
   const styleAbout = {
     display: "flex",
@@ -116,45 +117,47 @@ const CursoMetanima = ()=>{
     color: "blue",
   };
     return(
+      
         <>
                    <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       <Header/>
         <VideoMetanima/>
         <br/><br/><br/>
+        <div className="container ">
         
-
-        <div className="row display-2">
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+      
+        <div className=" row display-1  m-3  ">
+                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
+                    <div className="pb-3 px-4  rounded-circle " style={estilo}>
                         <AiOutlineLike/>
                     </div>
-                    <h4 className="text-primary m-4">Valoraciones buenas</h4>
-                    <p className="lead text-primary">{dataCurso.valoracion}</p>
+                    <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}>Valoraciones buenas</h4>
+                    <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion} </p>
                 </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
                         <BiBookReader/>
                     </div>
-                        <h4 className="text-primary m-4">Estudiantes</h4>
-                        <p className="lead text-primary">{dataCurso.estudiantes}</p>
+                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}>Estudiantes</h4>
+                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
 
                 </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
+                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
                         <GiUpgrade/>
                     </div>
-                        <h4 className="text-primary m-4"> Nivel</h4>
-                        <p className="lead text-primary">{dataCurso.nivel}</p>
+                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
+                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
                 </div>
-                <div className="col-3">
-                    <div className="border pb-3 px-4 rounded-circle" style={estilo}>
+                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
+                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
                         <GiSpeaker/>
                     </div>
-                        <h4 className="text-primary m-4"> Idioma</h4>
-                        <p className="lead text-primary">{dataCurso.idioma}</p>
+                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}> Idioma</h4>
+                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.idioma}</p>
                 </div>
             </div>
-
+            </div>
      
 
 
@@ -191,45 +194,85 @@ const CursoMetanima = ()=>{
         </p>
       </div>
     </div>
-    <div className="col-md-6 d-flex justify-content-center">
-      <div className="circulo " style={circleStyle}>
-        <h1 className="display-3 text-white">Matricúlate</h1>
-        <div style={{ textAlign: "center" }}>
-          <div className="my-3">
-            <input
-              type="text"
-              className="p-3"
-              style={{textAlign:"center",width:"60%", borderRadius:"50px", backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-              placeholder="Nombres y Apellidos"
-              aria-label="nombre"
-              aria-describedby="basic-addon1"
-            />
+    <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
+            <div className="circulo " style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
+              <h1 className="display-5 text-white">Matricúlate</h1>
+              <div style={{ textAlign: "center" }}>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Nombres y Apellidos"
+                    aria-label="nombre"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3 ">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Correo Electrónico"
+                    aria-label="correo"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Teléfono y/o Celular"
+                    aria-label="telefono"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <Correccion />
+                <button className="btn btn-primary bg-secondary">Enviar</button>
+              </div>
+            </div>
           </div>
-          <div className="my-3">
-            <input
-              type="text"
-              className="p-3"
-              style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-              placeholder="Correo Electrónico"
-              aria-label="correo"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-          <div className="my-3">
-            <input
-              type="text"
-              className="p-3"
-              style={{textAlign:"center",width:"60%", borderRadius:"50px",backgroundImage:"linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)"}}
-              placeholder="Teléfono y/o Celular"
-              aria-label="telefono"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-          <Correccion />
-          <button className="btn btn-primary bg-secondary">Enviar</button>
-        </div>
-      </div>
-    </div>
+          <div className="col-12 d-md-none">
+                  {/* Esta imagen se muestra solo en pantallas pequeñas */}
+                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
+              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
+              <div style={{ textAlign: "center" }}>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
+                    placeholder="Nombres y Apellidos"
+                    aria-label="nombre"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3 ">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Correo Electrónico"
+                    aria-label="correo"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Teléfono y/o Celular"
+                    aria-label="telefono"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <Correccion />
+                <button className="btn btn-primary bg-secondary">Enviar</button>
+              </div>
+            </div>
+            </div>
   </div>
 </div>
     <br/>

@@ -201,34 +201,34 @@ aliquip ex ea commodo consequat.</p>
 
 
         <div className="row display-2">
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
             <div className="border pb-3 px-4 rounded-circle" style={estilo}>
               <AiOutlineLike  className="text-warning"/>
             </div>
-            <h4 className="text-whiet m-4">Valoraciones buenas</h4>
-            <p className="lead text-white">{dataCurso.valoracion}</p>
+            <h4 className="text-whiet m-4" style={{ fontSize: "0.3em" }}>Valoraciones buenas</h4>
+            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion}</p>
           </div>
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
             <div className="border pb-3 px-4 rounded-circle" style={estilo}>
               <BiBookReader className="text-warning"/>
             </div>
-            <h4 className="text-white m-4">Estudiantes</h4>
-            <p className="lead text-white">{dataCurso.estudiantes}</p>
+            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>Estudiantes</h4>
+            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
 
           </div>
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
             <div className="border pb-3 px-4 rounded-circle" style={estilo}>
               <GiUpgrade className="text-warning"/>
             </div>
-            <h4 className="text-white m-4"> Nivel</h4>
-            <p className="lead text-white">{dataCurso.nivel}</p>
+            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
+            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
           </div>
-          <div className="col-3">
+          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
             <div className="border pb-3 px-4 rounded-circle" style={estilo}>
               <GiSpeaker className="text-warning"/>
             </div>
-            <h4 className="text-white m-4"> Idioma</h4>
-            <p className="lead text-white">{dataCurso.idioma}</p>
+            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}> Idioma</h4>
+            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.idioma}</p>
           </div>
         </div>
 
@@ -268,45 +268,89 @@ aliquip ex ea commodo consequat.</p>
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6 d-flex justify-content-center">
-                  <div className="circulo " style={circleStyle}>
-                    <h1 className="display-3 text-white">Matricúlate</h1>
-                    <div style={{ textAlign: "center" }}>
-                      <div className="my-3">
-                        <input
-                          type="text"
-                          className="p-3"
-                          style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                          placeholder="Nombres y Apellidos"
-                          aria-label="nombre"
-                          aria-describedby="basic-addon1"
-                        />
-                      </div>
-                      <div className="my-3">
-                        <input
-                          type="text"
-                          className="p-3"
-                          style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                          placeholder="Correo Electrónico"
-                          aria-label="correo"
-                          aria-describedby="basic-addon1"
-                        />
-                      </div>
-                      <div className="my-3">
-                        <input
-                          type="text"
-                          className="p-3"
-                          style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                          placeholder="Teléfono y/o Celular"
-                          aria-label="telefono"
-                          aria-describedby="basic-addon1"
-                        />
-                      </div>
-                      <Correccion />
-                      <button className="btn btn-primary bg-secondary">Enviar</button>
-                    </div>
-                  </div>
+               
+
+                <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
+            <div className="circulo " style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
+              <h1 className="display-5 text-white">Matricúlate</h1>
+              <div style={{ textAlign: "center" }}>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Nombres y Apellidos"
+                    aria-label="nombre"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
+                <div className="my-3 ">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Correo Electrónico"
+                    aria-label="correo"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-3"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    placeholder="Teléfono y/o Celular"
+                    aria-label="telefono"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <Correccion />
+                <button className="btn btn-primary bg-secondary">Enviar</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 d-md-none">
+                  {/* Esta imagen se muestra solo en pantallas pequeñas */}
+                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
+              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
+              <div style={{ textAlign: "center" }}>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
+                    placeholder="Nombres y Apellidos"
+                    aria-label="nombre"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3 ">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Correo Electrónico"
+                    aria-label="correo"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div className="my-3">
+                  <input
+                    type="text"
+                    className="p-1"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
+                    placeholder="Teléfono y/o Celular"
+                    aria-label="telefono"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <Correccion />
+                <button className="btn btn-primary bg-secondary">Enviar</button>
+              </div>
+            </div>
+                </div>
+
+
               </div>
             </div>
             <br />
