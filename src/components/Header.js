@@ -72,10 +72,10 @@ const handleAcademia = () =>{
 
   return (
     <>
-      <div className="container border " style={{position:"relative"}} >
+      <div className="container " >
         <nav className="navbar navbar-expand-lg navbar-light "  >
-          <Link to="/cisfarm-react" className="nav-item nav-link text-white">
-            <img className="" style={{ width: "30%", marginRight: "35em" }} src={logo} alt="Logo" />
+          <Link to="/cisfarm-react" className="nav-item nav-link text-white ">
+            <img className="" style={{ width: "30%", }} src={logo} alt="Logo" />
           </Link>
           <button
             className="navbar-toggler border-0"
@@ -110,7 +110,7 @@ const handleAcademia = () =>{
               >
                 <h6 className=" sobre p-1">Cursos </h6>
 
-                <div className="sub-menu  m-3 p-3" style={subMenuStyleCursos}>
+                <div className="sub-menu  m-3 p-3" style={{...subMenuStyleCursos, position:"absolute"}}>
                   <Link to="/cisfarm-react/cursos" className="sub-menu-item text-white">Farmacología</Link>
                   <br />
                   <Link to="/cisfarm-react/cursos" className="sub-menu-item text-white">Curso 1</Link>
@@ -127,7 +127,7 @@ const handleAcademia = () =>{
               >
                 <h6 className=" sobre p-1">Academia Q.F. </h6>
 
-                <div className="sub-menu  m-3 p-3" style={subMenuStyleQuienes}>
+                <div className="sub-menu  m-3 p-3" style={{...subMenuStyleQuienes,position:"absolute"}}>
                   <Link to="/cisfarm-react/menu" className="sub-menu-item text-white">ENAFB</Link>
                   <br />
                   <Link to="/cisfarm-react/menu" className="sub-menu-item text-white">Residentado</Link>
@@ -144,7 +144,7 @@ const handleAcademia = () =>{
               >
                 <h6 className=" sobre p-1">Metanima </h6>
 
-                <div className="sub-menu  m-3 p-3" style={subMenuStyleMetamina}>
+                <div className="sub-menu  m-3 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
                   <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white">Metanima</Link>
                   <br />
                   <Link to="/cisfarm-react/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>

@@ -3,6 +3,9 @@ import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png'; // Import additional images as needed
 import { Carousel, CarouselItem } from "react-bootstrap";
 import imagen7 from '../imagenes/img7Recortada.png';
+import imagenCaso1 from '../assets/Alicia Esmeralda Triviños Ancachi.png';
+import imagenCaso2 from '../assets/Robert Anthony Dietz Maravi.png';
+import imagenCaso3 from '../assets/Ruth Jenny Lucas Vargas.png';
 
 const casosData = [
   {
@@ -14,7 +17,7 @@ const casosData = [
     Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
-    imagen: imagen7,
+    imagen: imagenCaso1,
     puesto: "1",
     dimi:"er",
     nombres: " Nombres y",
@@ -30,7 +33,24 @@ const casosData = [
     Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
-    imagen: imagen7,
+    imagen: imagenCaso2,
+    puesto: "2",
+    dimi:"do",
+    nombres: " Nombres y",
+    apellidos: "apellidos",
+    especialidad: "Quimico farmaceutico",
+
+  },
+  {
+    id: 2,
+    texto: "Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
+    parrafo: `Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat.`,
+    imagen: imagenCaso3,
     puesto: "2",
     dimi:"do",
     nombres: " Nombres y",

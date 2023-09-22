@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/videoClinica.mp4";
+import video from "../assets/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.mp4";
 import "./backgrounds.css";
 
 const Video = () => {
