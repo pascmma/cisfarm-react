@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cisfarm-react/static/css/main.d27fe181.css",
-    "main.js": "/cisfarm-react/static/js/main.07019a03.js",
+    "main.js": "/cisfarm-react/static/js/main.14cc47d6.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.mp4": "/cisfarm-react/static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.04aa4aeb398168ca9423.mp4",
     "static/media/videoClinica.mp4": "/cisfarm-react/static/media/videoClinica.090545a2b5b26d410396.mp4",
@@ -54,11 +54,11 @@
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
     "main.d27fe181.css.map": "/cisfarm-react/static/css/main.d27fe181.css.map",
-    "main.07019a03.js.map": "/cisfarm-react/static/js/main.07019a03.js.map",
+    "main.14cc47d6.js.map": "/cisfarm-react/static/js/main.14cc47d6.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d27fe181.css",
-    "static/js/main.07019a03.js"
+    "static/js/main.14cc47d6.js"
   ]
 }
