@@ -142,7 +142,7 @@ const Prueba = () => {
         settings: {
           slidesToShow: 3,
           infinite: true,
-          dots: true
+        
         }
       }
     ]

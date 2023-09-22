@@ -37,7 +37,7 @@ const dataDocentes = [
 ];
 
 const settings = {
-    dots: true,
+    
     centerMode:true,
     infinite: true,
     speed: 500,
@@ -50,7 +50,7 @@ const settings = {
         settings:{
           slidesToShow:1,
           infinite:true,
-          dots:true
+          
         }
     }
     ]

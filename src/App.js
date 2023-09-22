@@ -17,7 +17,7 @@ function App() {
 
     
     <Router>
-      <div >
+      <div style={{overflowX:'hidden'}} >
       
         <Routes>
           <Route path='/cisfarm-react' element={<Inicio/>}></Route>

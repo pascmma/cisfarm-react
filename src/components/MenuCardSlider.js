@@ -124,7 +124,7 @@ function MenuCardSlider() {
         settings:{
           slidesToShow:1,
           infinite:true,
-          dots:true
+          
         }
       }
     ]
@@ -136,7 +136,7 @@ function MenuCardSlider() {
   return (
     <>
       <div className="container cont-carousel">
-        <h1 className="text-warning"> Programas de entrenamiento</h1>
+        <h1 className="text-warning text-center"> Programas de entrenamiento</h1>
         <br/><br/>
         <h4 className="text-white text-wrap" >
         Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1
@@ -174,7 +174,7 @@ function MenuCardSlider() {
     <br/>
 
     <div className="container cont-carousel">
-        <h1 className="text-warning"> Simulacro</h1>
+        <h1 className="text-warning text-center"> Simulacro</h1>
         <br/>
         <br/><br/>
         <h4 className="text-white text-wrap">

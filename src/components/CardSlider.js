@@ -91,7 +91,6 @@ const CardSlider = () => {
         settings:{
           slidesToShow:1,
           infinite:true,
-          dots:true
         }
       }
     ]

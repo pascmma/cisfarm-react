@@ -34,8 +34,8 @@ const casosData = [
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
     imagen: imagenCaso2,
-    puesto: "2",
-    dimi:"do",
+    puesto: "1",
+    dimi:"er",
     nombres: " Nombres y",
     apellidos: "apellidos",
     especialidad: "Quimico farmaceutico",
@@ -51,8 +51,8 @@ const casosData = [
     exercitation ullamco laboris nisi ut aliquip ex
     ea commodo consequat.`,
     imagen: imagenCaso3,
-    puesto: "2",
-    dimi:"do",
+    puesto: "1",
+    dimi:"er",
     nombres: " Nombres y",
     apellidos: "apellidos",
     especialidad: "Quimico farmaceutico",
@@ -79,7 +79,7 @@ const Casos = () => {
                   <p className="text-white text-xs" style={{fontSize:"1.3em", textAlign:"justify"}}>{item.parrafo}</p>
                 </div>
                 <div className="col-12 col-sm-4 ">
-                  <img src={imagen7} className="img-fluid " />
+                  <img src={item.imagen} className="img-fluid " />
 
                 </div>
 

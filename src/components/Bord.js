@@ -5,6 +5,12 @@ import { Carousel } from "react-bootstrap";
 import './contenedor.css';
 
 
+import imagenAsesor1 from '../assets/ASESORES/Christopher_Davila Mendoza.png';
+import imagenAsesor2 from '../assets/ASESORES/David_James Vásquez Díaz.png';
+import imagenAsesor3 from '../assets/ASESORES/Guido_Alonso Saldón Beltran.png'; 
+import imagenAsesor4 from '../assets/ASESORES/Mario_Cavero Medina.png';
+import imagenAsesor5 from '../assets/ASESORES/Nelber_Fernandez Flores.png';
+
 import imagen6 from "../imagenes/img6.png";
 import Slider from "react-slick";
 
@@ -12,7 +18,7 @@ const Bord=()=> {
 
   const data = [
     {
-      imagen: imagen6,
+      imagen: imagenAsesor1,
       titulo: "Asesor Academico",
       nombre: "Alvaro Jose",
       apellido:"Andrade Condori",
@@ -21,7 +27,7 @@ const Bord=()=> {
       lugar: "Lugar Farmacia Hospitalaria",
     },
     {
-      imagen: imagen6,
+      imagen: imagenAsesor2,
       titulo: "Asesor Academico",
       nombre: "Alvaro Jose",
       apellido:"Andrade Condori",
@@ -30,7 +36,7 @@ const Bord=()=> {
       lugar: "Lugar Farmacia Hospitalaria",
     },
     {
-      imagen: imagen6,
+      imagen: imagenAsesor3,
       titulo: "Asesor Academico",
       nombre: "Alvaro Jose",
       apellido:"Andrade Condori",
@@ -39,7 +45,7 @@ const Bord=()=> {
       lugar: "Lugar Farmacia Hospitalaria",
     },
     {
-      imagen: imagen6,
+      imagen: imagenAsesor4,
       titulo: "Asesor Academico",
       nombre: "Alvaro Jose",
       apellido:"Andrade Condori",
@@ -59,14 +65,14 @@ const Bord=()=> {
     slidesToShow:1,
     speed:500,
     focusOnSelect: true,
-    dots:true,
+    
     responsive:[
       {
         breakpoint:620,
         settings:{
           slidesToShow:1,
           infinite:true,
-          dots:true
+        
         }
       }
     ]

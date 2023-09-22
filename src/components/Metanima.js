@@ -26,7 +26,7 @@ const Metanima = () => {
     centerPadding: "300px",
     speed: 500,
     slidesToShow: 5,
-    dots: true
+    
 
   };
 
