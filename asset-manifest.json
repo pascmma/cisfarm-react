@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cisfarm-react/static/css/main.6036971b.css",
-    "main.js": "/cisfarm-react/static/js/main.44ab15aa.js",
+    "main.js": "/cisfarm-react/static/js/main.668b6065.js",
     "static/js/787.71df535f.chunk.js": "/cisfarm-react/static/js/787.71df535f.chunk.js",
     "static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.mp4": "/cisfarm-react/static/media/VIDEO-HORAIZONTAL-Curso-farmacología-cardiovascular.04aa4aeb398168ca9423.mp4",
     "static/media/img10.png": "/cisfarm-react/static/media/img10.9116acb3a1d16704680c.png",
@@ -29,6 +29,7 @@
     "static/media/card3.png": "/cisfarm-react/static/media/card3.cfffc4d4775c3b378c0b.png",
     "static/media/Mario_Cavero Medina.png": "/cisfarm-react/static/media/Mario_Cavero Medina.56145b09bc1d53a6fb5d.png",
     "static/media/Ruth Jenny Lucas Vargas.png": "/cisfarm-react/static/media/Ruth Jenny Lucas Vargas.d492ff68bb88eb45a653.png",
+    "static/media/sin_back.png": "/cisfarm-react/static/media/sin_back.896b2d63084f634764a7.png",
     "static/media/Robert Anthony Dietz Maravi.png": "/cisfarm-react/static/media/Robert Anthony Dietz Maravi.f78e3d3039c21af1911a.png",
     "static/media/Alicia Esmeralda Triviños Ancachi.png": "/cisfarm-react/static/media/Alicia Esmeralda Triviños Ancachi.b42499160614648c0692.png",
     "static/media/Christopher_Davila Mendoza.png": "/cisfarm-react/static/media/Christopher_Davila Mendoza.672f577e55242b937b18.png",
@@ -55,11 +56,11 @@
     "static/media/slick.woff": "/cisfarm-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cisfarm-react/index.html",
     "main.6036971b.css.map": "/cisfarm-react/static/css/main.6036971b.css.map",
-    "main.44ab15aa.js.map": "/cisfarm-react/static/js/main.44ab15aa.js.map",
+    "main.668b6065.js.map": "/cisfarm-react/static/js/main.668b6065.js.map",
     "787.71df535f.chunk.js.map": "/cisfarm-react/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6036971b.css",
-    "static/js/main.44ab15aa.js"
+    "static/js/main.668b6065.js"
   ]
 }
