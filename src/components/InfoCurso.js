@@ -1,33 +1,16 @@
 import React from "react";
-import { BiBookReader } from "react-icons/bi"
-import { GiSpeaker, GiUpgrade } from "react-icons/gi"
-import { AiOutlineLike } from "react-icons/ai"
 import Correccion from "./CorreccionTest";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
+import './placeholder.css';
 
 
 
 
-const estilo = {
-  display: "inline-block",
-  fontSize: "70%",
-  color: "#00b2ff",
-  WebkitBoxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-  MozBoxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-  boxShadow: "2px 10px 46px 18px rgba(84, 168, 242, 1)",
-};
 
-
-const dataCurso = {
-  valoracion: "50%",
-  estudiantes: 300,
-  nivel: "avanzado",
-  idioma: "español"
-};
 
 const data = {
-  costo: "$ 129",
+  costo: "S/130.00",
   duracion: "14,2 horas",
   lecciones: "9 lecciones",
   modalidad: "online y ritmo",
@@ -66,40 +49,14 @@ const styleAbout = {
 
 
 const InfoCurso = () => {
+
+
+
+  
   return (
     <div className="container" style={{ backgroundColor: "transparent" }}>
+         
       
-      <div className="row display-2" style={{ marginLeft: "1.2em", marginRight: "1.2em" }}>
-        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center" >
-          <div className="pb-3 px-4 rounded-circle " style={estilo}>
-            <AiOutlineLike />
-          </div>
-          <h4 className="text-info mt-4 mb-4" style={{ fontSize: "0.3em" }} >Valoraciones buenas</h4>
-          <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion}</p>
-        </div>
-        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-          <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-            <BiBookReader />
-          </div>
-          <h4 className="text-info m-4" style={{ fontSize: "0.3em" }}>Estudiantes</h4>
-          <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
-
-        </div>
-        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-          <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-            <GiUpgrade />
-          </div>
-          <h4 className="text-info m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
-          <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
-        </div>
-        <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-          <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-            <GiSpeaker />
-          </div>
-          <h4 className="text-info m-4" style={{ fontSize: "0.3em" }}> Idioma</h4>
-          <p className="lead text-primary" style={{ fontSize: "0.3em" }}>{dataCurso.idioma}</p>
-        </div>
-      </div>
       <br />
       <br />
       <br />
@@ -115,11 +72,11 @@ const InfoCurso = () => {
         <div className="row ">
           <div className="col-md-6 " style={{ marginTop: "5.5em" }}>
             <div className="container" >
-              <h4 className="text-primary text-start">
+              <h3 className="text-primary text-start" style={{fontSize:"2.5em"}}>
                 ¿Por qué estudiar Farmacología Cardiovascular en Cisfarm?
-              </h4>
+              </h3>
               <br /><br />
-              <p className="lead text-primary" style={{ textAlign: "justify" }}>
+              <p className="lead text-primary " style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -130,13 +87,16 @@ const InfoCurso = () => {
           </div>
           <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
             <div className="circulo " style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
-              <h1 className="display-5 text-white">Matricúlate</h1>
+              <h1 className="display-4  text-white" >Matricúlate</h1>
               <div style={{ textAlign: "center" }}>
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-3"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
+                    className="p-3 text-white"
+                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",'::placeholder':"white",
+                    "::placeholder": {
+                      color: "#00000",
+                      }, }}
                     placeholder="Nombres y Apellidos"
                     aria-label="nombre"
                     aria-describedby="basic-addon1"
@@ -145,7 +105,7 @@ const InfoCurso = () => {
                 <div className="my-3 ">
                   <input
                     type="text"
-                    className="p-3"
+                    className="p-3 my-input text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Correo Electrónico"
                     aria-label="correo"
@@ -155,7 +115,7 @@ const InfoCurso = () => {
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-3"
+                    className="p-3 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Teléfono y/o Celular"
                     aria-label="telefono"
@@ -169,13 +129,13 @@ const InfoCurso = () => {
           </div>
           <div className="col-12 d-md-none">
                   {/* Esta imagen se muestra solo en pantallas pequeñas */}
-                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
-              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
+                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "21em", marginTop:"4em", marginBottom:"3em" }}>
+              <h1 className="text-white mt-5">Matricúlate</h1>
               <div style={{ textAlign: "center" }}>
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
                     placeholder="Nombres y Apellidos"
                     aria-label="nombre"
@@ -185,7 +145,7 @@ const InfoCurso = () => {
                 <div className="my-3 ">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
                     placeholder="Correo Electrónico"
                     aria-label="correo"
@@ -195,7 +155,7 @@ const InfoCurso = () => {
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
                     placeholder="Teléfono y/o Celular"
                     aria-label="telefono"
@@ -213,40 +173,40 @@ const InfoCurso = () => {
       <br />
       <br />
 
-      <div className="container">
+      <div className="container ">
         <div className="row">
           <div className="col-sm " >
-            <div className="m-5 text-white px-5" style={{ display: "inline-block", borderRadius: "80px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(15,197,236,0.9556197478991597) 100%)" }}>
+            <div className="mx-4 my-4 text-white px-5" style={{ display: "inline-block", borderRadius: "80px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(15,197,236,0.9556197478991597) 100%)" }}>
               <div className="p-4">
                 <h4 className="fs-5">Costo</h4>
-                <h3 className="fs-1">$ 129.00</h3>
+                <h1 className="display-5">{data.costo}</h1>
               </div>
             </div>
-            <div>
+            <div className="col px-4">
               <div className="d-flex align-items-center">
                 <PiClockCounterClockwiseBold className="text-primary display-3 mx-4" />
                 <div>
-                  <h3 className="text-primary">duracion</h3>
-                  <h4 className="text-primary">14,2 horas</h4>
+                  <h2 className="text-primary"><strong>Duracion</strong></h2>
+                  <h4 className="text-primary">{data.duracion}</h4>
                 </div>
               </div>
-              <hr />
+              
               <div className="d-flex align-items-center">
                 <PiVideoDuotone className=" text-primary display-3 mx-4" />
                 <div>
-                  <h3 className="text-primary">Lecciones</h3>
-                  <h4 className="text-primary">9 sesiones</h4>
+                  <h2 className="text-primary"><strong>Lecciones</strong></h2>
+                  <h4 className="text-primary">{data.lecciones}</h4>
                 </div>
               </div>
-              <hr />
+              
               <div className="d-flex align-items-center">
                 <BsPersonSquare className="text-primary display-3 mx-4" />
                 <div>
-                  <h3 className="text-primary">Modalidad</h3>
-                  <h4 className="text-primary">Online y a tu ritmo</h4>
+                  <h2 className="text-primary"><strong>Modalidad</strong></h2>
+                  <h4 className="text-primary">{data.modalidad}</h4>
                 </div>
               </div>
-              <hr />
+              
             </div>
           </div>
           <div className="col " style={styleAbout}>
@@ -297,11 +257,12 @@ const InfoCurso = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm" style={styleAbout}>
-            <div className="border" style={{ width: "70%", display: "inline-block", marginLeft: "15%", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", backgroundImage: "linear-gradient(180deg, rgba(0,103,224,0.9864320728291317) 42%, rgba(0,164,255,1) 100%)" }} >
-              <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
-              <p className="text-white m-4" style={{ textAlign: "justify", fontSize: "0.9rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+          <div className="col-sm-12 col-md-6" style={styleAbout}>
+  <div className="border" style={{ width: window.innerWidth <= 768 ? '90%' : '70%', height: "100%", display: "inline-block", marginLeft: window.innerWidth <=768 ? "1em": "3em", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", backgroundImage: "linear-gradient(180deg, rgba(0,103,224,0.9864320728291317) 42%, rgba(0,164,255,1) 100%)" }}>
+    <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
+    <p className="text-white m-4" style={{ textAlign: "justify", fontSize: "1em" }}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
@@ -312,9 +273,12 @@ const InfoCurso = () => {
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 
                 consequat.Lorem ipsum.
-              </p>
-            </div>
-          </div>
+
+    </p>
+  </div>
+</div>
+
+          
         </div>
       </div>
     </div>

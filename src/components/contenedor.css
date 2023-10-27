@@ -14,9 +14,12 @@
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
     transform: scale(0.9);
     
 }
+
+
 
 /*Queines slider*/
 .slider-fechas{
@@ -68,5 +71,33 @@
     border-radius: 0px 4px 4px 4px;
     background: #fff;
     padding: 30px;
+}
+
+
+/* Modificaion del slick central en el primer slider */
+
+
+  
+  .slick-inicio-slick-center {
+    
+    transform: translateX(50%);
+    transform: scale(0.8);
+    
+
+
+  }
+
+  @media screen and ( min-width: 600px){
+    .slick-inicio-slick-center {
+        transform: translateX(-50%);
+        transform: scale(1.4);
+    
+      } 
+  }
+
+  .slick-prev,
+.slick-next {
+  transform: scale(1.5) !important;
+  /* You can adjust the scale factor to make them larger or smaller as needed */
 }
 

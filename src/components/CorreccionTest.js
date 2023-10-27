@@ -30,8 +30,8 @@ const Correccion = () => {
 
   return (
     <>
-      <div className="d-inline">
-        <p className="text-white">
+      <div className="d-inline ">
+        <p className="text-white px-3 " style={{"fontSize":"0.8em"}}>
         <Form.Check inline className=" "/>
           Acepto haber leido{" "}
           <a className="text-white" onClick={handleOpenModal}>

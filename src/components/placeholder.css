@@ -1,0 +1,11 @@
+/*
+Modificacion del placeholder
+*/
+
+my-input{
+    border-radius: 50px;
+}
+
+::placeholder{
+    color: white;
+}

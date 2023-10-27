@@ -3,6 +3,7 @@
 .sobre:hover{
     background:linear-gradient(90deg, rgba(129,131,142,1) 0%, rgba(63,98,140,0.6811099439775911) 91%);
     border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .sobre:active{

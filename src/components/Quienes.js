@@ -11,6 +11,7 @@ import Areas from "./Areas";
 import molecula from "../imagenes/molecula3-removebg-preview.png";
 import background from "../imagenes/back_somos.png";
 import MisionQuienes from "./MisionQuienes";
+import { Fade } from "react-reveal";
 
 function Quienes() {
   return (
@@ -23,10 +24,13 @@ function Quienes() {
       <br/>
       <br/>
 
+      <Fade>
     <Example/>
 
     <Promesa/>
+    </Fade>
     </div>
+    <Fade>
     <MisionQuienes/>
 
       <Staff/>
@@ -37,7 +41,7 @@ function Quienes() {
       <div className="bg-white">
       <Footer2/>
       </div>
-
+      </Fade>
     </>
   );
 }

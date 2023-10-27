@@ -1,7 +1,8 @@
 import React from "react";
 
-import avatar from '../imagenes/img.png';
+import avatar from '../imagenes/sin_back.png';
 import Slider from 'react-slick'
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 
 
@@ -14,7 +15,7 @@ const dataDocentes = [
         profesion: "Quimico farmaceutico",
     },
     {
-        id: 1,
+        id: 1, 
         img: avatar,
         nombre: "nombre del docente",
         apellido: "apellidos del profesor",
@@ -36,9 +37,12 @@ const dataDocentes = [
     },
 ];
 
+
+
 const settings = {
     
     centerMode:true,
+    
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -48,12 +52,16 @@ const settings = {
         {
         breakpoint:620,
         settings:{
-          slidesToShow:1,
-          infinite:true,
+            centerMode: true,
+            centerPadding: "1px",
+            slidesToShow: 1,
+            infinite: true,
           
-        }
-    }
-    ]
+        },
+    },
+    ],
+    nextArrow: <GrNext  />,
+    prevArrow:<GrPrevious />
 };
 
 
@@ -64,27 +72,24 @@ const Ejemplo = () => {
     return (
         <>
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1 className="display-3 text-primary m-5">Docentes</h1>
+            <div className="container">
+
+            <h1 className="display-3 text-primary container text-center mt-5">Docentes</h1>
             <br />
             <br />
 
 
             <div className="container ">
-                <Slider {...settings}>
+                <Slider {...settings} >
                     {dataDocentes.map((item, index) => (
-                        <div className="container">
-                            <div className="col">
-                                <img  className="my-5 border bg-primary" style={{ width: '300px', height:"300px",borderRadius:"50%" }} src={item.img} />
-                                <div className="text-start" style={{marginLeft:"3em"}}>
+                        <div className="container ">
+                            <div className="col text-center mx-auto">
+                                <img  className="my-5 bg-primary " style={{ width: '20em', height:"20em",borderRadius:"50%", margin:'auto' }} src={item.img} />
+                                
                                 <h4 className="text-primary">{item.nombre}</h4>
                                 <h5 className="text-primary">{item.apellido} </h5>
                                 <p className="text-warning">{item.profesion} </p>
-                                </div>
+                                
 
                             </div>
                         </div>
@@ -93,6 +98,7 @@ const Ejemplo = () => {
                 </Slider>
 
 
+            </div>
             </div>
 
         </>

@@ -9,6 +9,8 @@ import Ejemplo from "./Ejemplo";
 import ContenidoCurso from "./ContenidoCurso";
 import Video from "./Video";
 import background from "../imagenes/back_curso_cardio.png";
+import Valoraciones from "./Valoraciones";
+import { Fade } from "react-reveal";
 
 
 const containerStyle = {
@@ -33,12 +35,11 @@ function Cursos() {
   return (
     <>
     <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}} >
+     
+      <Video>
+   
+      </Video>
     
-     <div >
-      <Header/>
-     </div>
-    
-      <Video/>
 
     <div style={gradientBackgroundStyle2}>
 
@@ -47,7 +48,7 @@ function Cursos() {
     <Ejemplo/>
 
 
-      <ContenidoCurso/>
+      <ContenidoCurso titulo={"Contenido del curso"}/>
     </div>
       <Footer />
       <Footer2/>

@@ -363,7 +363,7 @@ tempor incididunt ut labore et dolore magna aliqua.`,
     ],
 };
 
-const paginaMetamina = {};
+
 
 const paginaBLogs = {
     posts: [

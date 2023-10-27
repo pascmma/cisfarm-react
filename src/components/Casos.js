@@ -78,13 +78,13 @@ const Casos = () => {
                   <br /><br/><br /><br/>
                   <p className="text-white text-xs" style={{fontSize:"1.3em", textAlign:"justify"}}>{item.parrafo}</p>
                 </div>
-                <div className="col-12 col-sm-4 ">
-                  <img src={item.imagen} className="img-fluid " />
+                <div className="col-12 col-sm-4" >
+                  <img src={item.imagen} style={{width:"48vh !important", height:"47vh !important", boxShadow:" 5px 5px 10px rgba(0, 0, 0, 0.3)"}} className="img-fluid " />
 
                 </div>
 
                 <div className="col-12 col-sm-3  mx-auto" style={{  margin:"0 auto" }}>
-                  <h1 className="display-1 text-warning" style={{ fontSize: "7em", textAlign:"justify", fontWeight:"bold" }}>{item.puesto} <sup className="display-3" style={{verticalAlign:"0.2em", fontWeight:"bold"}}> {item.dimi}</sup> </h1>
+                  <h1 className="display-1 text-warning" style={{ fontSize: "7em", textAlign:"justify", fontWeight:"bold" }}>{item.puesto} <sup className="display-3 " style={{verticalAlign:"0.2em", fontWeight:"bold", marginLeft:"-0.6em"}}> {item.dimi}</sup> </h1>
                   <h2 className="text-warning" style={{ fontSize: "2.5em", textAlign:"justify" }}>Puesto</h2>
                   <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}>{item.nombres}</h6>
                   <h6 className="text-white" style={{ fontSize: "1em", textAlign:"justify" }}> {item.apellidos}</h6>

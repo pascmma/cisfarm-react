@@ -7,25 +7,24 @@ import Header from "./Header";
 import Prueba from "./Prueba";
 import Footer2 from "./Footer2";
 import img4 from "../imagenes/img4.png";
-import background from '../imagenes//back_blogs.png';
+import background from '../imagenes/back_blogs_edit.png';
+//import background from '../imagenes/back_inicio.png';
+import { Fade } from "react-reveal";
 
 function Blogs() {
 
-  const styles = {
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  
-};
   return (
     <>
-      <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
+      <div className="" style={{backgroundImage:`url(${background})`}}>
         <Header/>
 
 
 <Prueba/>
 </div>
+    
       <Footer/>
       <Footer2/>
+      
     </>
   );
 }

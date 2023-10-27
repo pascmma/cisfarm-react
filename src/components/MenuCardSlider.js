@@ -88,6 +88,18 @@ const slideStyles = `
 
 
 function MenuCardSlider() {
+  const boton={
+    fontSize: "16px",
+    padding: "10px 20px",
+    border: "2px solid #ffffff6b",
+    borderRadius: "50px",
+    background: "rgb(255 255 255 / 11%)",
+    boxShadow: "inset -2px -2px 5px #ffffff14, inset 2px 2px 5px #b0e0e67d",
+    color: "#fff",
+    cursor: "pointer",
+    transition: "transform 0.3s",
+
+};
 
   const NextArrow = ({onClick}) => {
     return(
@@ -150,13 +162,13 @@ function MenuCardSlider() {
         <Slider {...settings}>
           {cardsData.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
-            <div className="card my-3 contenedor-menu bg-transparent ">
+            <div className="card my-3 contenedor-menu bg-transparent border-0 ">
                 <img src={data.img} className="border rounded"/>  
                 <div className=""> 
-                    <p className="text-white"> {data.title}</p>
+                    <p className="my-3 text-white"> {data.title}</p>
                     <hr style={{border:"solid 2px white"}}/>
                     <p className="lead text-wrap text-warning" style={{fontSize:"1.9em"}}> {data.ciclo}</p>
-                    <button className="btn btn-primary">ver mas</button>
+                    <div className="text-center"><button className="btn " style={boton}>ver mas</button></div>
                 </div>
             </div>
 
@@ -189,13 +201,13 @@ function MenuCardSlider() {
         <Slider {...settings}>
           {cardsData2.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
-            <div className="card my-3 contenedor-menu bg-transparent ">
+            <div className="card my-3 contenedor-menu bg-transparent border-0">
                 <img src={data.img} className="border rounded"/>  
                 <div className=""> 
-                    <p className="text-white"> {data.title}</p>
+                    <p className="my-3 text-white"> {data.title}</p>
                     <hr style={{border:"solid 2px white"}}/>
                     
-                    <button className="btn btn-primary">ver mas</button>
+                    <div className="text-center"><button className="btn " style={boton}>ver mas</button></div>
                 </div>
             </div>
 

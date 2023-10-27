@@ -16,6 +16,49 @@ const mitad = {
 };
 
 
+const noticias = [
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+  {
+    img: imagen,
+    nombre: "nombre completo de la noticia",
+    fecha: "Fecha de lanzamiento",
+  },
+];
+
 
 const Metanima = () => {
   const settings = {
@@ -23,9 +66,21 @@ const Metanima = () => {
     centerMode: true,
     infinite: true,
     focusOnSelect: true,
-    centerPadding: "300px",
+    centerPadding: "1px",
     speed: 500,
     slidesToShow: 5,
+    responsive: [
+      {
+        breakpoint: 620,
+        settings: {
+          centerMode:true,
+          centerPadding:"1px",
+          slidesToShow: 1,
+          infinite: true,
+        
+        }
+      }
+    ]
     
 
   };
@@ -42,12 +97,12 @@ const Metanima = () => {
   return (
     <>
       <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
-       <div style={{background:"#383d3d"}}>
+       <div >
         <Header/>
         </div> 
       
       <div className="d-flex justify-content-center">
-      <div className="display-1">
+      <div className="display-1 mt-5">
         Soñar es crear
       </div>
       </div>
@@ -67,64 +122,69 @@ const Metanima = () => {
       <br />
       <div className="container">
       <div className="d-inline-block ">
-      <Nav variant="tabs" className="d-flex justify-content-center">
-        <Nav.Item>
-          <Nav.Link
-            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
-            style={{
-              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
-              borderTopLeftRadius: "40px",
-              borderTopRightRadius: "40px",
-              paddingInline: "40px"
-            }}
-            onClick={() => handleTabClick('SECCION I')}
-          >
-            SECCION I
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link
-            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION II' ? 'active' : ''}`}
-            style={{
-              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
-              borderTopLeftRadius: "40px",
-              borderTopRightRadius: "40px",
-              paddingInline: "40px"
-            }}
-            onClick={() => handleTabClick('SECCION II')}
-          >
-            SECCION II
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link
-            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION III' ? 'active' : ''}`}
-            style={{
-              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
-              borderTopLeftRadius: "40px",
-              borderTopRightRadius: "40px",
-              paddingInline: "40px"
-            }}
-            onClick={() => handleTabClick('SECCION III')}
-          >
-            SECCION III
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link
-            className={`nav-link  mx-3 text-white ${activeTab === 'SECCION IV' ? 'active' : ''}`}
-            style={{
-              backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
-              borderTopLeftRadius: "40px",
-              borderTopRightRadius: "40px",
-              paddingInline: "40px"
-            }}
-            onClick={() => handleTabClick('SECCION IV')}
-          >
-            SECCION IV
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <Nav variant="tabs" className="d-flex flex-wrap justify-content-center">
+  <Nav.Item className="col-6 col-md-3">
+    <Nav.Link
+      className={`nav-link text-white ${activeTab === 'SECCION I' ? 'active' : ''}`}
+      style={{
+        backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+        borderTopLeftRadius: "40px",
+        borderTopRightRadius: "40px",
+        margin: "5px",
+        textAlign: "center"
+      }}
+      onClick={() => handleTabClick('SECCION I')}
+    >
+      SECCION I
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item className="col-6 col-md-3">
+    <Nav.Link
+      className={`nav-link text-white ${activeTab === 'SECCION II' ? 'active' : ''}`}
+      style={{
+        backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+        borderTopLeftRadius: "40px",
+        borderTopRightRadius: "40px",
+        margin: "5px",
+        textAlign: "center"
+      }}
+      onClick={() => handleTabClick('SECCION II')}
+    >
+      SECCION II
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item className="col-6 col-md-3">
+    <Nav.Link
+      className={`nav-link text-white ${activeTab === 'SECCION III' ? 'active' : ''}`}
+      style={{
+        backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+        borderTopLeftRadius: "40px",
+        borderTopRightRadius: "40px",
+        margin: "5px",
+        textAlign: "center"
+      }}
+      onClick={() => handleTabClick('SECCION III')}
+    >
+      SECCION III
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item className="col-6 col-md-3">
+    <Nav.Link
+      className={`nav-link text-white ${activeTab === 'SECCION IV' ? 'active' : ''}`}
+      style={{
+        backgroundImage: "linear-gradient(90deg, rgba(11,47,89,1) 0%, rgba(148,105,105,1) 87%)",
+        borderTopLeftRadius: "40px",
+        borderTopRightRadius: "40px",
+        margin: "5px",
+        textAlign: "center"
+      }}
+      onClick={() => handleTabClick('SECCION IV')}
+    >
+      SECCION IV
+    </Nav.Link>
+  </Nav.Item>
+</Nav>
+
       {/* Contenido de cada sección */}
       {activeTab === 'SECCION I' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion1"}/></div>}
       {activeTab === 'SECCION II' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion2"}/></div>}
@@ -139,99 +199,51 @@ const Metanima = () => {
       <br />
       <br />
       <br />
-      <br />
+      <br /> 
 
       <div className="d-flex justify-content-center mb-4">
         <h4 className="">Novedades </h4>
       </div>
-      <div className="row">
+      <div className="container ">
         <Slider {...settings}>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
+          {noticias.map((item, index) => (
+            <div className="col ">
+              <div
+                className="card my-3 mx-auto"
+                style={{
+                  width: "13em",
+                  height: "25em",
+                  borderRadius: "50px",
+                  border: "solid blue 13px",
+                }}
+              >
+                <div className="card-body">
+                  <img
+                    src={imagen}
+                    style={{
+                      width: "100%",
+                      height: "50%",
+                      borderRadius: "40px",
+                    }}
+                  />
+                  <h6 className="card-subtitle my-2 text-primary text-start">
+                    Nombre completo de la noticia1
+                  </h6>
+                  <p className="card-text text-start text-primary">
+                    Fecha de lanzamiento{" "}
+                  </p>
+                  <button
+                    type="button"
+                    className="btn btn-primary"
+                    style={{ marginLeft: "35%", borderRadius: "20px" }}
+                  >
+                    Ver mas
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card my-3 " style={{ width: "13rem", borderRadius: "50px", border: "solid blue 13px" }}>
-              <div className="card-body">
-                <img src={imagen} style={{ width: "90%", height: "60%", borderRadius: "40px", }} />
-                <h6 className="card-subtitle my-2 text-primary text-start">
-                  Nombre completo de la noticia1
-                </h6>
-                <p className="card-text text-start text-primary">Fecha de lanzamiento </p>
-                <button type="button" className="btn btn-primary" style={{ marginLeft: "35%", borderRadius: "20px" }}>
-                  Ver mas
-                </button>
-              </div>
-            </div>
-          </div>
+          ))}
         </Slider>
-
       </div>
       </div>
       

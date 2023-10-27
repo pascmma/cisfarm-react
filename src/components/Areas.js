@@ -1,14 +1,9 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import imagen from '../imagenes/img.png';
+import imagen from '../imagenes/sin_back.png';
+import { GrNext,GrPrevious } from "react-icons/gr";
 //cada objeto va a tener areas iguale
 
-const areas = [
-    { nombre: "Diseno y animacion" },
-    { nombre: "area2" },
-    { nombre: "area3" },
-    { nombre: "area4" },
-];
 
 const dataAreas = [
     {
@@ -162,43 +157,39 @@ const dataAreas = [
 
 
 //creacion de obejtos
-const prueba = () => {
-    console.log('preuba: ', dataAreas[0].cards[0]);
-};
 
-prueba();
 
 
 const Areas = () => {
 
     return (
         <>
-            <div>
-                <Carousel>
+            <div style={{margin:"0.2em"}}>
+                <Carousel prevIcon=<GrPrevious/> nextIcon= <GrNext/>  >
                     {dataAreas.map((item, index) => (
                         <Carousel.Item key={index}>
-                            <div className="container my-3 bg-white" style={{WebkitBoxShadow: "1px 0px 10px 7px rgba(27,26,102,0.75)",
-  MozBoxShadow: "-1px 0px 10px 7px rgba(27,26,102,0.75)",
-  boxShadow: "-1px 0px 10px 7px rgba(27,26,102,0.75)",
+                            <div className="container my-3 bg-white" style={{WebkitBoxShadow: "1px 0px 10px 7px rgba(191,191,191,0.25)",
+  MozBoxShadow: "-1px 0px 10px 7px rgba(191,191,191,0.75)",
+  boxShadow: "-1px 0px 10px 7px rgba(191,191,191,0.75)",
   borderRadius:"10px"}} >
-                                <div className="row">
-                                    <h3 className="text-warning text-center"> Area </h3>
-                                    <h5 className="text-warning text-center"> {item.nombre}</h5>
+                                <div className="row m-5 ">
+                                    <h1 className="text-warning text-center my-5"> Area </h1>
+                                    <h5 className="text-warning text-center mt-3"> {item.nombre}</h5>
                                 </div>
-                                <Carousel>
+                                <Carousel className="p-4 m-4 " prevIcon=<GrPrevious/> nextIcon= <GrNext/> >
                                     {
                                         (item.cards).map((aux,inde)=>(
-                                            <Carousel.Item key={inde}>
-                                                <div className="container  my-4" style={{borderRadius:"25px"}}>
+                                            <Carousel.Item key={inde} className="">
+                                                <div className="container my-4 " style={{borderRadius:"25px"}}>
                                                     <div className="row my-4">
                                                         <p className="text-primary text-center lead">{aux.parrafo}</p>
                                                     </div>
-                                                    <div className="row my-4">
+                                                    <div className="row my-4 text-center">
                                                         {
                                                             (aux.usuarios).map((temp,ind)=>(
-                                                                <div className="col">
+                                                                <div className="col ">
                                                                     <img style={{width:'200px', height:"200px",borderRadius:"50%", background:"blue" }} src={temp.imagenUsuario}/>
-                                                                    <h4 className="text-primary">{temp.cargoUsuario}</h4>
+                                                                    <h4 className="text-primary mt-4">{temp.cargoUsuario}</h4>
                                                                     <h5 className="text-primary">{temp.nombresUsuario} </h5>
                                                                     <p className="text-warning">{temp.areaUsuario} </p>
                                                                     

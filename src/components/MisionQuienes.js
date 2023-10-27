@@ -20,7 +20,7 @@ const MisionQuienes = () =>{
         <>
          <div className="container rounded" style={{ backgroundColor: "rgba(255, 255, 255, 0.897)" }}>
   <div className="row">
-    <div className="col-lg-6 col-md-12">
+    <div className="col-lg-6 col-md-12 my-5">
       <h3 className="text-warning" style={{ textAlign: "left" }}>Misión</h3>
       <br /><br />
       <ul className="text-primary lead text-start">

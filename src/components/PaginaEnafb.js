@@ -1,72 +1,69 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import Header from "./Header";
-import InfoCurso from "./InfoCurso";
+import Beneficios from "./Beneficios";
+import { Fade } from "react-reveal";
 
 import Ejemplo from "./Ejemplo";
 
-import VideoMetanima from "./VideoMetanima";
-import { BiBookReader } from "react-icons/bi"
-import { GiSpeaker, GiUpgrade } from "react-icons/gi"
-import { AiOutlineLike } from "react-icons/ai"
+import { BiBookReader } from "react-icons/bi";
+import { GiSpeaker, GiUpgrade } from "react-icons/gi";
+import { AiOutlineLike } from "react-icons/ai";
 import Correccion from "./CorreccionTest";
-import ContenidoCursoMetanima from "./ContenidoCursoMetanima";
-import imagenFondo from '../imagenes/back_enafb.png';
+
+import imagenFondo from "../imagenes/back_enafb.png";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
 import ContenidoCurso from "./ContenidoCurso";
-
 
 const estilo = {
   display: "inline-block",
   color: "#000000",
 };
 
-
-const data = {
+const data = { 
   costo: "$ 129",
   duracion: "14,2 horas",
   lecciones: "9 lecciones",
   modalidad: "online y ritmo",
-  acerca: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  beneficios: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-  requisitos: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
+  acerca:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+  beneficios:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
+  requisitos:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
 };
 
 const containerStyle = {
   position: "relative",
   width: "100%",
-  height: "50%"
+  height: "50%",
 };
 
 const gradientBackgroundStyle = {
-
   top: 0,
   left: 0,
   width: "100%",
   height: "100%",
   backgroundColor: "blue",
-  zIndex: -1
+  zIndex: -1,
 };
 
 const gradientBackgroundStyle2 = {
-
   top: 0,
   left: 0,
   width: "100%",
   height: "100%",
   background: "white",
-  zIndex: -1
+  zIndex: -1,
 };
-
 
 const dataCurso = {
   valoracion: "50%",
   estudiantes: 300,
   nivel: "avanzado",
-  idioma: "español"
+  idioma: "español",
 };
 
 const circleStyle = {
@@ -79,12 +76,12 @@ const circleStyle = {
   alignItems: "center",
   justifyContent: "center",
   padding: "20px",
-  zIndex: 3
+  zIndex: 3,
 };
 
 const inputStyle = {
   maxWidth: "80%",
-  margin: "10px auto"
+  margin: "10px auto",
 };
 const styleAbout = {
   display: "flex",
@@ -92,26 +89,32 @@ const styleAbout = {
   alignItems: "center",
   color: "blue",
 };
-
+const estiloResponsive = {
+  fontSize: "90%", // Tamaño de fuente más pequeño para pantallas pequeñas
+};
 const PaginaEnafb = () => {
+  const [selected, setSelected] = useState("superintensivo");
+
   const estilo = {
     display: "inline-block",
-    color: "white",
-    WebkitBoxShadow: "1px 0px 12px 12px rgba(255,255,255,0.75)",
-    MozBoxShadow: "-1px 0px 12px 12px rgba(255,255,255,0.75)",
-    boxShadow: "1px 0px 24px 12px rgba(255,255,255,0.75)",
+    color: "#D1A900",
+    WebkitBoxShadow: "0px 1px 42px 2px rgba(209, 169, 0,0.75)",
+    MozBoxShadow: "0px 1px 42px 2px rgba(209, 169, 0,0.75)",
+    boxShadow: "0px 1px 42px 2px rgba(209, 169, 0,0.75)",
   };
+
   const circleStyle = {
-    width: "600px",
-    height: "600px",
+    width: "40em",
+    height: "40em",
     borderRadius: "50%",
-    backgroundColor: `#0b2f59`,
+    backgroundColor: `#0067e0`,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     padding: "20px",
     zIndex: 2,
+    fontSize: "0.9em !important",
   };
   const styleAbout = {
     display: "flex",
@@ -119,342 +122,466 @@ const PaginaEnafb = () => {
     alignItems: "start",
     color: "blue",
   };
+
+  const boton = {
+    fontSize: "1em",
+    padding: "10px 20px",
+    border: "2px solid #ffffff6b",
+    borderRadius: "10px",
+    background: "rgb(255 255 255 / 11%)",
+    boxShadow: "inset -2px -2px 5px #ffffff14, inset 2px 2px 5px #b0e0e67d",
+    color: "#fff",
+    cursor: "pointer",
+    transition: "transform 0.3s",
+  };
+
   return (
     <>
-      <div style={{ backgroundImage: `url(${imagenFondo})`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
-        <Header />
+      <Fade>
+        <div
+          style={{
+            backgroundImage: `url(${imagenFondo})`,
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <Header />
 
-        <br /><br /><br />
+          <br />
+          <br />
+          <br />
 
-        <div className="container">
-          <div className="row">
-            <div className="col">
+          <div className="container ">
+            <div className="row mx-2 ">
+              <div className="col-md-8 ">
+                <h1 className="text-white">Programa de entrenamiento</h1>
+                <h1 className="text-primary" style={{ fontSize: "5em" }}>
+                  SERUMS
+                </h1>
+                <h1 className="display-3 text-warning">ENAFB 2024-I</h1>
 
-          <h1 className="text-white">Programa de entrenamiento </h1>
-          <h1 className="display-2 text-info">SERUMS</h1>
-          <h1 className="display-2 text-warning">SUEPRINTENSIVO</h1>
-            </div>
-            <div className="col">
-            <div className="col-sm " >
-            <div className="m-5 text-white px-5" style={{ display: "inline-block", borderRadius: "80px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(15,197,236,0.9556197478991597) 100%)" }}>
-            
-            </div>
-            <div>
-              <div className="d-flex align-items-center">
-                <PiClockCounterClockwiseBold className="text-primary display-3 mx-4" />
-                <div>
-                  <h3 className="text-primary">duracion</h3>
-                  <h4 className="text-primary">14,2 horas</h4>
-                </div>
-              </div>
-              <hr />
-              <div className="d-flex align-items-center">
-                <PiVideoDuotone className=" text-primary display-3 mx-4" />
-                <div>
-                  <h3 className="text-primary">Lecciones</h3>
-                  <h4 className="text-primary">9 sesiones</h4>
-                </div>
-              </div>
-              <hr />
-              <div className="d-flex align-items-center">
-                <BsPersonSquare className="text-primary display-3 mx-4" />
-                <div>
-                  <h3 className="text-primary">Modalidad</h3>
-                  <h4 className="text-primary">Online y a tu ritmo</h4>
-                </div>
-              </div>
-              <hr />
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
-        <br /><br /><br /><br /><br /><br />
-
-        <div className="container bg-primary ">
-
-          <div className="row m-5 p-5 ">
-            <div className="col">
-              <h4 className="text-warning">¿Que es el SERUMS y por que es importarte?</h4>
-              <p className="lead text-white">Lorem ipsum dolor sit amet,
-consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut
-enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.</p>
-            </div>
-            <div className="col">
-            <h4 className="text-warning">Metodologia de ensenanza</h4>
-              <p className="lead text-white">Lorem ipsum dolor sit amet,
-consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut
-enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <br/><br/><br/>
-
-
-        <div className="row display-2">
-          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-            <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-              <AiOutlineLike  className="text-warning"/>
-            </div>
-            <h4 className="text-whiet m-4" style={{ fontSize: "0.3em" }}>Valoraciones buenas</h4>
-            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion}</p>
-          </div>
-          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-            <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-              <BiBookReader className="text-warning"/>
-            </div>
-            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>Estudiantes</h4>
-            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
-
-          </div>
-          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-            <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-              <GiUpgrade className="text-warning"/>
-            </div>
-            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
-            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
-          </div>
-          <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-            <div className="border pb-3 px-4 rounded-circle" style={estilo}>
-              <GiSpeaker className="text-warning"/>
-            </div>
-            <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}> Idioma</h4>
-            <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.idioma}</p>
-          </div>
-        </div>
-
-
-
-
-
-
-        <div className="row bg-white">
-        <Ejemplo />
-          <div style={{ backgroundColor: "transparent" }}>
-
-            <br />
-            <br />
-            <br />
-            <h2 className="text-primary">Aprende mas en el campo de los mecanismos en accion en 3D </h2>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className="container">
-              <div className="row ">
-                <div className="col-md-6" style={{ marginTop: "5.5em" }}>
-                  <div className="container" >
-                    <h4 className="text-primary text-start">
-                      ¿Por qué estudiar en academia Q.F.?
+                <div className="row  ">
+                  <div className=" col-md-8 ">
+                    <h1
+                      className={`text-${
+                        selected === "superintensivo" ? "warning" : "muted"
+                      } user-select-none`}
+                      onClick={() => setSelected("superintensivo")}
+                    >
+                      SUPERINTENSIVO
+                    </h1>
+                  </div>
+                  <div
+                    className={`col-md-3 ${
+                      selected === "superintensivo" ? "d-block" : "d-none"
+                    }`}
+                  >
+                    <h4 className="text-center" style={boton}>
+                      14 de Septiembre
                     </h4>
-                    <br /><br />
-                    <p className="lead text-primary" style={{ textAlign: "justify" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                      ea commodo consequat.Lorem ipsum
-                    </p>
                   </div>
                 </div>
-               
-
-                <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
-            <div className="circulo " style={{ ...circleStyle, maxWidth: "40em", minHeight: "18em" }}>
-              <h1 className="display-5 text-white">Matricúlate</h1>
-              <div style={{ textAlign: "center" }}>
-                <div className="my-3">
-                  <input
-                    type="text"
-                    className="p-3"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                    placeholder="Nombres y Apellidos"
-                    aria-label="nombre"
-                    aria-describedby="basic-addon1"
-                  />
+                <div className="row">
+                  <div className="col-md-8">
+                    <h1
+                      className={`text-${
+                        selected === "intensivo" ? "warning" : "muted"
+                      } user-select-none`}
+                      onClick={() => setSelected("intensivo")}
+                    >
+                      INTENSIVO
+                    </h1>
+                  </div>
+                  <div
+                    className={`col-md-3 ${
+                      selected === "intensivo" ? "d-block" : "d-none"
+                    }`}
+                  >
+                    <h4 className="text-center" style={boton}>
+                      14 de Septiembre
+                    </h4>
+                  </div>
                 </div>
-                <div className="my-3 ">
-                  <input
-                    type="text"
-                    className="p-3"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                    placeholder="Correo Electrónico"
-                    aria-label="correo"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div className="my-3">
-                  <input
-                    type="text"
-                    className="p-3"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
-                    placeholder="Teléfono y/o Celular"
-                    aria-label="telefono"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <Correccion />
-                <button className="btn btn-primary bg-secondary">Enviar</button>
               </div>
-            </div>
-          </div>
-          <div className="col-12 d-md-none">
-                  {/* Esta imagen se muestra solo en pantallas pequeñas */}
-                  <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
-              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
-              <div style={{ textAlign: "center" }}>
-                <div className="my-3">
-                  <input
-                    type="text"
-                    className="p-1"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
-                    placeholder="Nombres y Apellidos"
-                    aria-label="nombre"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div className="my-3 ">
-                  <input
-                    type="text"
-                    className="p-1"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
-                    placeholder="Correo Electrónico"
-                    aria-label="correo"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div className="my-3">
-                  <input
-                    type="text"
-                    className="p-1"
-                    style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
-                    placeholder="Teléfono y/o Celular"
-                    aria-label="telefono"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <Correccion />
-                <button className="btn btn-primary bg-secondary">Enviar</button>
-              </div>
-            </div>
-                </div>
 
-
-              </div>
-            </div>
-            <br />
-            <br />
-
-
-            <div className="container">
-              <div className="row">
-                <div className="col-sm " >
-                  <div className="m-5 text-white px-5" style={{ display: "inline-block", borderRadius: "80px", backgroundImage: "linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)" }}>
-                    <div className="p-4">
-                      <h4 className="fs-5">Costo</h4>
-                      <h3 className="fs-1">$ 129.00</h3>
+              <div className="col-md-4">
+                <div
+                  className="col-sm text-white"
+                  style={{
+                    display: "inline-block",
+                    borderRadius: "80px",
+                    backgroundImage:
+                      "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(15,197,236,0.9556197478991597) 100%)",
+                  }}
+                ></div>
+                <div>
+                  <div className="d-flex align-items-center">
+                    <PiClockCounterClockwiseBold className="text-white display-3 mx-4" />
+                    <div>
+                      <h3 className="text-primary"> <strong>Duración </strong></h3>
+                      <h4 className="text-white">14.2 horas</h4>
                     </div>
                   </div>
-                  <div>
-                    <h3>duracion</h3>
-                    <h4>14,2horas</h4>
-                    <hr />
-                    <h3>Lecciones</h3>
-                    <h4>9 sesiones</h4>
-                    <hr />
-                    <h3>Modalidad</h3>
-                    <h4>Online</h4>
-                    <hr />
+                  <hr />
+                  <div className="d-flex align-items-center">
+                    <PiVideoDuotone className="text-white display-3 mx-4" />
+                    <div>
+                      <h3 className="text-primary"><strong>Lecciones </strong></h3>
+                      <h4 className="text-white">9 sesiones</h4>
+                    </div>
                   </div>
-                </div>
-                <div className="col-sm " style={styleAbout}>
-                  <div className="mt-5" style={{ width: "70%", textAlign: "justify" }}>
-                    <br />
-                    <h2 className="">Acerca del curso</h2>
-                    <br />
-                    <p className="lead" style={{ textAlign: "justify" }}>
-
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.Lorem ipsum
-                    </p>
+                  <hr />
+                  <div className="d-flex align-items-center">
+                    <BsPersonSquare className="text-white display-3 mx-4" />
+                    <div>
+                      <h3 className="text-primary"><strong>Modalidad</strong></h3>
+                      <h4 className="text-white">Online y a tu ritmo</h4>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <br /><br /><br /><br />
-            <div className="container">
-              <div className="row bg-white m-1">
-                <div className="col-sm m-1 ">
-                  <h1 className="text-primary text-start mb-4" style={{ marginLeft: "5%" }} >Beneficios</h1>
-                  <br />
-
-                  <ul style={{ marginLeft: "10%", textAlign: "left", width: "80%" }}>
-                    <li>
-                      <p className="lead text-primary"> {data.beneficios}</p>
-                    </li>
-                    <li>
-                      <p className="lead text-primary"> {data.beneficios}</p>
-                    </li>
-                    <li>
-                      <p className="lead text-primary"> {data.beneficios}</p>
-                    </li>
-                    <li>
-                      <p className="lead text-primary"> {data.beneficios}</p>
-                    </li>
-                    <li>
-                      <p className="lead text-primary"> {data.beneficios}</p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-sm" style={styleAbout}>
-                  <div className="border" style={{ width: "70%", display: "inline-block", marginLeft: "15%", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", backgroundImage: "linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)" }} >
-                    <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
-                    <p className="text-white m-4" style={{ textAlign: "justify", fontSize: "0.9rem" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.Lorem ipsum. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-
-                      consequat.Lorem ipsum.
-                    </p>
-                  </div>
+                  <hr />
                 </div>
               </div>
             </div>
           </div>
 
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="container">
+            <div className="row m-5 p-3 ">
+              <div className="col">
+                <h4 className="text-warning">
+                  ¿Que es el SERUMS y por que es importarte?
+                </h4>
+                <p className="lead text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <div className="col-1 ">
+                <div
+                  className="mx-4"
+                  style={{ borderLeft: "1px solid yellow", height: "100%" }}
+                ></div>
+              </div>
+
+              <div className="col">
+                <h4 className="text-warning">Metodologia de ensenanza</h4>
+                <p className="lead text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="">
+            <div
+              className="row display-2 mt-5"
+              style={{
+                marginLeft: "1.2em",
+                marginRight: "1.2em",
+                paddingTop: "2em",
+              }}
+            >
+              <div
+                className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center"
+                style={{
+                  fontSize: "1em",
+                  ...(window.innerWidth <= 768 ? estiloResponsive : {}),
+                }}
+              >
+                <div className="pb-2 px-3 rounded-circle" style={{ ...estilo }}>
+                  <AiOutlineLike />
+                </div>
+                <h4
+                  className="text-white mt-4 mb-4"
+                  style={{ fontSize: "0.3em" }}
+                >
+                  Valoraciones buenas
+                </h4>
+                <p className="lead text-white" style={{ fontSize: "0.3em" }}>
+                  {dataCurso.valoracion}
+                </p>
+              </div>
+              <div
+                className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center"
+                style={{
+                  fontSize: "1em",
+                  ...(window.innerWidth <= 768 ? estiloResponsive : {}),
+                }}
+              >
+                <div
+                  className="pb-2 px-3 rounded-circle "
+                  style={{ ...estilo }}
+                >
+                  <BiBookReader />
+                </div>
+                <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+                  Estudiantes
+                </h4>
+                <p className="lead text-white" style={{ fontSize: "0.3em" }}>
+                  {dataCurso.estudiantes}
+                </p>
+              </div>
+              <div
+                className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center"
+                style={{
+                  fontSize: "1em",
+                  ...(window.innerWidth <= 768 ? estiloResponsive : {}),
+                }}
+              >
+                <div className="pb-2 px-3 rounded-circle" style={{ ...estilo }}>
+                  <GiUpgrade />
+                </div>
+                <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+                  Nivel
+                </h4>
+                <p className="lead text-white" style={{ fontSize: "0.3em" }}>
+                  {dataCurso.nivel}
+                </p>
+              </div>
+              <div
+                className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center"
+                style={{
+                  fontSize: "1em",
+                  ...(window.innerWidth <= 768 ? estiloResponsive : {}),
+                }}
+              >
+                <div className="pb-2 px-3 rounded-circle" style={{ ...estilo }}>
+                  <GiSpeaker />
+                </div>
+                <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+                  Idioma
+                </h4>
+                <p className="lead text-white" style={{ fontSize: "0.3em" }}>
+                  {dataCurso.idioma}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="row bg-white">
+            <Ejemplo />
+            <div style={{ backgroundColor: "transparent" }}>
+              <br />
+              <br />
+              <br />
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <Beneficios />
+
+              <div className="container">
+                <div className="row ">
+                  <div className="col-md-6 " style={{ marginTop: "5.5em" }}>
+                    <div className="container">
+                      <h3
+                        className="text-primary text-start"
+                        style={{ fontSize: "2.5em" }}
+                      >
+                        ¿Por qué estudiar en Academia Q.F.?
+                      </h3>
+                      <br />
+                      <br />
+                      <p
+                        className="lead text-primary "
+                        style={{ textAlign: "justify" }}
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.Lorem ipsum
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 d-flex justify-content-center d-none d-md-block ">
+                    <div
+                      className="circulo "
+                      style={{
+                        ...circleStyle,
+                        maxWidth: "40em",
+                        minHeight: "18em",
+                      }}
+                    >
+                      <h1 className="display-4  text-white">Matricúlate</h1>
+                      <div style={{ textAlign: "center" }}>
+                        <div className="my-3">
+                          <input
+                            type="text"
+                            className="p-3 text-white"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                              "::placeholder": "white",
+                              "::placeholder": {
+                                color: "#00000",
+                              },
+                            }}
+                            placeholder="Nombres y Apellidos"
+                            aria-label="nombre"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <div className="my-3 ">
+                          <input
+                            type="text"
+                            className="p-3 my-input"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                            }}
+                            placeholder="Correo Electrónico"
+                            aria-label="correo"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <div className="my-3">
+                          <input
+                            type="text"
+                            className="p-3"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                            }}
+                            placeholder="Teléfono y/o Celular"
+                            aria-label="telefono"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <Correccion />
+                        <button className="btn btn-primary bg-secondary">
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 d-md-none">
+                    {/* Esta imagen se muestra solo en pantallas pequeñas */}
+                    <div
+                      className="circulo "
+                      style={{
+                        ...circleStyle,
+                        maxWidth: "22em",
+                        maxHeight: "22em",
+                        marginTop:"3em"
+                      }}
+                    >
+                      <h1 className="text-white mt-5">Matricúlate</h1>
+                      <div style={{ textAlign: "center" }}>
+                        <div className="my-3">
+                          <input
+                            type="text"
+                            className="p-1"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                              fontSize: "0.9em",
+                            }}
+                            placeholder="Nombres y Apellidos"
+                            aria-label="nombre"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <div className="my-3 ">
+                          <input
+                            type="text"
+                            className="p-1"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                              fontSize: "0.9em ",
+                            }}
+                            placeholder="Correo Electrónico"
+                            aria-label="correo"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <div className="my-3">
+                          <input
+                            type="text"
+                            className="p-1"
+                            style={{
+                              textAlign: "center",
+                              width: "60%",
+                              borderRadius: "50px",
+                              backgroundImage:
+                                "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
+                              fontSize: "0.9em ",
+                            }}
+                            placeholder="Teléfono y/o Celular"
+                            aria-label="telefono"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                        <Correccion />
+                        <button className="btn btn-primary bg-secondary">
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+
+              <div className="container my-4">
+                <h3 className="text-primary text-center">Requisitos</h3>
+                <br />
+                <br />
+                <p className="lead text-center text-primary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-      </div>
-<ContenidoCurso/>
-      <Footer />
-      <Footer2 />
+        <ContenidoCurso titulo={"Cronograma"} />
+        <Footer />
+        <Footer2 />
+      </Fade>
     </>
-  )
+  );
 };
 
 export default PaginaEnafb;

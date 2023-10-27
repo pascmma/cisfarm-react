@@ -7,7 +7,7 @@ import './titulos.css';
  3 row boton
  */
 
-const TituloInicio = () => {
+const TituloInicio = (props) => {
   const boton={
       fontSize: "16px",
       padding: "10px 20px",
@@ -25,27 +25,24 @@ const TituloInicio = () => {
   return (
     <>
       <div className="container">
-        <div className="row  ">
+        <div className="row mt-5 ">
           <div className="col-12 col-sm-9">
-            <h1 className="display-2 titulos-inicio text-white text-justify text-start" style={{fontWeight:"bold"}}>
+            <h1 className="display-2 titulos-inicio text-white text-justify text-start" >
               
-              Preparate en nuestros programas de entrenamiento
+              {props.datos.titulo}
             </h1>
             <hr className="hr my-5"/>
           </div>
         </div>
         <div className="col-12 col-sm-9 " >
-          <p className="text-white lead  " style={{textAlign:"justify", fontWeight:"bold"}}> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+          <p className="text-white lead  " style={{textAlign:"left"}} > 
+            {props.datos.parrafo}
           </p>
         </div>
         <div className="row">
           <div className="col-1">
             <button type="button" className="btn" style={boton}>
-              Registrarse
+              {props.datos.boton}
             </button>
           </div>
         </div>

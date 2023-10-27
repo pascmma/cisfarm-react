@@ -19,7 +19,7 @@ const ContenidoSecciones = (props) => {
 
 
   const imagenes = {
-    width: '80%',
+    width: '100%',
     cursor: 'pointer'
   }
 
@@ -36,25 +36,25 @@ const ContenidoSecciones = (props) => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12">
             <div className="p-1" style={bordeRadio}>
-              <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-              <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+              <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:"1.5em"}}  >{props.seccion}</h5>
+              <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 ipsum dolor sit amet, consectetur
               </p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
-            <img className="rounded" src={imagen} style={imagenes} onClick={handleOpenModal} />
-            <Modal show={showModal} fullscreen={true} onHide={handleCloseModal} style={{
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto" >
+            <img className="rounded " src={imagen} style={imagenes} onClick={handleOpenModal} />
+            <Modal show={showModal} size={"xl"} onHide={handleCloseModal} style={{
               position: 'absolute',
               width: '100%',
               height: "100%",
             }}>
               <Modal.Header closeButton>
-                <Modal.Title>Modelo 3D</Modal.Title>
+                <Modal.Title>Modelo 3D 3 </Modal.Title>
               </Modal.Header>
               <Modal.Body >
-                <iframe title="id1" style={{ width: "100%", height: "100wh", border: "1px solid #eeeeee" }} src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj"></iframe>
+              <iframe title="id3" src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj" style={{width:"100%",height:"700px",frameborder:"0"}}></iframe>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseModal}>
@@ -65,15 +65,15 @@ const ContenidoSecciones = (props) => {
             </Modal>
 
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>
-                  <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-                  <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+                  <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:"1.5em"}}>{props.seccion}</h5>
+                  <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     ipsum dolor sit amet, consectetur
                   </p>
@@ -85,25 +85,25 @@ const ContenidoSecciones = (props) => {
         <div className="row mt-5">
           <div className="col-lg-4 col-md-6 col-12">
             <div className="p-1" style={bordeRadio}>
-              <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-              <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+              <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
+              <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 ipsum dolor sit amet, consectetur
               </p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} onClick={handleOpenModal} />
-            <Modal show={showModal} fullscreen={true} onHide={handleCloseModal} style={{
+            <Modal show={showModal} size={"xl"} onHide={handleCloseModal} style={{
               position: 'absolute',
               width: '100%',
               height: "100%",
             }}>
               <Modal.Header closeButton>
-                <Modal.Title>Modelo 3D</Modal.Title>
+                <Modal.Title>Modelo 3D 2 </Modal.Title>
               </Modal.Header>
               <Modal.Body >
-                <iframe title="id2" style={{ width: "100%", height: "40em", border: "1px solid #eeeeee" }} src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj"></iframe>
+              <iframe title="id3" src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj" style={{width:"100%",height:"700px",frameborder:"0"}}></iframe>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseModal}>
@@ -114,15 +114,15 @@ const ContenidoSecciones = (props) => {
             </Modal>
 
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>
-                  <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-                  <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+                  <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
+                  <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     ipsum dolor sit amet, consectetur
                   </p>
@@ -134,25 +134,25 @@ const ContenidoSecciones = (props) => {
         <div className="row mt-5">
           <div className="col-lg-4 col-md-6 col-12">
             <div className="p-1" style={bordeRadio}>
-              <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-              <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+              <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
+              <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 ipsum dolor sit amet, consectetur
               </p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} onClick={handleOpenModal} />
-            <Modal show={showModal} fullscreen={true} onHide={handleCloseModal} style={{
+            <Modal show={showModal} size={"xl"} onHide={handleCloseModal} style={{
               position: 'absolute',
               width: '100%',
               height: "100%",
             }}>
               <Modal.Header closeButton>
-                <Modal.Title>Modelo 3D </Modal.Title>
+                <Modal.Title>Modelo 3D 3 </Modal.Title>
               </Modal.Header>
               <Modal.Body >
-              <iframe title="id3" src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj" style={{width:"100%",height:"600px",frameborder:"0"}}></iframe>
+              <iframe title="id3" src="https://3dviewer.net/#model=https://vitplanet.com/3d/test.obj" style={{width:"100%",height:"700px",frameborder:"0"}}></iframe>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseModal}>
@@ -163,15 +163,15 @@ const ContenidoSecciones = (props) => {
             </Modal>
 
           </div>
-          <div className="col-lg-2 col-md-3 col-6">
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>
-                  <h5 className="text-danger mx-md-5 text-start">{props.seccion}</h5>
-                  <p className="text-start mx-md-5" style={{ color: "#11215D" }}>
+                  <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
+                  <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     ipsum dolor sit amet, consectetur
                   </p>

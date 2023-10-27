@@ -78,6 +78,9 @@ const Example = () => {
   return (
     <>
       <div className="container text-center">
+      <div className="container">
+          <h3 className="text-white text-center mb-5">Nuestra historia</h3>
+        </div>
         <Slider {...settings}>
           {sliderData.map((item, index) => (
             <div key={index}  className="fechas slider-fechas">

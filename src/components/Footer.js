@@ -6,7 +6,7 @@ const Footer = () =>{
     return(
         <>
        
-       <footer className="footer mt-auto py-3 bg-light" style={{ borderTopLeftRadius: "40px", borderTopRightRadius: "40px" }}>
+       <footer className="footer mt-auto py-3 " style={{ borderTopLeftRadius: "40px", borderTopRightRadius: "40px",backgroundColor:"#DEECFA" }}>
   <div className="container text-center text-md-start mt-2 text-primary">
     <div className="row mt-3">
       <div className="col-md-6 col-lg-3 col-xl-2 mx-auto mb-4">

@@ -2,10 +2,9 @@
     background-color: rgba(218, 235, 241, 0.3);
     width: 5em;
     height: 16em;
+    border-radius: 10px !important;
+    box-shadow: rgb(152 152 159 / 75%) -1px 0px 46px 7px;
+    
     
 }
 
-.fecha{
-    background-color: rgba(74, 135, 204, 0.897);
-    
-}

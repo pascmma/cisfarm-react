@@ -13,6 +13,8 @@ import {AiOutlineLike} from "react-icons/ai"
 import Correccion from "./CorreccionTest";
 import ContenidoCursoMetanima from "./ContenidoCursoMetanima";
 import background from "../imagenes/back_metanima_curso.png";
+import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
+import { BsPersonSquare } from "react-icons/bs";
 
 const estilo = {
     display:"inline-block",
@@ -116,49 +118,19 @@ const CursoMetanima = ()=>{
     alignItems: "start",
     color: "blue",
   };
+
+  const estiloResponsive = {
+    fontSize: "70%", // Tamaño de fuente más pequeño para pantallas pequeñas
+  };
+
     return(
       
         <>
                    <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
-      <Header/>
-        <VideoMetanima/>
-        <br/><br/><br/>
-        <div className="container ">
-        
       
-        <div className=" row display-1  m-3  ">
-                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className="pb-3 px-4  rounded-circle " style={estilo}>
-                        <AiOutlineLike/>
-                    </div>
-                    <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}>Valoraciones buenas</h4>
-                    <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.valoracion} </p>
-                </div>
-                <div className="col-3 d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-                        <BiBookReader/>
-                    </div>
-                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}>Estudiantes</h4>
-                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.estudiantes}</p>
+        <VideoMetanima/>
+        
 
-                </div>
-                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-                        <GiUpgrade/>
-                    </div>
-                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}> Nivel</h4>
-                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.nivel}</p>
-                </div>
-                <div className="col-3  d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className=" pb-3 px-4 rounded-circle" style={estilo}>
-                        <GiSpeaker/>
-                    </div>
-                        <h4 className="text-warning m-4" style={{ fontSize: "0.3em" }}> Idioma</h4>
-                        <p className="lead text-white" style={{ fontSize: "0.3em" }}>{dataCurso.idioma}</p>
-                </div>
-            </div>
-            </div>
-     
 
 
 
@@ -236,9 +208,9 @@ const CursoMetanima = ()=>{
           <div className="col-12 d-md-none">
                   {/* Esta imagen se muestra solo en pantallas pequeñas */}
                   <div className="circulo " style={{ ...circleStyle, maxWidth: "21em", maxHeight: "20em" }}>
-              <h1 className="display-6 text-white mt-3">Matricúlate</h1>
+              <h1 className="text-white mt-5" style={{fontSize:"1.5em"}}>Matricúlate</h1>
               <div style={{ textAlign: "center" }}>
-                <div className="my-3">
+                <div className="my-2">
                   <input
                     type="text"
                     className="p-1"
@@ -269,7 +241,7 @@ const CursoMetanima = ()=>{
                   />
                 </div>
                 <Correccion />
-                <button className="btn btn-primary bg-secondary">Enviar</button>
+                <button className="btn btn-primary bg-secondary  p-0"  style={{width:"25%",marginTop:"-1.5em"}} >Enviar</button>
               </div>
             </div>
             </div>
@@ -285,20 +257,35 @@ const CursoMetanima = ()=>{
           <div className="m-5 text-white px-5" style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}}>
             <div className="p-4">
             <h4 className="fs-5">Costo</h4>
-            <h3 className="fs-1">$ 129.00</h3>
+            <h3 className="display-5"> S/129.00</h3>
             </div>
           </div>
           <div>
-            <h3>duracion</h3>
-            <h4>14,2horas</h4>
-            <hr />
-            <h3>Lecciones</h3>
-            <h4>9 sesiones</h4>
-            <hr />
-            <h3>Modalidad</h3>
-            <h4>Online</h4>
-            <hr />
-          </div>
+              <div className="d-flex align-items-center">
+                <PiClockCounterClockwiseBold className="display-3 mx-4" style={{color:"#D1A900"}} />
+                <div>
+                  <h3 className="text-primary">duracion</h3>
+                  <h4 className="text-primary">{data.duracion}</h4>
+                </div>
+              </div>
+              
+              <div className="d-flex align-items-center">
+                <PiVideoDuotone className="  display-3 mx-4" style={{color:"#D1A900"}} />
+                <div>
+                  <h3 className="text-primary">Lecciones</h3>
+                  <h4 className="text-primary">{data.lecciones}</h4>
+                </div>
+              </div>
+              
+              <div className="d-flex align-items-center">
+                <BsPersonSquare className="display-3 mx-4" style={{color:"#D1A900"}} />
+                <div>
+                  <h3 className="text-primary">Modalidad</h3>
+                  <h4 className="text-primary">{data.modalidad}</h4>
+                </div>
+              </div>
+              
+            </div>
         </div>
         <div className="col-sm " style={styleAbout}>
             <div className="mt-5" style={{width:"70%",textAlign:"justify"}}>
@@ -347,9 +334,9 @@ const CursoMetanima = ()=>{
           </ul>
         </div>
         <div className="col-sm" style={styleAbout}>
-            <div className="border" style={{width:"70%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}} >
+            <div className="border" style={{width:"70%",height:"100%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}} >
           <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
-          <p className="text-white m-4" style={{textAlign:"justify", fontSize:"0.9rem"}}>
+          <p className="text-white m-4" style={{textAlign:"justify", fontSize:"1em"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

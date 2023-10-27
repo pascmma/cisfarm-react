@@ -1,6 +1,6 @@
 // Menu-inicio
 
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import Footer from "./Footer";
 import Casos from "./Casos";
@@ -12,22 +12,31 @@ import Footer2 from "./Footer2";
 import Correccion from "./CorreccionTest";
 import Modelo from "./Modelo";
 import background from '../imagenes/back_inicio.png';
-
+import {useSpring,animated, a} from 'react-spring';
+import { Fade } from "react-reveal";
+import {data} from '../objetos/ObjetoInicio';
 
 
 function Inicio() {
+  
+
+
+
   return (
     <>
       <div className="" style={{backgroundImage:`url(${background})`}}>
         <Header/>
-        <TituloInicio/>
+        <Fade>
+        <TituloInicio datos={data}/>
 
-        <CardSlider className="my-3"/>
         
-        <Casos/>
+
+        <CardSlider datos={data} className="my-3"/>
+        
+        <Casos datos={data}/>
        
        
-        <Bord/>
+        <Bord datos={data}/>
         
 
         <Footer />
@@ -35,10 +44,10 @@ function Inicio() {
         <Footer2/>
 
         </div>
+        </Fade>
         </div>
         
 
-        
          
       
     

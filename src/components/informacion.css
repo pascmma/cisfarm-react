@@ -1,12 +1,13 @@
 .difuminado {
     margin-left: 10em;
     background-color: rgba(37, 116, 185, 0.3); /* Cambia el valor del canal alfa (0.6) para hacerlo más transparente */
-    border-radius: 20px;
+    border-radius: 40px;
     width: 22em;
-    height: 16em;
-    position: relative;
+    height: 18em;
+    position: relative !important;
     margin-left: auto; /* Establece el margen izquierdo a automático */
     margin-right: auto; /* Establece el margen derecho a automático */
+    
 }
 
 .difuminado-content {
@@ -18,6 +19,8 @@
     background-image: radial-gradient(circle, rgba(0, 123, 255, 0.6), transparent); /* Cambia el valor del canal alfa (0.6) para hacerlo más transparente */
     border-radius: inherit;
     padding: 2em; /* Añade un relleno para separar el texto de los bordes */
-    text-align: justify;
+    text-align: left;
+    
+    
 
 }
