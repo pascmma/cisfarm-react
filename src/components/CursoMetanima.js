@@ -142,12 +142,12 @@ const CursoMetanima = ()=>{
             <br/>
             <br/>
             <br/>
-            <h2 className="text-primary">Aprende mas en el campo de los mecanismos en accion en 3D </h2>
+            <h2 className="text-primary text-center">Aprende mas en el campo de los mecanismos en accion en 3D </h2>
             <br/>
             <br/>
             <br/>
             <br/>
-            <br/>
+            <br/> 
             <br/>
             <div className="container">
   <div className="row ">
@@ -264,7 +264,7 @@ const CursoMetanima = ()=>{
               <div className="d-flex align-items-center">
                 <PiClockCounterClockwiseBold className="display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
-                  <h3 className="text-primary">duracion</h3>
+                  <h3 className="text-primary"><strong>Duracion</strong></h3>
                   <h4 className="text-primary">{data.duracion}</h4>
                 </div>
               </div>
@@ -272,7 +272,7 @@ const CursoMetanima = ()=>{
               <div className="d-flex align-items-center">
                 <PiVideoDuotone className="  display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
-                  <h3 className="text-primary">Lecciones</h3>
+                  <h3 className="text-primary"><strong>Lecciones</strong></h3>
                   <h4 className="text-primary">{data.lecciones}</h4>
                 </div>
               </div>
@@ -280,15 +280,15 @@ const CursoMetanima = ()=>{
               <div className="d-flex align-items-center">
                 <BsPersonSquare className="display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
-                  <h3 className="text-primary">Modalidad</h3>
+                  <h3 className="text-primary"><strong>Modalidad</strong></h3>
                   <h4 className="text-primary">{data.modalidad}</h4>
                 </div>
               </div>
               
             </div>
         </div>
-        <div className="col-sm " style={styleAbout}>
-            <div className="mt-5" style={{width:"70%",textAlign:"justify"}}>
+        <div className="col" style={styleAbout}>
+            <div className="mt-5" style={{width:"80%",textAlign:"justify", marginLeft:"1.3em"}}>
             <br/>
           <h2 className="">Acerca del curso</h2>
           <br/>

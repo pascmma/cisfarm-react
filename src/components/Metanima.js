@@ -235,7 +235,7 @@ const Metanima = () => {
                   <button
                     type="button"
                     className="btn btn-primary"
-                    style={{ marginLeft: "35%", borderRadius: "20px" }}
+                    style={{ marginLeft: "2em", borderRadius: "20px" }}
                   >
                     Ver mas
                   </button>

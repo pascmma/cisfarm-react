@@ -1,138 +1,115 @@
-import React, {useState} from "react";
-
-import "../components/contenedor.css";
+import React, { useState } from "react";
+import { Row, Tab, Nav, Col } from "react-bootstrap";
+import "../estilos/menuSeccionMetanima.css";
 const contenido = [
-    {
-        id:1,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
-    {
-        id:2,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
-    {
-        id:3,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
-    {
-        id:4,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
-    {
-        id:5,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
-    {
-        id:6,
-        tema: "Nombre del tema",
-        detalle: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor.`
-    },
+  {
+    id: 1,
+    tema: "SECCION 1",
+    detalle:[
+      {topico:"Nombre del topico1"},
+      {topico:"Nombre del topico1"},
+      {topico:"Nombre del topico1"},
+      {topico:"Nombre del topico1"},
+      {topico:"Nombre del topico1"},
+      {topico:"Nombre del topico1"},
+    ],
+  },
+  {
+    id: 2,
+    tema: "SECCION II",
+    detalle:[
+      {topico:"Nombre del topico2"},
+      {topico:"Nombre del topico2"},
+      {topico:"Nombre del topico2"},
+      {topico:"Nombre del topico2"},
+      {topico:"Nombre del topico2"},
+      {topico:"Nombre del topico2"},
+    ],
+  },
+  {
+    id: 3,
+    tema: "SECCION III",
+    detalle:[
+      {topico:"Nombre del topico3"},
+      {topico:"Nombre del topico3"},
+      {topico:"Nombre del topico3"},
+      {topico:"Nombre del topico3"},
+      {topico:"Nombre del topico3"},
+      {topico:"Nombre del topico3"},
+    ],
+  },
+  {
+    id: 4,
+    tema: "SECCION IV",
+    detalle:[
+      {topico:"Nombre del topico4"},
+      {topico:"Nombre del topico4"},
+      {topico:"Nombre del topico4"},
+      {topico:"Nombre del topico4"},
+      {topico:"Nombre del topico4"},
+      {topico:"Nombre del topico4"},
+    ],
+  },
+  {
+    id: 5,
+    tema: "SECCION V",
+    detalle:[
+      {topico:"Nombre del topico5"},
+      {topico:"Nombre del topico5"},
+      {topico:"Nombre del topico5"},
+      {topico:"Nombre del topico5"},
+      {topico:"Nombre del topico5"},
+      {topico:"Nombre del topico5"},
+    ],
+  },
 ];
 
 const style = {
-    backgroundColor: `#201761`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  
+  backgroundColor: `#201761`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
 };
 
-const ContenidoCursoMetanima = () =>{
-    const [activeTab, setActiveTab] = useState('home-vertical');
+const ContenidoCursoMetanima = () => {
+  
+  
 
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
-  };
+  return (
+    <div className="container" >
+      <Tab.Container id="left-tabs-example" defaultActiveKey="1">
+        <Row>
+          <Col xs={4} sm={2} >
+            <Nav variant="pills" className="flex-column">
+              {contenido.map((item) => (
+                <div>
+                  <Nav.Item >
+                    <Nav.Link eventKey={item.id}  className="seccion text-black" >{item.tema}</Nav.Link>
+                  </Nav.Item>
+                </div>
+              ))}
 
-    
-    return(
-        <>
-            <br/><br/><br/>
-            <div className="container border mt-20">
-      <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
-        <div className="tab-vertical">
-          <ul className="nav nav-tabs" id="myTab3" role="tablist">
-            <li className={`nav-item ${activeTab === 'home-vertical' ? 'active' : ''}`}>
-              <a
-                className="nav-link"
-                id="home-vertical-tab"
-                onClick={() => handleTabClick('home-vertical')}
-              >
-                Seccion1
-              </a>
-            </li>
-            <li className={`nav-item ${activeTab === 'profile-vertical' ? 'active' : ''}`}>
-              <a
-                className="nav-link"
-                id="profile-vertical-tab"
-                onClick={() => handleTabClick('profile-vertical')}
-              >
-                Seccion2
-              </a>
-            </li>
-            <li className={`nav-item ${activeTab === 'contact-vertical' ? 'active' : ''} `} style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%) !important"}}>
-              <a
-                className="nav-link"
-                id="contact-vertical-tab"
-                onClick={() => handleTabClick('contact-vertical')}
-              >
-                Seccion3
-              </a>
-            </li>
-            <li className={`nav-item ${activeTab === 'section-vertical' ? 'active' : ''}`}>
-              <a
-                className="nav-link"
-                id="section-vertical-tab"
-                onClick={() => handleTabClick('section-vertical')}
-              >
-                Seccion4
-              </a>
-            </li>
-          </ul>
-          <div className="tab-content" id="myTabContent3">
-            <div className={`tab-pane ${activeTab === 'home-vertical' ? 'active' : ''}`} id="home-vertical" role="tabpanel">
-              <h3 >Seccion 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis.
-              </p>
-            </div>
-            <div className={`tab-pane ${activeTab === 'profile-vertical' ? 'active' : ''}`} id="profile-vertical" role="tabpanel">
-              <h3>Seccion 2 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
-            </div>
-            <div className={`tab-pane ${activeTab === 'contact-vertical' ? 'active' : ''}`} id="contact-vertical" role="tabpanel">
-              <h3>Seccion 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
-            </div>
-            <div className={`tab-pane ${activeTab === 'section-vertical' ? 'active' : ''}`} id="contact-vertical" role="tabpanel">
-              <h3>Seccion 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. At consectetur lorem donec massa. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Molestie nunc non blandit massa enim nec dui nunc mattis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Augue eget arcu dictum varius duis..</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Nav>
+          </Col>
+          <Col xs={8}sm={10}>
+            <Tab.Content className="">
+              {contenido.map((item)=>(
+
+                  <Tab.Pane style={{backgroundColor:"#121636"}} className="text-white p-4"  key={item.id} eventKey={item.id}>
+                    {item.detalle.map((detalle)=>(
+                      <ul>
+                        <li>{detalle.topico}</li>
+                      </ul>
+                    ))}
+                  </Tab.Pane>
+                
+              ))}
+              
+            </Tab.Content>
+          </Col>
+        </Row>
+      </Tab.Container>
     </div>
-    <br/><br/>
-
-            
-        </>
-    );
-}
+  );
+};
 
 export default ContenidoCursoMetanima;

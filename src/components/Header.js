@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import logo from "../imagenes/img3.png";
 import './header.css';
 import { IoMenu } from 'react-icons/io5';
+import metanimaLogo from "../imagenes/metanimaLogo.png";
 
 const Header = (props) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false); // submenu metanima
   const [subMenuCursos, setSubMenuCursos] = useState(false); // submenu cursos
   const [submenuAcademia, setSubMenuAcademia] = useState(false); //submenu academia
+  const [logoMetanima, setLogoMetanima] = useState(false); //cambio de logo por metanima
 
 
   const handleNavToggle = () => {
@@ -32,6 +34,11 @@ const handleAcademia = () =>{
     setIsSubMenuOpen(!isSubMenuOpen);
     setSubMenuAcademia(false);
     setSubMenuCursos(false);
+    handleMetanimaLogo();
+    
+  };
+  const handleMetanimaLogo = () => {
+    setLogoMetanima(!logoMetanima);
   };
 
   const styleMenu = {
@@ -80,7 +87,7 @@ const handleAcademia = () =>{
       <div className="container " >
         <nav className="navbar navbar-expand-lg navbar-light "  >
           <Link to="/cisfarm-react" className="nav-item nav-link text-white ">
-            <img className="" style={{ width: "30%", }} src={logo} alt="Logo" />
+            <img className="" style={{ width: "30%", }} src={logoMetanima? metanimaLogo : logo} alt="Logo" />
           </Link>
           <button
             className="navbar-toggler border-0 ms-auto"
@@ -158,7 +165,7 @@ const handleAcademia = () =>{
                 <h6 className=" sobre px-3 py-2">Metanima </h6>
 
                 <div className="sub-menu  m-2 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
-                  <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white">Metanima</Link>
+                  <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}} >Metanima</Link>
                   <br />
                   <Link to="/cisfarm-react/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>
                   {/* Agrega más enlaces de cursos según sea necesario */}

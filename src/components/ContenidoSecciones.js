@@ -34,7 +34,7 @@ const ContenidoSecciones = (props) => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="p-1" style={bordeRadio}>
               <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:"1.5em"}}  >{props.seccion}</h5>
               <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
@@ -43,7 +43,7 @@ const ContenidoSecciones = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto" >
+          <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto " >
             <img className="rounded " src={imagen} style={imagenes} onClick={handleOpenModal} />
             <Modal show={showModal} size={"xl"} onHide={handleCloseModal} style={{
               position: 'absolute',
@@ -68,7 +68,7 @@ const ContenidoSecciones = (props) => {
           <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>
@@ -83,7 +83,7 @@ const ContenidoSecciones = (props) => {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="p-1" style={bordeRadio}>
               <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
               <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
@@ -117,7 +117,7 @@ const ContenidoSecciones = (props) => {
           <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>
@@ -132,7 +132,7 @@ const ContenidoSecciones = (props) => {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="p-1" style={bordeRadio}>
               <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
               <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
@@ -166,7 +166,7 @@ const ContenidoSecciones = (props) => {
           <div className="col-lg-2 col-md-3 col-6 my-auto mx-auto">
             <img className="rounded" src={imagen} style={imagenes} />
           </div>
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-4 col-md-6 col-6">
             <div className="col ">
               <div>
                 <div className="p-1" style={bordeRadio}>

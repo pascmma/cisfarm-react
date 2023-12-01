@@ -252,7 +252,7 @@ const PaginaEnafb = () => {
           <br />
 
           <div className="container">
-            <div className="row m-5 p-3 ">
+            <div className="row m-5 p-1 ">
               <div className="col">
                 <h4 className="text-warning">
                   ¿Que es el SERUMS y por que es importarte?
@@ -496,7 +496,7 @@ const PaginaEnafb = () => {
                         ...circleStyle,
                         maxWidth: "22em",
                         maxHeight: "22em",
-                        marginTop:"3em"
+                        marginTop:"3emNA"
                       }}
                     >
                       <h1 className="text-white mt-5">Matricúlate</h1>

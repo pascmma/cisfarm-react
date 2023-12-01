@@ -1,0 +1,14 @@
+.seccion:focus {
+    background-color: rgb(167, 116, 22) !important;
+    color: black !important;
+    
+}
+.seccion:active{
+    background-color: rgb(167, 116, 22) !important;
+    color: black !important;
+}
+
+.nav-pills .nav-link.active{
+    background-color:  rgb(167, 116, 22) !important;
+    color: white !important;
+}
