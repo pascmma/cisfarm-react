@@ -439,10 +439,7 @@ const PaginaEnafb = () => {
                               borderRadius: "50px",
                               backgroundImage:
                                 "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)",
-                              "::placeholder": "white",
-                              "::placeholder": {
-                                color: "#00000",
-                              },
+                              
                             }}
                             placeholder="Nombres y Apellidos"
                             aria-label="nombre"
@@ -452,7 +449,7 @@ const PaginaEnafb = () => {
                         <div className="my-3 ">
                           <input
                             type="text"
-                            className="p-3 my-input"
+                            className="p-3 my-input text-white"
                             style={{
                               textAlign: "center",
                               width: "60%",
@@ -468,7 +465,7 @@ const PaginaEnafb = () => {
                         <div className="my-3">
                           <input
                             type="text"
-                            className="p-3"
+                            className="p-3 text-white"
                             style={{
                               textAlign: "center",
                               width: "60%",

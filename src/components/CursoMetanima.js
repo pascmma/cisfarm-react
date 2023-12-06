@@ -173,7 +173,7 @@ const CursoMetanima = ()=>{
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-3"
+                    className="p-3 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Nombres y Apellidos"
                     aria-label="nombre"
@@ -183,7 +183,7 @@ const CursoMetanima = ()=>{
                 <div className="my-3 ">
                   <input
                     type="text"
-                    className="p-3"
+                    className="p-3 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Correo Electrónico"
                     aria-label="correo"
@@ -193,7 +193,7 @@ const CursoMetanima = ()=>{
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-3"
+                    className="p-3 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)" }}
                     placeholder="Teléfono y/o Celular"
                     aria-label="telefono"
@@ -213,7 +213,7 @@ const CursoMetanima = ()=>{
                 <div className="my-2">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em" }}
                     placeholder="Nombres y Apellidos"
                     aria-label="nombre"
@@ -223,7 +223,7 @@ const CursoMetanima = ()=>{
                 <div className="my-3 ">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
                     placeholder="Correo Electrónico"
                     aria-label="correo"
@@ -233,7 +233,7 @@ const CursoMetanima = ()=>{
                 <div className="my-3">
                   <input
                     type="text"
-                    className="p-1"
+                    className="p-1 text-white"
                     style={{ textAlign: "center", width: "60%", borderRadius: "50px", backgroundImage: "linear-gradient(270deg, rgba(0,103,224,0.9864320728291317) 37%, rgba(183,198,205,0.14049369747899154) 100%)", fontSize:"0.9em " }}
                     placeholder="Teléfono y/o Celular"
                     aria-label="telefono"
@@ -311,7 +311,7 @@ const CursoMetanima = ()=>{
       <br/><br/><br/><br/>
       <div className="container">
       <div className="row bg-white m-1">
-        <div className="col-sm m-1 ">
+        <div className="col-sm m-1" style={{paddingTop:"3em"}}>
           <h1 className="text-primary text-start mb-4"style={{marginLeft:"5%"}} >Beneficios</h1>
           <br/>
           

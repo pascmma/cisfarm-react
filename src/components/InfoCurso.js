@@ -233,9 +233,9 @@ const InfoCurso = () => {
       <br />
       <br /><br /><br /><br />
 
-      <div className="container">
+      <div className="container ">
         <div className="row bg-white m-1">
-          <div className="col-sm m-1 ">
+          <div className="col-sm m-1 " style={{paddingTop:"3em"}}>
             <h1 className="text-primary text-start mb-4" style={{ marginLeft: "5%" }} >Beneficios</h1>
             <br />
 

@@ -39,7 +39,7 @@ const Valoraciones = () => {
           <div className="pb-2 px-3 rounded-circle" style={{ ...estilo  }}>
             <AiOutlineLike />
           </div>
-          <h4 className="text-white mt-4 mb-4" style={{ fontSize: "0.3em" }}>
+          <h4 className="text-white mt-5 mb-4" style={{ fontSize: "0.3em" }}>
             Valoraciones buenas
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
@@ -50,7 +50,7 @@ const Valoraciones = () => {
           <div className="pb-2 px-3 rounded-circle " style={{ ...estilo,  }}>
             <BiBookReader />
           </div>
-          <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+          <h4 className="text-white m-4 mt-5" style={{ fontSize: "0.3em" }}>
             Estudiantes
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
@@ -61,7 +61,7 @@ const Valoraciones = () => {
           <div className="pb-2 px-3 rounded-circle" style={{ ...estilo,  }}>
             <GiUpgrade />
           </div>
-          <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+          <h4 className="text-white m-4 mt-5" style={{ fontSize: "0.3em" }}>
             Nivel
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
@@ -72,7 +72,7 @@ const Valoraciones = () => {
           <div className="py-1 px-3 rounded-circle" style={{ ...estilo,  }}>
             <GiSpeaker />
           </div>
-          <h4 className="text-white m-4" style={{ fontSize: "0.3em" }}>
+          <h4 className="text-white m-4 mt-5" style={{ fontSize: "0.3em" }}>
             Idioma
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Row, Tab, Nav, Col } from "react-bootstrap";
 import "../estilos/menuSeccionMetanima.css";
+
 const contenido = [
   {
     id: 1,
