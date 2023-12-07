@@ -90,7 +90,7 @@ const Bord = () => {
               <div className="col-lg-7 col-md-6 col-sm-12  d-flex justify-content-center align-items-center">
                 <img
                   src={slide.imagen}
-                  className="" style={{maxWidth:"22em"}}
+                  className="" style={{maxWidth:window.innerWidth <480 ? '100%' : '22em'}}
                   alt={`slide-${index}`}
                 />
               </div>

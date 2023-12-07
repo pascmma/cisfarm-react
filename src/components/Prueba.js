@@ -232,10 +232,10 @@ const Prueba = () => {
 
 
 
-          <div className="container border ">
+          <div className="container ">
             <div className="row">
               {noticias.map((noticia, index) => (
-                <div key={index} className="col-12 col-md-3 border ">
+                <div key={index} className="col-12 col-md-3  ">
                   <div
                     className="card my-3 mx-auto  "
                     style={{

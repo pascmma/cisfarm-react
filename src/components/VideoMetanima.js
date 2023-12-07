@@ -14,8 +14,8 @@ const VideoMetanima = () => {
               <div className="container">
                 <div className="col">
       <Header />
-                  <h1 className="display-1">Curso1 </h1>
-                  <h1 className="display-1">Metamina</h1>
+                  <h1 className="display-1 text-center">Curso1 </h1>
+                  <h1 className="display-1 text-center">Metamina</h1>
                 </div>
               </div>
               <div className="d-flex justify-content-center">

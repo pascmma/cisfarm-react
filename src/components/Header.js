@@ -165,7 +165,7 @@ const handleAcademia = () =>{
                 <h6 className=" sobre px-3 py-2">Metanima </h6>
 
                 <div className="sub-menu  m-2 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
-                  <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}} >Metanima</Link>
+                  <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}}>Metanima</Link>
                   <br />
                   <Link to="/cisfarm-react/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>
                   {/* Agrega más enlaces de cursos según sea necesario */}

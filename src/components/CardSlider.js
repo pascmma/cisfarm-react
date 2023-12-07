@@ -35,7 +35,9 @@ const CardSlider = () => {
         breakpoint: 420,
         settings: {
           slidesToShow:1,
-          infinite:true
+          infinite:true,
+          slidesToScroll:1,
+          arrows:false
         },
       },
     ],

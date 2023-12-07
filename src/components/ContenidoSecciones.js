@@ -71,7 +71,7 @@ const ContenidoSecciones = (props) => {
           <div className="col-lg-4 col-md-6 col-6">
             <div className="col ">
               <div>
-                <div className="p-1" style={bordeRadio}>
+                <div className="p-2" style={bordeRadio}>
                   <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:"1.5em"}}>{props.seccion}</h5>
                   <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -84,7 +84,7 @@ const ContenidoSecciones = (props) => {
         </div>
         <div className="row mt-5">
           <div className="col-lg-4 col-md-6 col-6">
-            <div className="p-1" style={bordeRadio}>
+            <div className="p-2" style={bordeRadio}>
               <h5 className="text-danger mx-md-5 text-start py-2 px-3" style={{fontSize:'1.5em'}}>{props.seccion}</h5>
               <p className="text-start mx-md-5 p-2" style={{ color: "#11215D" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

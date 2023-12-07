@@ -75,14 +75,14 @@ function Menu() {
             <div className="col-lg-4 col-md-6 col-sm-12 my-3 ">
               <div className="" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
                 <Link to="/cisfarm-react/enafb" style={{textDecoration:"none"}}>
-                  <h1 className="card-title p-3 text-white " >Repaso-ENAFB</h1>
+                  <h1 className="card-title p-3 text-white text-center" >Repaso-ENAFB</h1>
                 </Link>
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-12 my-3">
               <div className="" style={{ background: "linear-gradient(180deg, rgba(141,143,161,1) 0%, rgba(183,198,205,0.4430147058823529) 67%)", backdropFilter: "blur(10px)", borderRadius: "20px", border: "1px solid white" }}>
                 <Link to="/cisfarm-react/residentado" style={{textDecoration:"none"}}>
-                  <h1 className="card-title p-3 text-white">Repaso-RESIDENTADO</h1>
+                  <h1 className="card-title p-3 text-white text-center">Repaso-RESIDENTADO</h1>
                 </Link>
 
               </div>
