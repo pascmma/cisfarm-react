@@ -2,6 +2,7 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://cisfarm.org/",
   "dependencies": {
     "@google/model-viewer": "^3.2.1",
     "@react-three/drei": "^9.83.9",

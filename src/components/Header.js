@@ -5,6 +5,11 @@ import './header.css';
 import { IoMenu } from 'react-icons/io5';
 import metanimaLogo from "../imagenes/metanimaLogo.png";
 
+// importar objetso para ver el tamano
+import {data} from '../objetos/ObjetoCursoFarmacologia';
+
+
+
 const Header = (props) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false); // submenu metanima
@@ -86,7 +91,7 @@ const handleAcademia = () =>{
     <>
       <div className="container " >
         <nav className="navbar navbar-expand-lg navbar-light "  >
-          <Link to="/cisfarm-react" className="nav-item nav-link text-white ">
+          <Link to="/" className="nav-item nav-link text-white ">
             <img className="" style={{ width: "30%", }} src={logoMetanima? metanimaLogo : logo} alt="Logo" />
           </Link>
           <button
@@ -103,12 +108,12 @@ const handleAcademia = () =>{
 
           >
             <div className="navbar-nav">
-              <Link to="/cisfarm-react" className="nav-item nav-link text-white  ">
+              <Link to="/" className="nav-item nav-link text-white  ">
                 <h6 className=" sobre pt-2 pb-1 px-4  "> Inicio</h6>
 
               </Link>
               <Link
-                to="/cisfarm-react/Quienes"
+                to="/Quienes"
                 className="nav-item nav-link text-white   "
 
               >
@@ -127,12 +132,15 @@ const handleAcademia = () =>{
                 <h6 className="px-3 py-2 sobre">Cursos </h6>
 
                 <div className="sub-menu  m-2 p-3" style={{...subMenuStyleCursos, position:"absolute"}}>
-                  <Link to="/cisfarm-react/cursos" className="sub-menu-item text-white">Farmacología</Link>
-                  <br />
-                  <Link to="/cisfarm-react/cursos" className="sub-menu-item text-white">Curso 1</Link>
-                  <br/>
-                  <Link to="/cisfarm-react/cursos" className="sub-menu-item text-white">Curso 2</Link>
-                  {/* Agrega más enlaces de cursos según sea necesario */}
+                {
+                  data.map((item,index)=>(
+                    <div>
+                      <Link to={`/cursos/${item.titulo1}`} className="sub-menu-item text-white">{item.titulo1}</Link>
+                    </div>
+                  ))
+                }
+
+
                 </div>
               </span>
 
@@ -146,11 +154,11 @@ const handleAcademia = () =>{
                 <h6 className=" sobre px-3 py-2" style={{whiteSpace:"nowrap"}}>Academia Q.F. </h6>
 
                 <div className="sub-menu  m-2 p-3" style={{...subMenuStyleQuienes,position:"absolute"}}>
-                  <Link to="/cisfarm-react/enafb" className="sub-menu-item text-white">ENAFB</Link>
+                  <Link to="/enafb" className="sub-menu-item text-white">ENAFB</Link>
                   <br />
-                  <Link to="/cisfarm-react/residentado" className="sub-menu-item text-white">Residentado</Link>
+                  <Link to="/residentado" className="sub-menu-item text-white">Residentado</Link>
                   <br/>
-                  <Link to="/cisfarm-react/menu" className="sub-menu-item text-white">Academia QF</Link>
+                  <Link to="/menu" className="sub-menu-item text-white">Academia QF</Link>
                   {/* Agrega más enlaces de cursos según sea necesario */}
                 </div>
               </span>
@@ -164,15 +172,15 @@ const handleAcademia = () =>{
               >
                 <h6 className=" sobre px-3 py-2">Metanima </h6>
 
-                <div className="sub-menu  m-2 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
-                  <Link to="/cisfarm-react/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}}>Metanima</Link>
+                <div className="sub-menu m-2 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
+                  <Link to="/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}}>Metanima</Link>
                   <br />
-                  <Link to="/cisfarm-react/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>
+                  <Link to="/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>
                   {/* Agrega más enlaces de cursos según sea necesario */}
                 </div>
               </span>
               <Link
-                to="/cisfarm-react/Blogs"
+                to="/Blogs"
                 className="nav-item nav-link text-white"
               >
                 <h6 className=" sobre px-3 py-2">Blogs </h6>
@@ -187,3 +195,4 @@ const handleAcademia = () =>{
 };
 
 export default Header;
+// 

@@ -77,6 +77,7 @@ const Metanima = () => {
           centerPadding:"1px",
           slidesToShow: 1,
           infinite: true,
+          arrows:false
         
         }
       }
@@ -248,7 +249,10 @@ const Metanima = () => {
       </div>
       
       <Footer />
+      
       <Footer2 />
+
+      
     </>
   )
 };

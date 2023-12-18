@@ -18,6 +18,7 @@ const Example = () => {
         settings:{
           slidesToShow:1,
           infinite:true,
+          arrows:false
           
         }
       }

@@ -136,6 +136,7 @@ function MenuCardSlider() {
         settings:{
           slidesToShow:1,
           infinite:true,
+          arrows:false
           
         }
       }

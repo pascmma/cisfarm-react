@@ -149,6 +149,7 @@ const Prueba = () => {
           centerPadding: "70px",
           slidesToShow: 1,
           infinite: true,
+          arrows:false
         },
       },
     ],

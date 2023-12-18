@@ -27,20 +27,20 @@ function Inicio() {
       <div className="" style={{backgroundImage:`url(${background})`}}>
         <Header/>
         <Fade>
-        <TituloInicio datos={data}/>
+        <TituloInicio datos={data[0]}/>
 
         
 
-        <CardSlider datos={data} className="my-3"/>
+        <CardSlider datos={data[0]} className="my-3"/>
         
-        <Casos datos={data}/>
+        <Casos datos={data[0]}/>
        
        
-        <Bord datos={data}/>
+        <Bord datos={data[0]}/>
         
 
         <Footer />
-        <div className="bg-white">
+        <div style={{backgroundColor:"#DEECFA"}}>
         <Footer2/>
 
         </div>

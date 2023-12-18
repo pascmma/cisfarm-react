@@ -31,12 +31,12 @@ const gradientBackgroundStyle2 = {
   zIndex: -1
 };
 
-function Cursos() {
+function Cursos(props) {
   return (
     <>
     <div className="" style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}} >
      
-      <Video>
+      <Video datosObjeto={props.datos}>
    
       </Video>
     

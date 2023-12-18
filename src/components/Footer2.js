@@ -6,6 +6,7 @@ import {FaFacebook,FaTwitter,FaYoutube,FaInstagram,FaTiktok} from 'react-icons/f
 
 const Footer2 = () =>{
     return(
+      <div style={{backgroundColor:"#DEECFA"}}>
         <footer className="footer p-5" style={{ borderTopLeftRadius: "60px", borderTopRightRadius: "60px", background: "#091e40" }}>
 
 <div className="row">
@@ -34,7 +35,7 @@ const Footer2 = () =>{
 
 
 </footer>
-
+</div>
     );
 }
 

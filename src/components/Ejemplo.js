@@ -56,6 +56,7 @@ const settings = {
             centerPadding: "1px",
             slidesToShow: 1,
             infinite: true,
+            arrows:false
           
         },
     },

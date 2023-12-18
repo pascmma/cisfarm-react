@@ -10,6 +10,7 @@ import Metanima from './components/Metanima';
 import CursoMetanima from './components/CursoMetanima';
 import PaginaEnafb from './components/PaginaEnafb';
 import PaginaResidentado from './components/PaginaResidentado';
+import {data} from './objetos/ObjetoCursoFarmacologia';
 
 
 function App() {
@@ -21,16 +22,21 @@ function App() {
       
       
         <Routes>
-          <Route path='/cisfarm-react' element={<Inicio/>}></Route>
-          <Route path='/cisfarm-react/Quienes' element={<Quienes/>} ></Route>
-          <Route path='/cisfarm-react/Menu' element={<Menu/>} ></Route>
-          <Route path='/cisfarm-react/Cursos' element={<Cursos/>}></Route>
-          <Route path='/cisfarm-react/Metanima/metanima' element={<Metanima/>}></Route>
-          <Route path='/cisfarm-react/Metanima/curso1' element={<CursoMetanima/>}></Route>
+          <Route path='/' element={<Inicio/>}></Route>
+          <Route path='/Quienes' element={<Quienes/>} ></Route>
+          <Route path='/Menu' element={<Menu/>} ></Route>
+          <Route path='/Metanima/metanima' element={<Metanima/>}></Route>
+          <Route path='/Metanima/curso1' element={<CursoMetanima/>}></Route>
 
-          <Route path='/cisfarm-react/Blogs' element={<Blogs/>}></Route>
-          <Route path='/cisfarm-react/enafb' element={<PaginaEnafb/>}></Route>
-          <Route path='/cisfarm-react/residentado' element={<PaginaResidentado/>}></Route>
+          {data.map((item,index)=>(
+            
+
+              <Route path={`/Cursos/${item.titulo1}`} element={<Cursos datos={data[index]}/>}></Route>
+            
+          ))}
+          <Route path='/Blogs' element={<Blogs/>}></Route>
+          <Route path='/enafb' element={<PaginaEnafb/>}></Route>
+          <Route path='/residentado' element={<PaginaResidentado/>}></Route>
           
 
         </Routes>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Row, Tab, Nav, Col } from "react-bootstrap";
+import { FaPlay } from "react-icons/fa";
+
 import "../estilos/menuSeccionMetanima.css";
 
 const contenido = [
@@ -84,7 +86,8 @@ const ContenidoCursoMetanima = () => {
               {contenido.map((item) => (
                 <div>
                   <Nav.Item >
-                    <Nav.Link eventKey={item.id}  className="seccion text-black" >{item.tema}</Nav.Link>
+                    <Nav.Link eventKey={item.id}  className="seccion text-black text-center text-wrap" style={{borderTopLeftRadius: "30px",
+        borderTopRightRadius: "30px",}} >{item.tema}</Nav.Link>
                   </Nav.Item>
                 </div>
               ))}
@@ -97,12 +100,12 @@ const ContenidoCursoMetanima = () => {
 
                   <Tab.Pane style={{backgroundColor:"#121636"}} className="text-white p-4"  key={item.id} eventKey={item.id}>
                     {item.detalle.map((detalle)=>(
-                      <ul>
-                        <li>{detalle.topico}</li>
+                      <ul style={{ listStyleType: 'none' }}>
+                        <li> <FaPlay style={{color:"rgb(167, 116, 22)"}}/> {detalle.topico}</li>
                       </ul>
                     ))}
                   </Tab.Pane>
-                
+                 
               ))}
               
             </Tab.Content>

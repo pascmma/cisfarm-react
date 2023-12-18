@@ -4,7 +4,7 @@ import "./backgrounds.css";
 import Header from "./Header";
 import Valoraciones from "./Valoraciones";
 
-const Video = () => {
+const Video = (props) => {
   return (
     <>
       <div className="bg-curso-video ">    
@@ -14,8 +14,8 @@ const Video = () => {
               <div className="container">
                 <div className="col text-center">
       <Header />
-                  <h1 className="display-1">Farmacologia</h1>
-                  <h1 className="display-1">Cardiovascular</h1>
+                  <h1 className="display-1">{props.datosObjeto.titulo1}</h1>
+                  <h1 className="display-1">{props.datosObjeto.titulo2}</h1>
                 </div>
               </div>
               <div className="d-flex justify-content-center">

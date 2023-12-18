@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import Header from "./Header";
@@ -16,6 +16,11 @@ import { BsPersonSquare } from "react-icons/bs";
 import ContenidoCurso from "./ContenidoCurso";
 import Beneficios from "./Beneficios";
 import { Fade } from "react-reveal";
+import { IoPlay } from "react-icons/io5";
+
+
+
+
 
 const estilo = {
   display: "inline-block",
@@ -94,6 +99,7 @@ const estiloResponsive = {
 };
 
 const PaginaResidentado = () => {
+  const [selected, setSelected] = useState("superintensivo");
   const estilo = {
     display: "inline-block",
     color: "#D1A900",
@@ -160,6 +166,55 @@ const PaginaResidentado = () => {
                   RESIDENTADO
                 </h1>
                 <h1 className="display-2 text-warning">2024</h1>
+                <div style={{borderLeft:"4px solid #82682f", height:"8em", overflowY:""}}>
+                <div className="row" >
+                  
+                  <div className=" col-md-8" >
+                    <h1
+                      className={`text-${
+                        selected === "superintensivo" ? "warning" : "muted"
+                      } user-select-none`}
+                      onClick={() => setSelected("superintensivo")}
+                      style={{ color: selected === "superintensivo" ? "yellow" : "#ffffff" }}
+
+                    >
+                      <IoPlay/> 
+                      SUPERINTENSIVO
+                    </h1>
+                  </div>
+                  <div
+                    className={`col-md-3 ${
+                      selected === "superintensivo" ? "d-block" : "d-none"
+                    }`}
+                  >
+                    <h4 className="text-center" style={boton}>
+                      14 de Septiembre
+                    </h4>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-8">
+                    <h1
+                      className={`text-${
+                        selected === "intensivo" ? "warning" : "muted"
+                      } user-select-none`}
+                      onClick={() => setSelected("intensivo")}
+                    >
+                      <IoPlay/> 
+                      INTENSIVO
+                    </h1>
+                  </div>
+                  <div
+                    className={`col-md-3 ${
+                      selected === "intensivo" ? "d-block" : "d-none"
+                    }`}
+                  >
+                    <h4 className="text-center" style={boton}>
+                      14 de Septiembre
+                    </h4>
+                  </div>
+                </div>
+                </div>
               </div>
               <div className="col-md-4">
                 <div className="col-sm ">

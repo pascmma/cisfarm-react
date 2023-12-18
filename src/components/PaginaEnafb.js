@@ -16,6 +16,8 @@ import imagenFondo from "../imagenes/back_enafb.png";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
 import ContenidoCurso from "./ContenidoCurso";
+import { IoPlay } from "react-icons/io5";
+
 
 const estilo = {
   display: "inline-block",
@@ -161,15 +163,19 @@ const PaginaEnafb = () => {
                   SERUMS
                 </h1>
                 <h1 className="display-3 text-warning">ENAFB 2024-I</h1>
-
-                <div className="row  ">
-                  <div className=" col-md-8 ">
+              <div style={{borderLeft:"4px solid #82682f", height:"8em", overflowY:""}}>
+                <div className="row" >
+                  
+                  <div className=" col-md-8" >
                     <h1
                       className={`text-${
                         selected === "superintensivo" ? "warning" : "muted"
                       } user-select-none`}
                       onClick={() => setSelected("superintensivo")}
+                      style={{ color: selected === "superintensivo" ? "yellow" : "#ffffff" }}
+
                     >
+                      <IoPlay/> 
                       SUPERINTENSIVO
                     </h1>
                   </div>
@@ -191,6 +197,7 @@ const PaginaEnafb = () => {
                       } user-select-none`}
                       onClick={() => setSelected("intensivo")}
                     >
+                      <IoPlay/> 
                       INTENSIVO
                     </h1>
                   </div>
@@ -203,6 +210,7 @@ const PaginaEnafb = () => {
                       14 de Septiembre
                     </h4>
                   </div>
+                </div>
                 </div>
               </div>
 
