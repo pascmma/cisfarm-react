@@ -60,12 +60,12 @@ const casosData = [
   },
 
 ];
-const Casos = () => {
+const Casos = (props) => {
   return (
     <>
       <br /><br /><br /><br /><br /><br />
       <Carousel>
-        {casosData.map((item, index) => (
+        {props.datos.casos.map((item, index) => (
           <Carousel.Item>
 
             <div className="container my-4 " style={{ backgroundImage: "linear-gradient(270deg, rgba(23,31,105,1) 0%, rgba(0,176,255,1) 100%)" }}>
@@ -79,7 +79,7 @@ const Casos = () => {
                   <p className="text-white text-xs" style={{fontSize:"1.3em", textAlign:"justify"}}>{item.parrafo}</p>
                 </div>
                 <div className="col-12 col-sm-4" >
-                  <img src={item.imagen} style={{width:"48vh !important", height:"47vh !important", boxShadow:" 5px 5px 10px rgba(0, 0, 0, 0.3)"}} className="img-fluid " />
+                  <img src={require(`../assets/${item.imagen}`)} style={{width:"48vh !important", height:"47vh !important", boxShadow:" 5px 5px 10px rgba(0, 0, 0, 0.3)"}} className="img-fluid " />
 
                 </div>
 

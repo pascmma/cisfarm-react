@@ -13,7 +13,7 @@ import imagenAsesor5 from "../assets/ASESORES/Nelber_Fernandez Flores.png";
 import imagen6 from "../imagenes/img6.png";
 import Slider from "react-slick";
 
-const Bord = () => {
+const Bord = (props) => {
   const data = [
     {
       imagen: imagenAsesor1,
@@ -85,12 +85,12 @@ const Bord = () => {
       <br />
       <br />
       <Slider {...settings} className="container">
-        {data.map((slide, index) => (
+        {props.datos.bord.map((slide, index) => (
           <div className="bord-1">
             <div className="row" >
               <div className="col-lg-7 col-md-6 col-sm-12  d-flex justify-content-center align-items-center">
                 <img
-                  src={slide.imagen}
+                  src={require(`../assets/ASESORES/${slide.imagen}`)}
                   className="" style={{maxWidth:window.innerWidth <480 ? '100%' : '22em'}}
                   alt={`slide-${index}`}
                 />

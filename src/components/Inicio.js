@@ -1,6 +1,6 @@
 // Menu-inicio
 
-import React, { useState } from "react";
+import React from "react";
 import "./nav.css";
 import Footer from "./Footer";
 import Casos from "./Casos";
@@ -9,10 +9,7 @@ import CardSlider from "./CardSlider";
 import Header from "./Header";
 import TituloInicio from "./TituloInicio";
 import Footer2 from "./Footer2";
-import Correccion from "./CorreccionTest";
-import Modelo from "./Modelo";
 import background from '../imagenes/back_inicio.png';
-import {useSpring,animated, a} from 'react-spring';
 import { Fade } from "react-reveal";
 import {data} from '../objetos/ObjetoInicio';
 
