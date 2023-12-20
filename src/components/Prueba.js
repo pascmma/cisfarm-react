@@ -1,94 +1,19 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import imagen from "../imagenes/img16.png";
+import imagen from "../assets/imagenes/img16.png";
 import Slider from "react-slick";
 
-const Prueba = () => {
-  const estilos = {
-    maxHeight: "200px",
-    height: "400px",
-    width: "400px",
-    border: "1px  solid #eee",
-    padding: "5px",
-    overflowY: "auto",
-  };
-
-  const data = [
-    {
-      img: imagen,
-      titulo: "titulo de la noticia",
-      contenido: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Lorem
-      ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.Lorem
-      ipsum`,
-    },
-    {
-      img: imagen,
-      titulo: "Titulo de la noticia",
-      contenido: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Lorem
-      ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.Lorem
-      ipsum`,
-    },
-    {
-      img: imagen,
-      titulo: "Titulo de la noticia",
-      contenido: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Lorem
-      ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.Lorem
-      ipsum`,
-    },
-    {
-      img: imagen,
-      titulo: "Titulo de la noticia",
-      contenido: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Lorem
-      ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.Lorem
-      ipsum`,
-    },
-  ];
-
+const Prueba = (props) => {
+  
   const noticias = [
     {
       img: imagen,
       nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
+      dia:"",
+      mes:"",
+      anio:"",
+      categoria:""
+      
     },
     {
       img: imagen,
@@ -126,11 +51,6 @@ const Prueba = () => {
       fecha: "Fecha de lanzamiento",
     },
   ];
-
-  const estilo = {
-    backgrounImage:
-      "linear-gradient(270deg, rgba(0,26,137,1) 3%, rgba(0,104,225,1) 62%)",
-  };
 
   const settings = {
     className: "center",
@@ -165,13 +85,13 @@ const Prueba = () => {
         }}
       >
         <Carousel>
-          {data.map((slide, index) => (
+          {props.datos.noticias.map((item, index) => (
             <Carousel.Item key={index}>
               <div className="container ">
                 <div className="row my-5">
                   <div className="col-md-6">
                     <img
-                      src={slide.img}
+                      src={require(`../assets/imagenes/${item.img}`)}
                       style={{
                         borderRadius: "90px",
                         height: "100%",
@@ -183,9 +103,9 @@ const Prueba = () => {
                   </div>
                   <div className="col-md-6 rounded d-flex align-items-center">
                     <div>
-                      <h1 className="text-start text-white">{slide.titulo}</h1>
+                      <h1 className="text-start text-white">{item.titulo}</h1>
                       <p className="lead text-white text-start my-5">
-                        {slide.contenido}
+                        {item.contenido}
                       </p>
                     </div>
                   </div>
@@ -235,7 +155,7 @@ const Prueba = () => {
 
           <div className="container ">
             <div className="row">
-              {noticias.map((noticia, index) => (
+              {props.datos.posts.map((item, index) => (
                 <div key={index} className="col-12 col-md-3  ">
                   <div
                     className="card my-3 mx-auto  "
@@ -247,7 +167,7 @@ const Prueba = () => {
                   >
                     <div className="card-body">
                       <img
-                        src={imagen}
+                        src={require(`../assets/imagenes/${item.img}`)}
                         style={{
                           width: "90%",
                           height: "60%",
@@ -255,10 +175,14 @@ const Prueba = () => {
                         }}
                       />
                       <h6 className="card-subtitle my-2 text-primary text-start">
-                        {noticia.nombre}
+                        {item.nombre}
                       </h6>
                       <p className="card-text text-start text-primary">
-                        {noticia.fecha}
+                        
+                        Fecha
+                        <br/>
+                        {item.mes} {item.anio}
+
                       </p>
                       <button
                         type="button"
@@ -281,7 +205,7 @@ const Prueba = () => {
 
       <div className="container ">
         <Slider {...settings}>
-          {noticias.map((item, index) => (
+          {props.datos.posts.map((item, index) => (
             <div className="col ">
               <div
                 className="card my-3 mx-auto"
@@ -289,12 +213,12 @@ const Prueba = () => {
                   width: "13em",
                   height: "25em",
                   borderRadius: "50px",
-                  border: "solid blue 13px",
+                  border: 'solid blue 13px',
                 }}
               >
                 <div className="card-body">
                   <img
-                    src={imagen}
+                    src={require(`../assets/imagenes/${item.img}`)}
                     style={{
                       width: "100%",
                       height: "50%",
@@ -302,10 +226,12 @@ const Prueba = () => {
                     }}
                   />
                   <h6 className="card-subtitle my-2 text-primary text-start">
-                    Nombre completo de la noticia1
+                    {item.nombre}
                   </h6>
                   <p className="card-text text-start text-primary">
-                    Fecha de lanzamiento{" "}
+                    Fecha
+                    <br/>
+                    {item.mes} {item.anio}
                   </p>
                   <button
                     type="button"

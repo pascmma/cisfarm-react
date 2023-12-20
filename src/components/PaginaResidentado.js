@@ -10,35 +10,20 @@ import { GiSpeaker, GiUpgrade } from "react-icons/gi";
 import { AiOutlineLike } from "react-icons/ai";
 import Correccion from "./CorreccionTest";
 
-import imagenFondo from "../imagenes/back_enafb.png";
+import imagenFondo from "../assets/imagenes/back_enafb.png";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
 import ContenidoCurso from "./ContenidoCurso";
 import Beneficios from "./Beneficios";
 import { Fade } from "react-reveal";
 import { IoPlay } from "react-icons/io5";
+import {data} from "../objetos/ObjetoAcademiaResidentado";
 
 
 
 
 
-const estilo = {
-  display: "inline-block",
-  color: "#000000",
-};
 
-const data = {
-  costo: "$ 129",
-  duracion: "14,2 horas",
-  lecciones: "9 lecciones",
-  modalidad: "online y ritmo",
-  acerca:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  beneficios:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-  requisitos:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-};
 
 const containerStyle = {
   position: "relative",
@@ -165,7 +150,7 @@ const PaginaResidentado = () => {
                 >
                   RESIDENTADO
                 </h1>
-                <h1 className="display-2 text-warning">2024</h1>
+                <h1 className="display-2 text-warning">{data.periodo}</h1>
                 <div style={{borderLeft:"4px solid #82682f", height:"8em", overflowY:""}}>
                 <div className="row" >
                   
@@ -188,7 +173,7 @@ const PaginaResidentado = () => {
                     }`}
                   >
                     <h4 className="text-center" style={boton}>
-                      14 de Septiembre
+                      {data.inicioSuper}
                     </h4>
                   </div>
                 </div>
@@ -201,7 +186,7 @@ const PaginaResidentado = () => {
                       onClick={() => setSelected("intensivo")}
                     >
                       <IoPlay/> 
-                      INTENSIVO
+                      {data.inicioIntesivo}
                     </h1>
                   </div>
                   <div
@@ -210,7 +195,7 @@ const PaginaResidentado = () => {
                     }`}
                   >
                     <h4 className="text-center" style={boton}>
-                      14 de Septiembre
+                      15 de Septiembre
                     </h4>
                   </div>
                 </div>
@@ -235,7 +220,7 @@ const PaginaResidentado = () => {
                           {" "}
                           <strong>Duración </strong>
                         </h3>
-                        <h4 className="text-white">14.2 horas</h4>
+                        <h4 className="text-white">{data.duracion}</h4>
                       </div>
                     </div>
                     <hr />
@@ -245,7 +230,7 @@ const PaginaResidentado = () => {
                         <h3 className="text-primary">
                           <strong>Lecciones </strong>
                         </h3>
-                        <h4 className="text-white">9 sesiones</h4>
+                        <h4 className="text-white">{data.lecciones}</h4>
                       </div>
                     </div>
                     <hr />
@@ -255,7 +240,7 @@ const PaginaResidentado = () => {
                         <h3 className="text-primary">
                           <strong>Modalidad</strong>
                         </h3>
-                        <h4 className="text-white">Online y a tu ritmo</h4>
+                        <h4 className="text-white">{data.modalidad}</h4>
                       </div>
                     </div>
                     <hr />
@@ -275,13 +260,10 @@ const PaginaResidentado = () => {
             <div className="row m-5 p-1 ">
               <div className="col">
                 <h4 className="text-warning">
-                  ¿Que es el SERUMS y por que es importarte?
+                  {data.preguntaResidentado}
                 </h4>
                 <p className="lead text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {data.respuestaResidentado}
                 </p>
               </div>
               <div className="col-1 ">
@@ -291,12 +273,9 @@ const PaginaResidentado = () => {
                 ></div>
               </div>
               <div className="col">
-                <h4 className="text-warning">Metodologia de ensenanza</h4>
+                <h4 className="text-warning">{data.metodologia}</h4>
                 <p className="lead text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {data.metodologiaDetalle}
                 </p>
               </div>
             </div>
@@ -363,7 +342,7 @@ const PaginaResidentado = () => {
           </div>
 
           <div className="row bg-white">
-            <Ejemplo />
+            <Ejemplo datos={data} />
             <div style={{ backgroundColor: "transparent" }}>
               <br />
               <br />
@@ -376,7 +355,7 @@ const PaginaResidentado = () => {
               <br />
               <br />
 
-              <Beneficios />
+              <Beneficios datos ={data} />
 
               <div className="container">
                 <div className="row ">
@@ -386,7 +365,7 @@ const PaginaResidentado = () => {
                         className="text-primary text-start"
                         style={{ fontSize: "2.5em" }}
                       >
-                        ¿Por qué estudiar en Residentado?
+                        {data.preguntaAcademiaResidentado}
                       </h3>
                       <br />
                       <br />
@@ -394,15 +373,7 @@ const PaginaResidentado = () => {
                         className="lead text-primary "
                         style={{ textAlign: "justify" }}
                       >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.Lorem ipsum
+                        {data.respuestaAcademiaResidentado}
                       </p>
                     </div>
                   </div>
@@ -469,7 +440,7 @@ const PaginaResidentado = () => {
                             aria-describedby="basic-addon1"
                           />
                         </div>
-                        <Correccion />
+                        <Correccion datos={data} />
                         <button className="btn btn-primary bg-secondary">
                           Enviar
                         </button>
@@ -539,7 +510,7 @@ const PaginaResidentado = () => {
                             aria-describedby="basic-addon1"
                           />
                         </div>
-                        <Correccion />
+                        <Correccion datos={data} />
                         <button className="btn btn-primary bg-secondary">
                           Enviar
                         </button>
@@ -556,14 +527,13 @@ const PaginaResidentado = () => {
                 <br />
                 <br />
                 <p className="lead text-center text-primary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {data.requisitos}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <ContenidoCurso titulo={"Cronograma"} />
+        <ContenidoCurso datos={data} titulo={"Cronograma"} />
         <Footer />
         <Footer2 />
       </Fade>

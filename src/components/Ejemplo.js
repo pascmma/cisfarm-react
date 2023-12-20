@@ -1,42 +1,6 @@
 import React from "react";
-
-import avatar from '../imagenes/sin_back.png';
 import Slider from 'react-slick'
 import { GrNext, GrPrevious } from "react-icons/gr";
-
-
-
-const dataDocentes = [
-    {
-        id: 1,
-        img: avatar,
-        nombre: "nombre del docente",
-        apellido: "apellidos del profesor",
-        profesion: "Quimico farmaceutico",
-    },
-    {
-        id: 1, 
-        img: avatar,
-        nombre: "nombre del docente",
-        apellido: "apellidos del profesor",
-        profesion: "Quimico farmaceutico",
-    },
-    {
-        id: 1,
-        img: avatar,
-        nombre: "nombre del docente",
-        apellido: "apellidos del profesor",
-        profesion: "Quimico farmaceutico",
-    },
-    {
-        id: 1,
-        img: avatar,
-        nombre: "nombre del docente",
-        apellido: "apellidos del profesor",
-        profesion: "Quimico farmaceutico",
-    },
-];
-
 
 
 const settings = {
@@ -69,7 +33,7 @@ const settings = {
 
 
 
-const Ejemplo = () => {
+const Ejemplo = (props) => {
     return (
         <>
 
@@ -82,14 +46,14 @@ const Ejemplo = () => {
 
             <div className="container ">
                 <Slider {...settings} >
-                    {dataDocentes.map((item, index) => (
+                    {props.datos.docentes.map((item, index) => (
                         <div className="container ">
                             <div className="col text-center mx-auto">
-                                <img  className="my-5 bg-primary " style={{ width: '20em', height:"20em",borderRadius:"50%", margin:'auto' }} src={item.img} />
+                                <img  className="my-5 bg-primary " style={{ width: '20em', height:"20em",borderRadius:"50%", margin:'auto' }} src={require(`../assets/imagenes/${item.imagen}`)} />
                                 
                                 <h4 className="text-primary">{item.nombre}</h4>
-                                <h5 className="text-primary">{item.apellido} </h5>
-                                <p className="text-warning">{item.profesion} </p>
+                                <h5 className="text-primary">{item.apellidos} </h5>
+                                <p className="text-warning">{item.titulo} </p>
                                 
 
                             </div>

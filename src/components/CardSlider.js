@@ -1,27 +1,10 @@
 import React, { useState } from "react";
-import imagen16 from "../imagenes/img16.png";
-import imagen10 from "../imagenes/img10.png";
 import Slider from "react-slick";
-import imagen8 from "../imagenes/img8.png";
 import "./contenedor.css";
-import imagen1 from "../imagenes/sliderInicio1/1.png";
-import imagen2 from "../imagenes/sliderInicio1/2.png";
-import imagen3 from "../imagenes/sliderInicio1/3.png";
-import imagen4 from "../imagenes/sliderInicio1/4.png";
-import imagen5 from "../imagenes/sliderInicio1/5.png";
-import imagen6 from "../imagenes/sliderInicio1/6.png";
 
-//${index === 2 ? "slick-inicio-slick-center" : ""}
-
-const imagenes = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6];
-
-
+ 
 const CardSlider = (props) => {
   const [activo, setActivo] = useState(0);
-  
-  props.datos.eventos.map((evento,index)=>{
-    console.log(`../imagenes/sliderInicio1/${evento.imagen}`);
-  })
   const settings = {
     className: "center",
     centerMode: true,
@@ -72,7 +55,7 @@ const CardSlider = (props) => {
             >
               <div className="image-container">
                 <img
-                  src={require(`../imagenes/sliderInicio1/${item.imagen}`)}
+                  src={require(`../assets/imagenes/sliderInicio1/${item.imagen}`)}
                   className=""
                   style={{
                     borderRadius: "30px",

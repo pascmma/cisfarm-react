@@ -1,25 +1,25 @@
 
   .bg-image{
-    background-image: url('../assets/background.png');
+    background-image: url('../assets/imagenes/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     
   }
 
   .bg-image-cursos{
-    background-image: url('../imagenes/img5.png');
+    background-image: url('../assets/imagenes/img5.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
   
   .bg-image-cursos2{
-    background-image: url('../imagenes/img4.png');
+    background-image: url('../assets/imagenes/img4.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .bg-image-qa{
-    background-image: url('../imagenes/img9.png');
+    background-image: url('../assets/imagenes/img9.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -27,7 +27,7 @@
 
 
 .bg-image-card {
-  background-image: url('../assets/card3.png');
+  background-image: url('../assets/imagenes/card3.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -65,7 +65,7 @@
 
 /*Imagen de casos*/
 .bg-image-casos{
-  background-image: url('../assets/card1.png');
+  background-image: url('../assets/imagenes/card1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

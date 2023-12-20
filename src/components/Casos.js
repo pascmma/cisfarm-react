@@ -1,65 +1,11 @@
 import React from "react";
-import card1 from '../assets/card1.png';
-import card2 from '../assets/card2.png'; // Import additional images as needed
+import card1 from '../assets/imagenes/card1.png';
+import card2 from '../assets/imagenes/card2.png'; // Import additional images as needed
 import { Carousel, CarouselItem } from "react-bootstrap";
-import imagen7 from '../imagenes/img7Recortada.png';
-import imagenCaso1 from '../assets/Alicia Esmeralda Triviños Ancachi.png';
-import imagenCaso2 from '../assets/Robert Anthony Dietz Maravi.png';
-import imagenCaso3 from '../assets/Ruth Jenny Lucas Vargas.png';
+import imagen7 from '../assets/imagenes/img7Recortada.png';
 
-const casosData = [
-  {
-    id: 1,
-    texto: "Actualmente contamos con el 40% de ingresantes en los primeros puestos ",
-    parrafo: `Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.`,
-    imagen: imagenCaso1,
-    puesto: "1",
-    dimi:"er",
-    nombres: " Nombres y",
-    apellidos: "Apellidos ",
-    especialidad: "Quimico farmaceutico",
-  },
-  {
-    id: 2,
-    texto: "Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
-    parrafo: `Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.`,
-    imagen: imagenCaso2,
-    puesto: "1",
-    dimi:"er",
-    nombres: " Nombres y",
-    apellidos: "apellidos",
-    especialidad: "Quimico farmaceutico",
 
-  },
-  {
-    id: 2,
-    texto: "Actualmente contamos con el 50% de ingresantes en los primeros puestos ",
-    parrafo: `Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.`,
-    imagen: imagenCaso3,
-    puesto: "1",
-    dimi:"er",
-    nombres: " Nombres y",
-    apellidos: "apellidos",
-    especialidad: "Quimico farmaceutico",
 
-  },
-
-];
 const Casos = (props) => {
   return (
     <>
@@ -79,7 +25,7 @@ const Casos = (props) => {
                   <p className="text-white text-xs" style={{fontSize:"1.3em", textAlign:"justify"}}>{item.parrafo}</p>
                 </div>
                 <div className="col-12 col-sm-4" >
-                  <img src={require(`../assets/${item.imagen}`)} style={{width:"48vh !important", height:"47vh !important", boxShadow:" 5px 5px 10px rgba(0, 0, 0, 0.3)"}} className="img-fluid " />
+                  <img src={require(`../assets/imagenes/${item.imagen}`)} style={{width:"48vh !important", height:"47vh !important", boxShadow:" 5px 5px 10px rgba(0, 0, 0, 0.3)"}} className="img-fluid " />
 
                 </div>
 

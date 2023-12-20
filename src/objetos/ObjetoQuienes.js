@@ -1,3 +1,5 @@
+// objeto de pagina de queines somos
+
 const data = {
     cisfarm:"CISFARM",
     titulo:"Texto informativo sobre la pagina",
@@ -5,7 +7,7 @@ const data = {
     parrafo:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`,
     
     //nuestra historia
-
+ 
     historia:[
         {
             dia:"dia",
@@ -55,21 +57,21 @@ const data = {
 
     staff:[
         {
-            imagen:"path de la imagen",
+            imagen:"sin_back.png",
             cargo:"CEO",
-            nombres:"Nombre",
+            nombres:"Nombres",
             apellidos:"Apellidos",
             parrafo:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `
         },
         {
-            imagen:"path de la imagen",
+            imagen:"sin_back.png",
             cargo:"COO",
             nombres:"Nombre",
             apellidos:"Apellidos",
             parrafo:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `
         },
         {
-            imagen:"path de la imagen",
+            imagen:"sin_back.png",
             cargo:"Coordinador",
             nombres:"Nombre",
             apellidos:"Apellidos",
@@ -88,19 +90,19 @@ const data = {
                     parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                     usuarios:[
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
@@ -112,19 +114,19 @@ const data = {
                     parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                     usuarios:[
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
@@ -141,19 +143,19 @@ const data = {
                     parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                     usuarios:[
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
@@ -165,19 +167,19 @@ const data = {
                     parrafo:`lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                     usuarios:[
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",
                         },
                         {
-                            imagenUsuario: "path de la imagen",
+                            imagenUsuario: "sin_back.png",
                             cargoUsuario: "Director",
                             nombresUsuario: "Nombres y Apellidos",
                             areaUsuario: "Area",

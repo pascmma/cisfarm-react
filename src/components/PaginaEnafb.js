@@ -12,30 +12,19 @@ import { GiSpeaker, GiUpgrade } from "react-icons/gi";
 import { AiOutlineLike } from "react-icons/ai";
 import Correccion from "./CorreccionTest";
 
-import imagenFondo from "../imagenes/back_enafb.png";
+import imagenFondo from "../assets/imagenes/back_enafb.png";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
 import ContenidoCurso from "./ContenidoCurso";
 import { IoPlay } from "react-icons/io5";
 
+import {data} from '../objetos/ObjetoAcademiaEnafb';
 
 const estilo = {
   display: "inline-block",
   color: "#000000",
 };
 
-const data = { 
-  costo: "$ 129",
-  duracion: "14,2 horas",
-  lecciones: "9 lecciones",
-  modalidad: "online y ritmo",
-  acerca:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  beneficios:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-  requisitos:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-};
 
 const containerStyle = {
   position: "relative",
@@ -162,7 +151,7 @@ const PaginaEnafb = () => {
                 <h1 className="text-primary" style={{ fontSize: "5em" }}>
                   SERUMS
                 </h1>
-                <h1 className="display-3 text-warning">ENAFB 2024-I</h1>
+                <h1 className="display-3 text-warning">ENAFB {data.periodo}</h1>
               <div style={{borderLeft:"4px solid #82682f", height:"8em", overflowY:""}}>
                 <div className="row" >
                   
@@ -185,7 +174,8 @@ const PaginaEnafb = () => {
                     }`}
                   >
                     <h4 className="text-center" style={boton}>
-                      14 de Septiembre
+                      {data.inicioSuper}
+                      
                     </h4>
                   </div>
                 </div>
@@ -207,7 +197,7 @@ const PaginaEnafb = () => {
                     }`}
                   >
                     <h4 className="text-center" style={boton}>
-                      14 de Septiembre
+                      {data.inicioIntesivo}
                     </h4>
                   </div>
                 </div>
@@ -229,7 +219,7 @@ const PaginaEnafb = () => {
                     <PiClockCounterClockwiseBold className="text-white display-3 mx-4" />
                     <div>
                       <h3 className="text-primary"> <strong>Duración </strong></h3>
-                      <h4 className="text-white">14.2 horas</h4>
+                      <h4 className="text-white">{data.duracion}</h4>
                     </div>
                   </div>
                   <hr />
@@ -237,7 +227,7 @@ const PaginaEnafb = () => {
                     <PiVideoDuotone className="text-white display-3 mx-4" />
                     <div>
                       <h3 className="text-primary"><strong>Lecciones </strong></h3>
-                      <h4 className="text-white">9 sesiones</h4>
+                      <h4 className="text-white">{data.lecciones}</h4>
                     </div>
                   </div>
                   <hr />
@@ -245,7 +235,7 @@ const PaginaEnafb = () => {
                     <BsPersonSquare className="text-white display-3 mx-4" />
                     <div>
                       <h3 className="text-primary"><strong>Modalidad</strong></h3>
-                      <h4 className="text-white">Online y a tu ritmo</h4>
+                      <h4 className="text-white">{data.modalidad}</h4>
                     </div>
                   </div>
                   <hr />
@@ -265,13 +255,10 @@ const PaginaEnafb = () => {
             <div className="row m-5 p-1 ">
               <div className="col">
                 <h4 className="text-warning">
-                  ¿Que es el SERUMS y por que es importarte?
+                  {data.preguntaSerums}
                 </h4>
                 <p className="lead text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {data.respuestaSerums}
                 </p>
               </div>
 
@@ -283,12 +270,9 @@ const PaginaEnafb = () => {
               </div>
 
               <div className="col">
-                <h4 className="text-warning">Metodologia de ensenanza</h4>
+                <h4 className="text-warning">{data.metodologia}</h4>
                 <p className="lead text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {data.metodologiaDetalle}
                 </p>
               </div>
             </div>
@@ -355,7 +339,7 @@ const PaginaEnafb = () => {
           </div>
 
           <div className="row bg-white">
-            <Ejemplo />
+            <Ejemplo datos ={data} />
             <div style={{ backgroundColor: "transparent" }}>
               <br />
               <br />
@@ -368,7 +352,7 @@ const PaginaEnafb = () => {
               <br />
               <br />
 
-              <Beneficios />
+              <Beneficios datos={data} />
 
               <div className="container">
                 <div className="row ">
@@ -378,7 +362,7 @@ const PaginaEnafb = () => {
                         className="text-primary text-start"
                         style={{ fontSize: "2.5em" }}
                       >
-                        ¿Por qué estudiar en Academia Q.F.?
+                        {data.preguntaAcademia}
                       </h3>
                       <br />
                       <br />
@@ -386,15 +370,7 @@ const PaginaEnafb = () => {
                         className="lead text-primary "
                         style={{ textAlign: "justify" }}
                       >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.Lorem ipsum
+                        {data.respuestaAcademia}
                       </p>
                     </div>
                   </div>
@@ -458,7 +434,7 @@ const PaginaEnafb = () => {
                             aria-describedby="basic-addon1"
                           />
                         </div>
-                        <Correccion />
+                        <Correccion datos={data}/>
                         <button className="btn btn-primary bg-secondary">
                           Enviar
                         </button>
@@ -529,7 +505,7 @@ const PaginaEnafb = () => {
                             aria-describedby="basic-addon1"
                           />
                         </div>
-                        <Correccion />
+                        <Correccion datos={data} />
                         <button className="btn btn-primary bg-secondary">
                           Enviar
                         </button>
@@ -546,14 +522,13 @@ const PaginaEnafb = () => {
                 <br />
                 <br />
                 <p className="lead text-center text-primary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {data.requisitos}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <ContenidoCurso titulo={"Cronograma"} />
+        <ContenidoCurso datos={data} titulo={"Cronograma"} />
         <Footer />
         <Footer2 />
       </Fade>

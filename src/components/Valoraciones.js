@@ -3,7 +3,7 @@ import { BiBookReader } from "react-icons/bi";
 import { GiSpeaker, GiUpgrade } from "react-icons/gi";
 import { AiOutlineLike } from "react-icons/ai";
 
-const Valoraciones = () => {
+const Valoraciones = (props) => {
   const estilo = {
     display: "inline-block",
     fontSize: "80%",
@@ -43,7 +43,7 @@ const Valoraciones = () => {
             Valoraciones buenas
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
-            {dataCurso.valoracion}
+            {props.datos.valoraciones}
           </p>
         </div>
         <div className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center" style={{ fontSize: "1em",...(window.innerWidth <= 768 ? estiloResponsive : {}) }}>
@@ -54,7 +54,7 @@ const Valoraciones = () => {
             Estudiantes
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
-            {dataCurso.estudiantes}
+            {props.datos.estudiantes}
           </p>
         </div>
         <div className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center" style={{ fontSize: "1em",...(window.innerWidth <= 768 ? estiloResponsive : {}) }}>
@@ -65,7 +65,7 @@ const Valoraciones = () => {
             Nivel
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
-            {dataCurso.nivel}
+            {props.datos.nivel}
           </p>
         </div>
         <div className="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center text-center" style={{ fontSize: "1em",...(window.innerWidth <= 768 ? estiloResponsive : {}) }}>
@@ -76,7 +76,7 @@ const Valoraciones = () => {
             Idioma
           </h4>
           <p className="lead text-primary" style={{ fontSize: "0.3em" }}>
-            {dataCurso.idioma}
+            {props.datos.idioma}
           </p>
         </div>
       </div>

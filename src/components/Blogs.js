@@ -1,15 +1,14 @@
 import React from "react";
-import Bordtemp from "./Bordtemp";
 import "./nav.css";
-import imagen16 from "../imagenes/img16.png";
+
 import Footer from "./Footer";
 import Header from "./Header";
 import Prueba from "./Prueba";
 import Footer2 from "./Footer2";
-import img4 from "../imagenes/img4.png";
-import background from '../imagenes/back_blogs_edit.png';
-//import background from '../imagenes/back_inicio.png';
-import { Fade } from "react-reveal";
+
+import background from '../assets/imagenes/back_blogs_edit.png';
+import {data} from '../objetos/ObjetoBlogs';
+
 
 function Blogs() {
 
@@ -19,7 +18,7 @@ function Blogs() {
         <Header/>
 
 
-<Prueba/>
+<Prueba datos={data}/>
 </div>
     
       <Footer/>

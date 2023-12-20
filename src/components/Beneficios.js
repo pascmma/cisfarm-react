@@ -1,37 +1,12 @@
 import React from "react";
 
-const data = [
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-{
-    parrafo:`Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa`
-},
-];
-
-
-
-
-
-const Beneficios =() =>{
+const Beneficios =(props) =>{
     return(
         <>
        <div className="container mb-5">
       <h3 className="text-primary">Beneficios</h3>
       <div className="row" style={{marginRight:"3em"}}>
-        {data.map((item,  index) => (
+        {props.datos.beneficios.map((item,  index) => (
           <div
             className="col-md-4 col-sm-6 mb-3 mx-auto "
             

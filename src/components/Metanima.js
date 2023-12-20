@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import Header from './Header'
-import imagen from '../imagenes/img15.png';
+import imagen from '../assets/imagenes/img15.png';
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
-import Novedades from "./Novedades";
 import Slider from "react-slick";
 import Nav from 'react-bootstrap/Nav';
 import ContenidoSecciones from "./ContenidoSecciones";
-import background from '../imagenes/back_metanima.png';
+import background from '../assets/imagenes/back_metanima.png';
+import {data} from '../objetos/ObjetoMetanima';
 
 
 
@@ -15,49 +15,6 @@ const mitad = {
   width: "60%"
 };
 
-
-const noticias = [
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-  {
-    img: imagen,
-    nombre: "nombre completo de la noticia",
-    fecha: "Fecha de lanzamiento",
-  },
-];
 
 
 const Metanima = () => {
@@ -104,16 +61,14 @@ const Metanima = () => {
       
       <div className="d-flex justify-content-center">
       <div className="display-1 mt-5">
-        Soñar es crear
+        {data.titulo}
       </div>
       </div>
       <br /><br />
-      <p className="lead text-primary" style={{textAlign:"center"}} >Estudio de animacion </p>
+      <p className="lead text-primary" style={{textAlign:"center"}} >{data.estudio} </p>
       <div className="d-flex justify-content-center ">
         <br />
-        <p className="lead text-start" style={mitad}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p className="lead text-start" style={mitad}> {data.parrafo}</p>
 
       </div>
       <br />
@@ -186,11 +141,11 @@ const Metanima = () => {
   </Nav.Item>
 </Nav>
 
-      {/* Contenido de cada sección */}
-      {activeTab === 'SECCION I' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion1"}/></div>}
-      {activeTab === 'SECCION II' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion2"}/></div>}
-      {activeTab === 'SECCION III' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion3"}/></div>}
-      {activeTab === 'SECCION IV' && <div className="mt-5"> <ContenidoSecciones seccion={"seccion4"}/></div>}
+      {/* Contenido de cada sección, para crear nuevas secciones copiar un activeTab */}
+      {activeTab === 'SECCION I' && <div className="mt-5"> <ContenidoSecciones datos={data} seccion={"seccion1"}/></div>}
+      {activeTab === 'SECCION II' && <div className="mt-5"> <ContenidoSecciones datos={data} seccion={"seccion2"}/></div>}
+      {activeTab === 'SECCION III' && <div className="mt-5"> <ContenidoSecciones datos={data} seccion={"seccion3"}/></div>}
+      {activeTab === 'SECCION IV' && <div className="mt-5"> <ContenidoSecciones  datos={data} seccion={"seccion4"}/></div>}
     </div>
     </div>
       <br /><br />
@@ -207,7 +162,7 @@ const Metanima = () => {
       </div>
       <div className="container ">
         <Slider {...settings}>
-          {noticias.map((item, index) => (
+          {data.novedades.map((item, index) => (
             <div className="col ">
               <div
                 className="card my-3 mx-auto"
@@ -215,12 +170,12 @@ const Metanima = () => {
                   width: "13em",
                   height: "25em",
                   borderRadius: "50px",
-                  border: "solid blue 13px",
+                  border: `solid ${index%2 === 0 ? '#825a16 13px' :'blue 13px' }`,
                 }}
               >
                 <div className="card-body">
                   <img
-                    src={imagen}
+                    src={require(`../assets/imagenes/${item.img}`)}
                     style={{
                       width: "100%",
                       height: "50%",
@@ -228,10 +183,10 @@ const Metanima = () => {
                     }}
                   />
                   <h6 className="card-subtitle my-2 text-primary text-start">
-                    Nombre completo de la noticia1
+                    {item.nombre}
                   </h6>
                   <p className="card-text text-start text-primary">
-                    Fecha de lanzamiento{" "}
+                    {item.fecha}
                   </p>
                   <button
                     type="button"

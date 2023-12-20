@@ -1,9 +1,10 @@
 import React from "react";
 import './footer2.css';
-import logo from '../imagenes/img3.png';
+import logo from '../assets/imagenes/img3.png';
 import {FaFacebook,FaTwitter,FaYoutube,FaInstagram,FaTiktok} from 'react-icons/fa';
+import { dataf } from "../objetos/ObjetoFooter";
 
-
+// Segunfo footer que contiene informacion como los terminos y condiciones 
 const Footer2 = () =>{
     return(
       <div style={{backgroundColor:"#DEECFA"}}>
@@ -17,19 +18,37 @@ const Footer2 = () =>{
 
   <div className="col-12 col-md-5 text-info " style={{ textAlign: "justify" }}>
     <ul>
-      <li style={{ fontSize: "0.9rem" }}>Términos y condiciones</li>
-      <li style={{ fontSize: "0.9rem" }}>Metodología de enseñanza</li>
-      <li style={{ fontSize: "0.9rem" }}>Política de privacidad</li>
-      <li style={{ fontSize: "0.9rem" }}>Directrices de marca</li>
+      <li style={{ fontSize: "0.9rem" }}>Términos y condiciones
+      <a href={dataf.footer2.terminos}/>
+      </li>
+      <li style={{ fontSize: "0.9rem" }}>Metodología de enseñanza
+      <a href={dataf.footer2.metodologia}/>
+      </li>
+      <li style={{ fontSize: "0.9rem" }}>Política de privacidad
+      <a href={dataf.footer2.politica}/>
+      </li>
+      <li style={{ fontSize: "0.9rem" }}>Directrices de marca
+      <a href={dataf.footer2.directrices}/>
+      </li>
     </ul>
   </div>
 
   <div className="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
-    <FaFacebook className="logos" />
+    <a href={dataf.footer2.facebook}>
+      <FaFacebook className="logos" />  
+    </a>
+    <a href={dataf.footer2.instagram}>
     <FaInstagram className="logos" />
+    </a>
+    <a href={dataf.footer2.twitter}>
     <FaTwitter className="logos" />
+    </a>
+    <a href={dataf.footer2.tiktok}>
     <FaTiktok className="logos" />
-    <FaYoutube className="logos" />
+    </a>
+    <a href={dataf.footer2.youtube}>
+    <FaYoutube className="logos"/>
+    </a>
   </div>
 </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../imagenes/sin_back.png";
+import img from "../assets/imagenes/sin_back.png";
 import { Carousel } from "react-bootstrap";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
@@ -26,7 +26,7 @@ const data = [
   // Agrega más objetos de acuerdo al número de diapositivas que necesites
 ];
 
-const Staff = () => {
+const Staff = (props) => {
 
 
 
@@ -40,22 +40,22 @@ const Staff = () => {
       <br />
       <br />
       <Carousel prevIcon = <GrLinkPrevious /> nextIcon=<GrLinkNext /> >
-        {data.map((slide, index) => (
+        {props.datos.staff.map((item, index) => (
           <Carousel.Item key={index}>
             <div className="container bg-white rounded" style={{ width: "100%" }}>
               <div className="row">
                 <div className="col-12 col-md-4 d-none d-md-block "  >
-                  <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{ width: "50%", borderRadius: "50%", background: "blue", marginLeft: "11em" }} />
+                  <img src={require(`../assets/imagenes/${item.imagen}`)} className="img-fluid" alt={`slide-${index}`} style={{ width: "50%", borderRadius: "50%", background: "blue", marginLeft: "11em" }} />
                 </div>
                 <div className="col-12 d-md-none">
                   {/* Esta imagen se muestra solo en pantallas pequeñas */}
-                  <img src={slide.imagen} className="img-fluid" alt={`slide-${index}`} style={{ width: "50%", borderRadius: "50%", background: "blue", marginLeft: "5em", marginBottom:"1em" }} />
+                  <img src={require(`../assets/imagenes/${item.imagen}`)} className="img-fluid" alt={`slide-${index}`} style={{ width: "50%", borderRadius: "50%", background: "blue", marginLeft: "5em", marginBottom:"1em" }} />
                 </div>
                 <div className="col-12 col-md-7 " >
-                  <h1 className="text-primary text-md-start text-center ">{slide.titulo}</h1>
-                  <h3 className="text-primary text-md-start text-center">{slide.nombre}</h3>
+                  <h1 className="text-primary text-md-start text-center ">{item.cargo}</h1>
+                  <h3 className="text-primary text-md-start text-center">{item.nombres} y {item.apellidos}</h3>
 
-                  <p className="text-primary mt-5 text-md-start text-center lead px-4">{slide.descripcion}</p>
+                  <p className="text-primary mt-5 text-md-start text-center lead px-4">{item.parrafo}</p>
 
                 </div>
 

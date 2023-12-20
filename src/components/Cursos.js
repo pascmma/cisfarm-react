@@ -8,7 +8,7 @@ import DetallesCurso from "./DetallesCurso";
 import Ejemplo from "./Ejemplo";
 import ContenidoCurso from "./ContenidoCurso";
 import Video from "./Video";
-import background from "../imagenes/back_curso_cardio.png";
+import background from "../assets/imagenes/back_curso_cardio.png";
 import Valoraciones from "./Valoraciones";
 import { Fade } from "react-reveal";
 
@@ -19,7 +19,7 @@ const containerStyle = {
   height: "50%"
 };
 
-
+//Politicas de aceptacion estan en el componente CorrecionTest
 
 const gradientBackgroundStyle2 = {
   
@@ -43,12 +43,12 @@ function Cursos(props) {
 
     <div style={gradientBackgroundStyle2}>
 
-    <InfoCurso/>
+    <InfoCurso datos={props.datos}/>
     
-    <Ejemplo/>
+    <Ejemplo datos={props.datos}/>
 
 
-      <ContenidoCurso titulo={"Contenido del curso"}/>
+      <ContenidoCurso datos={props.datos} titulo={"Contenido del curso"}/>
     </div>
       <Footer />
       <Footer2/>

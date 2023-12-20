@@ -1,10 +1,10 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import imagen from '../imagenes/sin_back.png';
+import imagen from '../assets/imagenes/sin_back.png';
 import { GrNext,GrPrevious } from "react-icons/gr";
-//cada objeto va a tener areas iguale
 
 
+//El objeto de areas es el mas complicado, cada area tiene subareas por el detalle de los profesores
 const dataAreas = [
     {
         nombre: "Area1",
@@ -160,13 +160,13 @@ const dataAreas = [
 
 
 
-const Areas = () => {
+const Areas = (props) => {
 
     return (
         <>
             <div style={{margin:"0.2em"}}>
                 <Carousel prevIcon=<GrPrevious/> nextIcon= <GrNext/>  >
-                    {dataAreas.map((item, index) => (
+                    {props.datos.areas.map((item, index) => (
                         <Carousel.Item key={index}>
                             <div className="container my-3 bg-white" style={{WebkitBoxShadow: "1px 0px 10px 7px rgba(191,191,191,0.25)",
   MozBoxShadow: "-1px 0px 10px 7px rgba(191,191,191,0.75)",
@@ -174,7 +174,7 @@ const Areas = () => {
   borderRadius:"10px"}} >
                                 <div className="row m-5 ">
                                     <h1 className="text-warning text-center my-5"> Area </h1>
-                                    <h5 className="text-warning text-center mt-3"> {item.nombre}</h5>
+                                    <h5 className="text-warning text-center mt-3"> {item.area}</h5>
                                 </div>
                                 <Carousel className="p-4 m-4 " prevIcon=<GrPrevious/> nextIcon= <GrNext/> >
                                     {
@@ -188,7 +188,7 @@ const Areas = () => {
                                                         {
                                                             (aux.usuarios).map((temp,ind)=>(
                                                                 <div className="col ">
-                                                                    <img style={{width:'200px', height:"200px",borderRadius:"50%", background:"blue" }} src={temp.imagenUsuario}/>
+                                                                    <img style={{width:'200px', height:"200px",borderRadius:"50%", background:"blue" }} src={require(`../assets/imagenes/${temp.imagenUsuario}`)}/>
                                                                     <h4 className="text-primary mt-4">{temp.cargoUsuario}</h4>
                                                                     <h5 className="text-primary">{temp.nombresUsuario} </h5>
                                                                     <p className="text-warning">{temp.areaUsuario} </p>

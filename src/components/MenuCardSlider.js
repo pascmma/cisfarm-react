@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import imagen16 from "../imagenes/img16.png";
-import imagen10 from "../imagenes/img10.png";
+import imagen16 from "../assets/imagenes/img16.png";
+import imagen10 from "../assets/imagenes/img10.png";
 import Slider from "react-slick";
-import imagen from '../imagenes/img1.png';
-
+import imagen from '../assets/imagenes/img1.png';
 import "../estilos/academia.css";
-
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
-const imagenesCard = [imagen16, imagen10, imagen16, imagen10];
-
 const cardsData = [
   {
     id: 1,
@@ -87,7 +82,7 @@ const slideStyles = `
 `;
 
 
-function MenuCardSlider() {
+function MenuCardSlider(props) {
   const boton={
     fontSize: "16px",
     padding: "10px 20px",
@@ -152,7 +147,7 @@ function MenuCardSlider() {
         <h1 className="text-warning text-center"> Programas de entrenamiento</h1>
         <br/><br/>
         <h4 className="text-white text-wrap" >
-        Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1
+        {props.datos.parrafoPrograma}
         </h4>
         <br/>
         <br/>
@@ -161,14 +156,14 @@ function MenuCardSlider() {
         <br/>
         
         <Slider {...settings}>
-          {cardsData.map((data,idx)=>(
+          {props.datos.programas.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
             <div className="card my-3 contenedor-menu bg-transparent border-0 ">
-                <img src={data.img} className="border rounded"/>  
+                <img src={require(`../assets/imagenes/${data.imagen}`)} className="border rounded"/>  
                 <div className=""> 
-                    <p className="my-3 text-white"> {data.title}</p>
+                    <p className="my-3 text-white"> {data.ciclo}</p>
                     <hr style={{border:"solid 2px white"}}/>
-                    <p className="lead text-wrap text-warning" style={{fontSize:"1.9em"}}> {data.ciclo}</p>
+                    <p className="lead text-wrap text-warning" style={{fontSize:"1.9em"}}> {data.nombre}</p>
                     <div className="text-center"><button className="btn " style={boton}>ver mas</button></div>
                 </div>
             </div>
@@ -191,7 +186,7 @@ function MenuCardSlider() {
         <br/>
         <br/><br/>
         <h4 className="text-white text-wrap">
-        Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1
+        {props.datos.parrafoSimulacro}
         </h4>
         <br/>
         <br/>
@@ -200,12 +195,12 @@ function MenuCardSlider() {
         <br/>
 
         <Slider {...settings}>
-          {cardsData2.map((data,idx)=>(
+          {props.datos.simulacros.map((data,idx)=>(
             <div className={idx === imageIndex ? "slide activateSlide" : "slide"}>
             <div className="card my-3 contenedor-menu bg-transparent border-0">
-                <img src={data.img} className="border rounded"/>  
+                <img src={require(`../assets/imagenes/${data.imagen}`)} className="border rounded"/>  
                 <div className=""> 
-                    <p className="my-3 text-white"> {data.title}</p>
+                    <p className="my-3 text-white"> {data.ciclo}</p>
                     <hr style={{border:"solid 2px white"}}/>
                     
                     <div className="text-center"><button className="btn " style={boton}>ver mas</button></div>

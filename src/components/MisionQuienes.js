@@ -1,22 +1,6 @@
 import React from "react";
-const data2 = {
-  misionli:
-    "Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod",
-  visionli: `Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat. Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et
-    dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo
-    consequat.Lorem ipsum dolor sit amet, consectetur`,
-};
 
-const MisionQuienes = () => {
+const MisionQuienes = (props) => {
   return (
     <>
       <div
@@ -31,13 +15,14 @@ const MisionQuienes = () => {
             <br />
             <br />
             <ul className="text-primary lead text-start">
-              <li>{data2.misionli}</li>
-              <br />
-              <li>{data2.misionli}</li>
-              <br />
-              <li>{data2.misionli}</li>
-              <br />
-              <li>{data2.misionli}</li>
+
+              {props.datos.mision.map((item,index)=>(
+                <div>
+                  <li>{item.item}</li>
+                  <br />    
+                </div>
+              ))}
+            
             </ul>
           </div>
           <div className="col-lg-6 col-md-12">
@@ -52,7 +37,7 @@ const MisionQuienes = () => {
             >
               <h3 className="text-white mx-5 py-5 text-start">Visión</h3>
               <p className="text-wrap text-white lead mx-5 text-start pb-5">
-                {data2.visionli}
+                {props.datos.vision}
               </p>
             </div>
           </div>

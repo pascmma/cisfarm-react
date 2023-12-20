@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imagen16 from "../imagenes/img16.png";
-import imagen10 from "../imagenes/img10.png";
+import imagen16 from "../assets/imagenes/img16.png";
+import imagen10 from "../assets/imagenes/img10.png";
 import { Carousel } from "react-bootstrap";
 import "./contenedor.css";
 
@@ -10,7 +10,7 @@ import imagenAsesor3 from "../assets/ASESORES/Guido_Alonso Saldón Beltran.png";
 import imagenAsesor4 from "../assets/ASESORES/Mario_Cavero Medina.png";
 import imagenAsesor5 from "../assets/ASESORES/Nelber_Fernandez Flores.png";
 
-import imagen6 from "../imagenes/img6.png";
+import imagen6 from "../assets/imagenes/img6.png";
 import Slider from "react-slick";
 
 const Bord = (props) => {

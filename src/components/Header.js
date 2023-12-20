@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../imagenes/img3.png";
+import logo from "../assets/imagenes/img3.png";
 import './header.css';
 import { IoMenu } from 'react-icons/io5';
-import metanimaLogo from "../imagenes/metanimaLogo.png";
+import metanimaLogo from "../assets/imagenes/metanimaLogo.png";
 
 // importar objetso para ver el tamano
 import {data} from '../objetos/ObjetoCursoFarmacologia';
+import {datam} from '../objetos/ObjetoMetanimaCruso';
 
 
 
@@ -139,7 +140,7 @@ const handleAcademia = () =>{
                     </div>
                   ))
                 }
-
+ 
 
                 </div>
               </span>
@@ -173,9 +174,16 @@ const handleAcademia = () =>{
                 <h6 className=" sobre px-3 py-2">Metanima </h6>
 
                 <div className="sub-menu m-2 p-3" style={{...subMenuStyleMetamina,position:"absolute"}}>
-                  <Link to="/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}}>Metanima</Link>
+                  <Link to="/Metanima/metanima" className="sub-menu-item text-white" onClick={()=>{handleMetanimaLogo()}}>Metanimas</Link>
                   <br />
-                  <Link to="/Metanima/curso1" className="sub-menu-item text-white">Curso 1</Link>
+                
+                  {
+                  datam.map((item,index)=>(
+                    <div>
+                      <Link to={`/Metanima/${item.titulo1}`} className="sub-menu-item text-white">{item.titulo1}</Link>
+                    </div>
+                  ))
+                }
                   {/* Agrega más enlaces de cursos según sea necesario */}
                 </div>
               </span>

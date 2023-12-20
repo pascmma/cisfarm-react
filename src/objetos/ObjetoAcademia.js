@@ -1,7 +1,9 @@
+//Objeto de modificacion de Academia QF
+
 const data = {
     titulo:"Academia Q.F.",
     parrafo:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua`,
-    logo:"path de la imagen",
+    logo:"Academia- metálico-simple.png",
 
     //programas de entrenamiento
     parrafoProgramas:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1`,
@@ -10,50 +12,51 @@ const data = {
 
     programas:[
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             nombre:"SUPERINTENSIVO",
 
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             nombre:"SUPERINTENSIVO",
 
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             nombre:"SUPERINTENSIVO",
 
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             nombre:"SUPERINTENSIVO",
 
         },
     ],
+    parrafoSimulacro:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la Lorem ipsum dolor sit amet, consecteturContenido del párrafo 1`,
 
     //simulacros
     simulacros:[
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             
         },
         {
-            imagen:"path de la imagen",
+            imagen:"img1.png",
             ciclo:"ENAFB-SERUMS 2023-II",
             
         },

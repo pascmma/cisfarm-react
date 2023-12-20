@@ -9,7 +9,7 @@ import CardSlider from "./CardSlider";
 import Header from "./Header";
 import TituloInicio from "./TituloInicio";
 import Footer2 from "./Footer2";
-import background from '../imagenes/back_inicio.png';
+import background from '../assets/imagenes/back_inicio.png';
 import { Fade } from "react-reveal";
 import {data} from '../objetos/ObjetoInicio';
 

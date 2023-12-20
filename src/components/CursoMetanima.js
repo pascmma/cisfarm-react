@@ -12,9 +12,10 @@ import {GiSpeaker,GiUpgrade} from "react-icons/gi"
 import {AiOutlineLike} from "react-icons/ai"
 import Correccion from "./CorreccionTest";
 import ContenidoCursoMetanima from "./ContenidoCursoMetanima";
-import background from "../imagenes/back_metanima_curso.png";
+import background from "../assets/imagenes/back_metanima_curso.png";
 import { PiClockCounterClockwiseBold, PiVideoDuotone } from "react-icons/pi";
 import { BsPersonSquare } from "react-icons/bs";
+import {datam} from '../objetos/ObjetoMetanimaCruso';
 
 const estilo = {
     display:"inline-block",
@@ -22,16 +23,7 @@ const estilo = {
   };
 
 
-  const data = {
-    costo:"$ 129",
-    duracion: "14,2 horas",
-    lecciones: "9 lecciones",
-    modalidad: "online y ritmo",
-    acerca: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    beneficios:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-    requisitos:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
   
-  };
 
 const containerStyle = {
     position: "relative",
@@ -91,7 +83,7 @@ const containerStyle = {
     color: "blue",
   };
 
-const CursoMetanima = ()=>{
+const CursoMetanima = (props)=>{
   const estilo = {
     display: "inline-block",
     color: "white",
@@ -128,7 +120,7 @@ const CursoMetanima = ()=>{
         <>
                    <div style={{backgroundImage:`url(${background})`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat",}}>
       
-        <VideoMetanima/>
+        <VideoMetanima datos={props.datos}/>
         
 
 
@@ -142,7 +134,7 @@ const CursoMetanima = ()=>{
             <br/>
             <br/>
             <br/>
-            <h2 className="text-primary text-center">Aprende mas en el campo de los mecanismos en accion en 3D </h2>
+            <h2 className="text-primary text-center">{props.datos.informacion} </h2>
             <br/>
             <br/>
             <br/>
@@ -154,15 +146,11 @@ const CursoMetanima = ()=>{
     <div className="col-md-6" style={{marginTop:"5.5em"}}>
       <div className="container" >
         <h4 className="text-primary text-start">
-          ¿Por qué estudiar Farmacología Cardiovascular en Cisfarm?
+          {props.datos.preguntaCurso}
         </h4>
         <br/><br/>
         <p className="lead text-primary" style={{textAlign:"justify"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat.Lorem ipsum
+          {props.datos.respuestaCurso}
         </p>
       </div>
     </div>
@@ -200,7 +188,7 @@ const CursoMetanima = ()=>{
                     aria-describedby="basic-addon1"
                   />
                 </div>
-                <Correccion />
+                <Correccion datos={props.datos}/>
                 <button className="btn btn-primary bg-secondary">Enviar</button>
               </div>
             </div>
@@ -240,7 +228,7 @@ const CursoMetanima = ()=>{
                     aria-describedby="basic-addon1"
                   />
                 </div>
-                <Correccion />
+                <Correccion datos ={props.datos}/>
                 <button className="btn btn-primary bg-secondary  p-0"  style={{width:"25%",marginTop:"-1.5em"}} >Enviar</button>
               </div>
             </div>
@@ -257,7 +245,7 @@ const CursoMetanima = ()=>{
           <div className="m-5 text-white px-5" style={{display:"inline-block",borderRadius:"80px",backgroundImage:"linear-gradient(287deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}}>
             <div className="p-4">
             <h4 className="fs-5">Costo</h4>
-            <h3 className="display-5"> S/129.00</h3>
+            <h3 className="display-5"> S/{props.datos.costo}</h3>
             </div>
           </div>
           <div>
@@ -265,7 +253,7 @@ const CursoMetanima = ()=>{
                 <PiClockCounterClockwiseBold className="display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
                   <h3 className="text-primary"><strong>Duracion</strong></h3>
-                  <h4 className="text-primary">{data.duracion}</h4>
+                  <h4 className="text-primary">{props.datos.duracion}</h4>
                 </div>
               </div>
               
@@ -273,7 +261,7 @@ const CursoMetanima = ()=>{
                 <PiVideoDuotone className="  display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
                   <h3 className="text-primary"><strong>Lecciones</strong></h3>
-                  <h4 className="text-primary">{data.lecciones}</h4>
+                  <h4 className="text-primary">{props.datos.lecciones}</h4>
                 </div>
               </div>
               
@@ -281,7 +269,7 @@ const CursoMetanima = ()=>{
                 <BsPersonSquare className="display-3 mx-4" style={{color:"#D1A900"}} />
                 <div>
                   <h3 className="text-primary"><strong>Modalidad</strong></h3>
-                  <h4 className="text-primary">{data.modalidad}</h4>
+                  <h4 className="text-primary">{props.datos.modalidad}</h4>
                 </div>
               </div>
               
@@ -294,14 +282,7 @@ const CursoMetanima = ()=>{
           <br/>
           <p className="lead" style={{textAlign:"justify"}}>
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.Lorem ipsum
+            {props.datos.acerca}
           </p>
           </div>
         </div>
@@ -316,38 +297,22 @@ const CursoMetanima = ()=>{
           <br/>
           
           <ul style={{marginLeft:"10%", textAlign:"left",width:"80%"}}>
-            <li>
-              <p className="lead text-primary"> {data.beneficios}</p>
-            </li>
-            <li>
-            <p className="lead text-primary"> {data.beneficios}</p>
-            </li>
-            <li>
-            <p className="lead text-primary"> {data.beneficios}</p>
-            </li>
-            <li>
-            <p className="lead text-primary"> {data.beneficios}</p>
-            </li>
-            <li>
-            <p className="lead text-primary"> {data.beneficios}</p>
-            </li>
+
+            {props.datos.beneficios.map((item,index)=>(
+              <li>
+                <p className="lead text-primary"> {item.item}</p>
+              </li>
+
+            ))}
+
+            
           </ul>
         </div>
         <div className="col-sm" style={styleAbout}>
             <div className="border" style={{width:"70%",height:"100%", display:"inline-block",marginLeft:"15%", borderTopLeftRadius:"70px",borderTopRightRadius:"70px",backgroundImage:"linear-gradient(180deg, rgba(11,47,89,1) 0%, rgba(164,127,40,1) 84%)"}} >
           <h1 className="text-white text-start mt-5 mx-4">Requisitos y materiales</h1>
           <p className="text-white m-4" style={{textAlign:"justify", fontSize:"1em"}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.Lorem ipsum. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-
-consequat.Lorem ipsum.
+            {props.datos.requisitos}
           </p>
           </div>
         </div>
@@ -356,8 +321,8 @@ consequat.Lorem ipsum.
         </div>
 
       </div>
-      <Ejemplo/>
-      <ContenidoCursoMetanima />
+      <Ejemplo datos={props.datos}/>
+      <ContenidoCursoMetanima datos={props.datos}/>
         
       </div>
         <Footer/>

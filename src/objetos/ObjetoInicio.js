@@ -1,5 +1,5 @@
 
-
+// Objeto de la pagina de inicio
 const data = [{
     //parte de los titulos
     titulo: "Preparate en nuestros programas de entrenamiento",
@@ -9,7 +9,7 @@ const data = [{
     // Parte de eventos
 
     eventos:[
-        {imagen:'1.png'},
+        {imagen:'2.png'},
         {imagen:'2.png'},
         {imagen:'3.png'},
         {imagen:'4.png'},
@@ -54,43 +54,6 @@ const data = [{
     ],
 
     //tarjetas
-    card:[
-        {
-            imagen:"path de la imagen",
-            puesto:"Asesor Academico",
-            nombres:"Alvaro Jose",
-            apellidos:"Andrade Condori",
-            titulo:"Quimico Farmaceutico",
-            puesto:"1 Puesto",
-            curso:"Farmacia Hospitalaria"
-        },
-        {
-            imagen:"path de la imagen",
-            puesto:"Asesor Academico",
-            nombres:"Alvaro Jose",
-            apellidos:"Andrade Condori",
-            titulo:"Quimico Farmaceutico",
-            puesto:"1 Puesto",
-            curso:"Farmacia Hospitalaria"
-        },
-        {
-            imagen:"path de la imagen",
-            puesto:"Asesor Academico",
-            nombres:"Alvaro Jose",
-            apellidos:"Andrade Condori",
-            titulo:"Quimico Farmaceutico",
-            puesto:"1 Puesto",
-            curso:"Farmacia Hospitalaria"
-        },{
-            imagen:"path de la imagen",
-            puesto:"Asesor Academico",
-            nombres:"Alvaro Jose",
-            apellidos:"Andrade Condori",
-            titulo:"Quimico Farmaceutico",
-            puesto:"1 Puesto",
-            curso:"Farmacia Hospitalaria"
-        },
-    ],
     bord:[{
         imagen:'Christopher_Davila Mendoza.png',
         titulo: "Asesor Academico",
