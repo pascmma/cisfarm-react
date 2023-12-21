@@ -58,6 +58,19 @@ const data={
         {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -66,6 +79,107 @@ const data={
           },
           {
             img: 'img16.png',
+            nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
+            dia:"1",
+            mes:"1",
+            anio:"2023",
+            categoria:"1"
+            
+          },
+          {
+            img: 'img16.png',
+            nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
+            dia:"1",
+            mes:"1",
+            anio:"2023",
+            categoria:"1"
+            
+          },
+          {
+            img: 'img16.png',
+            nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
+            dia:"1",
+            mes:"1",
+            anio:"2023",
+            categoria:"1"
+            
+          },
+          {
+            img: 'img16.png',
+            nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
+            dia:"1",
+            mes:"1",
+            anio:"2023",
+            categoria:"1"
+            
+          },
+          {
+            img: 'img16.png',
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             nombre: "nombre completo de la noticia",
             dia:"1",
             mes:"1",
@@ -76,6 +190,19 @@ const data={
           {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -85,6 +212,19 @@ const data={
           {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -94,42 +234,19 @@ const data={
           {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
-            dia:"1",
-            mes:"1",
-            anio:"2023",
-            categoria:"1"
-            
-          },
-          {
-            img: 'img16.png',
-            nombre: "nombre completo de la noticia",
-            dia:"1",
-            mes:"1",
-            anio:"2023",
-            categoria:"1"
-            
-          },
-          {
-            img: 'img16.png',
-            nombre: "nombre completo de la noticia",
-            dia:"1",
-            mes:"1",
-            anio:"2023",
-            categoria:"1"
-            
-          },
-          {
-            img: 'img16.png',
-            nombre: "nombre completo de la noticia",
-            dia:"1",
-            mes:"1",
-            anio:"2023",
-            categoria:"1"
-            
-          },
-          {
-            img: 'img16.png',
-            nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -141,6 +258,19 @@ const data={
         {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -149,6 +279,19 @@ const data={
           },{
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -157,6 +300,19 @@ const data={
           },{
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -165,6 +321,19 @@ const data={
           },{
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -173,6 +342,19 @@ const data={
           },{
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -182,6 +364,19 @@ const data={
           {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",
@@ -191,6 +386,19 @@ const data={
           {
             img: 'img16.png',
             nombre: "nombre completo de la noticia",
+            informacion:`Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem
+            ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem
+            ipsum`,
             dia:"1",
             mes:"1",
             anio:"2023",

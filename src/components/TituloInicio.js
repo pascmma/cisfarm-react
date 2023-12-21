@@ -21,6 +21,11 @@ const TituloInicio = (props) => {
   
   };
 
+  const formulario = () =>{
+    const urlNueva = "https://forms.gle/xUUmiMVqkSCYErTv5";
+    window.open(urlNueva,'_blank');
+  }
+
 
   return (
     <>
@@ -41,7 +46,7 @@ const TituloInicio = (props) => {
         </div>
         <div className="row">
           <div className="col-1">
-            <button type="button" className="btn" style={boton}>
+            <button type="button" className="btn" style={boton} onClick={formulario} >
               {props.datos.boton}
             </button>
           </div>

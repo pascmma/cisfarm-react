@@ -1,57 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import { Carousel } from "react-bootstrap";
 import imagen from "../assets/imagenes/img16.png";
 import Slider from "react-slick";
+import { Modal } from "react-bootstrap";
 
 const Prueba = (props) => {
-  
-  const noticias = [
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      dia:"",
-      mes:"",
-      anio:"",
-      categoria:""
-      
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-    {
-      img: imagen,
-      nombre: "nombre completo de la noticia",
-      fecha: "Fecha de lanzamiento",
-    },
-  ];
 
+  const [showModal, setShowModal] = useState(false);
+
+
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  
   const settings = {
     className: "center",
     centerMode: true,
@@ -188,9 +154,29 @@ const Prueba = (props) => {
                         type="button"
                         className="btn btn-primary"
                         style={{ marginLeft: "35%", borderRadius: "20px" }}
+                        onClick={handleOpenModal}
                       >
                         Ver mas
                       </button>
+                        <Modal
+                          show={showModal}
+                          onHide={handleCloseModal}
+                          backdrop="static"
+                          keyboard={false}
+                        >
+                          <Modal.Header closeButton>
+                            <Modal.Title>{item.nombre}</Modal.Title>
+                          </Modal.Header>
+                          <Modal.Body>
+                            {item.informacion}
+                          </Modal.Body>
+                          <Modal.Footer>
+                            <button className="btn btn-secondary" onClick={handleCloseModal} >Cerrar</button>
+                          </Modal.Footer>
+
+                        </Modal>
+                      
+
                     </div>
                   </div>
                 </div>
@@ -237,9 +223,27 @@ const Prueba = (props) => {
                     type="button"
                     className="btn btn-primary"
                     style={{ marginLeft: "35%", borderRadius: "20px" }}
+                    onClick={handleOpenModal}
                   >
                     Ver mas
                   </button>
+                  <Modal
+                          show={showModal}
+                          onHide={handleCloseModal}
+                          backdrop="static"
+                          keyboard={false}
+                        >
+                          <Modal.Header closeButton>
+                            <Modal.Title>{item.nombre}</Modal.Title>
+                          </Modal.Header>
+                          <Modal.Body>
+                            {item.informacion}
+                          </Modal.Body>
+                          <Modal.Footer>
+                            <button className="btn btn-secondary" onClick={handleCloseModal} >Cerrar</button>
+                          </Modal.Footer>
+
+                        </Modal>
                 </div>
               </div>
             </div>

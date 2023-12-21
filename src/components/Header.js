@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/imagenes/img3.png";
 import './header.css';
 import { IoMenu } from 'react-icons/io5';
 import metanimaLogo from "../assets/imagenes/metanimaLogo.png";
+import { Form } from "react-bootstrap";
 
 // importar objetso para ver el tamano
 import {data} from '../objetos/ObjetoCursoFarmacologia';
@@ -46,6 +47,26 @@ const handleAcademia = () =>{
   const handleMetanimaLogo = () => {
     setLogoMetanima(!logoMetanima);
   };
+
+ 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const audio = new Audio('path/to/your/mp3.mp3'); 
+    audioRef.current = audio;
+  }, []);
+
+  const handleSwitchChange = () => {
+    setIsPlaying(!isPlaying);
+    if (isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  };
+
+
 
   const styleMenu = {
     boxShadow: 'none',
@@ -194,6 +215,15 @@ const handleAcademia = () =>{
                 <h6 className=" sobre px-3 py-2">Blogs </h6>
 
               </Link>
+              <Form className="pt-3 ml-2">
+                <Form.Check
+                  type="switch"
+                  id="audio-switch"
+                  onChange={handleSwitchChange}
+                  
+                />
+
+              </Form>
             </div>
           </div>
         </nav>
